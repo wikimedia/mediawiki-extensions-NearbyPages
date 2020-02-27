@@ -30,7 +30,7 @@ class SpecialNearby extends SpecialPage {
 			'wgNearbyRange' => $this->config->get( 'NearbyRange' ),
 		] );
 		$out->addModuleStyles( [
-			'ext.nearbypages.images',
+			'ext.nearby.images',
 			'ext.nearby.styles'
 		] );
 		$out->addModules( [

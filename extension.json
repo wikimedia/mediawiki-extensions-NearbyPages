@@ -44,12 +44,12 @@
 				"resources/ext.nearby.scripts/index.js"
 			]
 		},
-		"ext.nearbypages.images": {
+		"ext.nearby.images": {
 			"class": "ResourceLoaderImageModule",
 			"useDataURI": false,
 			"selector": ".{name}",
 			"images": {
-				"mw-nearby-pages__image-info": "resources/ext.nearbypages.images/article-illustration.svg"
+				"mw-nearby-pages__image-info": "resources/ext.nearby.images/article-illustration.svg"
 			}
 		}
 	}
