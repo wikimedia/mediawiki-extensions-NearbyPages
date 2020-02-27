@@ -2,7 +2,11 @@ const mustache = require( 'mustache' );
 const fs = require( 'fs' );
 const i18n = require( '../i18n/en.json' );
 const template = fs.readFileSync( `${__dirname}/../includes/templates/Nearby.mustache` ).toString();
-window.mw = {};
+window.mw = {
+    msg: function ( key ) {
+        return i18n[key];
+    }
+};
 
 document.getElementById( 'dev-container' ).innerHTML = mustache.render( template, {
     'heading': i18n['nearby-pages-info-heading'],
