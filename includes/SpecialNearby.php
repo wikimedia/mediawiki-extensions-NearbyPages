@@ -4,6 +4,7 @@ namespace NearbyPages;
 
 use Html;
 use SpecialPage;
+use TemplateParser;
 use MediaWiki\MediaWikiServices;
 
 /**
@@ -37,50 +38,14 @@ class SpecialNearby extends SpecialPage {
 		] );
 		$out->setPageTitle( $this->msg( 'nearby-pages-title' ) );
 
-		$html = Html::openElement( 'div', [
-				'id' => 'mw-nearby-pages',
-				'class' => 'mw-nearby-pages'
-			] )
-			. Html::element( 'div', [
-				'class' => 'mw-nearby-pages__image-info'
-			] )
-			. Html::element( 'h3', [
-					'class' => 'mw-nearby-pages__image-info__heading'
-				],
-				$this->msg( 'nearby-pages-info-heading' )->text()
-			)
-			. Html::element( 'div', [
-					'class' => 'mw-nearby-pages__image-info__description'
-				],
-				$this->msg( 'nearby-pages-info-description' )->text()
-			)
-			. Html::openElement( 'div', [] )
-				. Html::element( 'button',
-					[
-						'id' => 'mw-nearby-pages__activate',
-						'disabled' => true,
-						'class' => 'mw-ui-button mw-ui-progressive'
-					],
-					$this->msg( 'nearby-pages-info-show-button' )->text()
-				)
-			. Html::closeElement( 'div' )
-			. Html::closeElement( 'div' )
-
-			. Html::openElement( 'div',
-				[
-					'class' => 'content-unstyled',
-					'id' => 'mw-nearby-pages',
-				]
-			) .
-			Html::openElement( 'noscript' ) .
-			Html::errorBox(
-				Html::element( 'h2', [],
-					$this->msg( 'nearby-pages-requirements' )->text() ) .
-				Html::element( 'p', [],
-					$this->msg( 'nearby-pages-requirements-guidance' )->text() )
-			) .
-			Html::closeElement( 'noscript' );
-			Html::closeElement( 'div' );
+		$tp = new TemplateParser( __DIR__ . '/templates' );
+		$html = $tp->processTemplate( 'Nearby', [
+			'heading' => $this->msg( 'nearby-pages-info-heading' )->text(),
+			'description' => $this->msg( 'nearby-pages-info-description' )->text(),
+			'button' => $this->msg( 'nearby-pages-info-show-button' )->text(),
+			'noscript-heading' => $this->msg( 'nearby-pages-requirements' )->text(),
+			'noscript-text' => $this->msg( 'nearby-pages-requirements-guidance' )->text(),
+		] );
 
 		$out->addHTML( $html );
 	}
