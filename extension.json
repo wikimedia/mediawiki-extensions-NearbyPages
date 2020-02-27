@@ -41,7 +41,8 @@
 				"nearby-pages-permission-denied"
 			],
 			"packageFiles": [
-				"resources/ext.nearby.scripts/index.js"
+				"resources/ext.nearby.scripts/index.js",
+				"resources/ext.nearby.scripts/Errorbox.vue"
 			]
 		},
 		"ext.nearby.images": {

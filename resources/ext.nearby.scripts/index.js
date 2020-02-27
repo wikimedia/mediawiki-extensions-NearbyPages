@@ -6,7 +6,13 @@ btn.addEventListener( 'click', function () {
 	// eslint-disable-next-line no-new
 	new Vue( {
 		el: '#mw-nearby-pages',
-		template: '<div>TODO</div>'
+		data: {
+			message: mw.msg( 'nearby-pages-permission-denied' )
+		},
+		components: {
+			errorbox: require( './Errorbox.vue' )
+		},
+		template: '<errorbox v-bind:message="message" />'
 	} );
 } );
 
