@@ -1,0 +1,56 @@
+{
+	"name": "NearbyPages",
+	"version": "1.0.0",
+	"AutoloadClasses": {
+		"NearbyPages\\SpecialNearby": "includes/SpecialNearby.php"
+	},
+	"MessagesDirs": {
+		"NearbyPages": [
+			"i18n"
+		]
+	},
+	"config": {
+		"NearbyRange": 10000,
+		"NearbyDisplayWikibaseDescriptions": true
+	},
+	"SpecialPages": {
+		"Nearby": "NearbyPages\\SpecialNearby"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "NearbyPages"
+	},
+	"ResourceModules": {
+		"ext.nearby.styles": {
+			"targets": [ "mobile", "desktop" ],
+			"styles": "resources/ext.nearby.styles/index.less"
+		},
+		"ext.nearby.scripts": {
+			"dependencies": [ "vue" ],
+			"targets": [ "mobile", "desktop" ],
+			"messages": [
+				"nearby-pages-distance",
+				"nearby-pages-distance-meters",
+				"nearby-pages-requirements",
+				"nearby-pages-requirements-guidance",
+				"nearby-pages-error",
+				"nearby-pages-error-guidance",
+				"nearby-pages-noresults",
+				"nearby-pages-noresults-guidance",
+				"nearby-pages-location-unavailable",
+				"nearby-pages-permission-denied"
+			],
+			"packageFiles": [
+				"resources/ext.nearby.scripts/index.js"
+			]
+		},
+		"ext.nearbypages.images": {
+			"class": "ResourceLoaderImageModule",
+			"useDataURI": false,
+			"selector": ".{name}",
+			"images": {
+				"mw-nearby-pages__image-info": "resources/ext.nearbypages.images/article-illustration.svg"
+			}
+		}
+	}
+}

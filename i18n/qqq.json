@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+		]
+	},
+	"nearby-pages-distance": "States distance to current location. Parameters:\n* $1 - distance (in kilometers)\nSee also:\n* {{msg-mw|nearby-pages-distance-meters}}",
+	"nearby-pages-distance-meters": "States distance to current location for numbers less than 1km.\n\nParameters:\n* $1 - distance (in meters)\nSee also:\n* {{msg-mw|nearby-pages-distance}}",
+	"nearby-pages-error": "Text of generic error message when querying geodata API.",
+	"nearby-pages-error-guidance": "Message explaining actions user can take when keying error {{msg-mw|nearby-pages-error}}",
+	"nearby-pages-noresults": "Message shown when nothing is nearby",
+	"nearby-pages-noresults-guidance": "Message explaining actions user can take when keying error {{msg-mw|nearby-pages-noresults}}",
+	"nearby-pages-permission-denied": "Error message shown as alert when location was not found due to browser settings/permissions.",
+	"nearby-pages-location-unavailable": "Error message shown as alert when location was not provided by the browser (example: not in range)",
+	"nearby-pages-requirements": "Message shown to users who have no JavaScript or a browser that is not capable",
+	"nearby-pages-requirements-guidance": "Message explaining actions user can take when keying error {{msg-mw|nearby-pages-requirements}}",
+	"nearby-pages-title": "Title of [[Special:Nearby]].\n{{Identical|Nearby}}",
+	"nearby-pages-info-heading": "Heading title for Nearby info page",
+	"nearby-pages-info-description": "Nearby feature description above 'Show' button",
+	"nearby-pages-info-show-button": "Text on 'Show nearby articles' button"
+}

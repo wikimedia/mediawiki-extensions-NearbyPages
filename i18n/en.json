@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+		]
+	},
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "{{SITENAME}} Nearby is having some issues.",
+	"nearby-pages-error-guidance": "Try refreshing your location.",
+	"nearby-pages-noresults": "Quiet out here... There weren't any pages found with nearby topics.",
+	"nearby-pages-noresults-guidance": "Try creating a new page or adding location to an existing one",
+	"nearby-pages-permission-denied": "You have denied access to Location Services for {{SITENAME}}. To change this please visit your browser or device settings",
+	"nearby-pages-location-unavailable": "{{SITENAME}} cannot determine your location. Please try again with a better signal.",
+	"nearby-pages-requirements": "Sorry! Your web browser doesn't support {{SITENAME}} Nearby.",
+	"nearby-pages-requirements-guidance": "Try a different browser or enable JavaScript if you've disabled it.",
+	"nearby-pages-title": "Nearby",
+	"nearby-pages-info-heading": "Places around you",
+	"nearby-pages-info-description": "You can read about interesting {{SITENAME}} articles about places around you",
+	"nearby-pages-info-show-button": "Show nearby articles"
+}

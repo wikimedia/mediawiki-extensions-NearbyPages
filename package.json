@@ -1,0 +1,25 @@
+{
+	"private": true,
+	"scripts": {
+		"precommit": "npm -s run test",
+		"lint": "eslint --ext .json . && npm -s run lint:i18n && npm -s run lint:js && npm run lint:css",
+		"lint:js": "eslint --cache --max-warnings 0 --report-unused-disable-directives .",
+		"lint:css": "stylelint '**/*.less'",
+		"lint:i18n": "banana-checker --requireLowerCase=0 i18n/",
+		"test": "npm -s run lint",
+		"jsdoc": "jsdoc -c jsdoc.json",
+		"doc": "npm run jsdoc"
+	},
+	"engines": {
+		"node": "10.15.2"
+	},
+	"pre-commit": "precommit",
+	"devDependencies": {
+		"eslint-config-wikimedia": "0.15.0",
+		"grunt-banana-checker": "0.8.1",
+		"jsdoc": "3.6.3",
+		"pre-commit": "1.2.2",
+		"stylelint": "10.0.1",
+		"stylelint-config-wikimedia": "0.7.0"
+	}
+}
