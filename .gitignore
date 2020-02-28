@@ -2,3 +2,6 @@
 /docs/*
 .DS_Store
 /.eslintcache
+/dev/index.html
+/dist/
+.cache

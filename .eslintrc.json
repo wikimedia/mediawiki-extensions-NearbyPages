@@ -10,6 +10,7 @@
 		"no-implicit-globals": 0
 	},
 	"globals": {
+		"mw": true,
 		"require": true
 	}
 }
