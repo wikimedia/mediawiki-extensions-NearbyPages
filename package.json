@@ -2,7 +2,7 @@
 	"private": true,
 	"scripts": {
 		"precommit": "npm -s run test",
-		"start": "parcel dev/index.html",
+		"start": "node dev/build.js && parcel dev/index.html",
 		"lint": "eslint --ext .json . && npm -s run lint:i18n && npm -s run lint:js && npm run lint:css",
 		"lint:js": "eslint --cache --max-warnings 0 --report-unused-disable-directives .",
 		"lint:css": "stylelint '**/*.less'",

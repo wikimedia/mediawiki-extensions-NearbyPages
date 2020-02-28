@@ -5,3 +5,4 @@
 /dev/index.html
 /dist/
 .cache
+.eslintcache
