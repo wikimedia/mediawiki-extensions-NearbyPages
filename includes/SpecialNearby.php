@@ -2,18 +2,23 @@
 
 namespace NearbyPages;
 
-use Html;
+use Config;
+use MediaWiki\MediaWikiServices;
 use SpecialPage;
 use TemplateParser;
-use MediaWiki\MediaWikiServices;
 
 /**
  * Provide the Special page "Nearby" with location based articles
  */
 class SpecialNearby extends SpecialPage {
+
+	/**
+	 * @var Config
+	 */
+	private $config;
+
 	public function __construct() {
 		parent::__construct( 'Nearby' );
-		$this->listed = true;
 		$services = MediaWikiServices::getInstance();
 		$this->config = $services->getService( 'MobileFrontend.Config' );
 	}

@@ -1,4 +1,5 @@
 /node_modules/
+/vendor/
 /docs/*
 .DS_Store
 /.eslintcache
@@ -6,3 +7,4 @@
 /dist/
 .cache
 .eslintcache
+composer.lock
