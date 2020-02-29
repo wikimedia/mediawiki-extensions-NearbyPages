@@ -53,5 +53,6 @@
 				"mw-nearby-pages__image-info": "resources/ext.nearby.images/article-illustration.svg"
 			}
 		}
-	}
+	},
+	"manifest_version": 1
 }
