@@ -3,6 +3,7 @@
 		"authors": [
 		]
 	},
+	"nearby-pages-desc": "Adds [[Special:Nearby|Nearby]] special page",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
 	"nearby-pages-error": "{{SITENAME}} Nearby is having some issues.",

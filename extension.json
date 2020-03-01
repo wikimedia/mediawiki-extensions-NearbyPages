@@ -1,6 +1,9 @@
 {
 	"name": "NearbyPages",
 	"version": "1.0.0",
+	"url": "https://www.mediawiki.org/wiki/Extension:NearbyPages",
+	"descriptionmsg": "nearby-pages-desc",
+	"type": "specialpage",
 	"AutoloadClasses": {
 		"NearbyPages\\SpecialNearby": "includes/SpecialNearby.php"
 	},

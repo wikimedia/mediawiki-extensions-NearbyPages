@@ -3,6 +3,7 @@
 		"authors": [
 		]
 	},
+	"nearby-pages-desc": "{{desc|name=NearbyPages|url=https://www.mediawiki.org/wiki/Extension:NearbyPages}}",
 	"nearby-pages-distance": "States distance to current location. Parameters:\n* $1 - distance (in kilometers)\nSee also:\n* {{msg-mw|nearby-pages-distance-meters}}",
 	"nearby-pages-distance-meters": "States distance to current location for numbers less than 1km.\n\nParameters:\n* $1 - distance (in meters)\nSee also:\n* {{msg-mw|nearby-pages-distance}}",
 	"nearby-pages-error": "Text of generic error message when querying geodata API.",
