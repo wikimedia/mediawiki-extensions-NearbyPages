@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"nearby-pages-desc": "Додава службена страница „[[Special:Nearby|Во близина]]“",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 км}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 м}}",
+	"nearby-pages-error": "„Во близина“ на {{SITENAME}} се соочува со проблеми.",
+	"nearby-pages-error-guidance": "Превчитајте го местото кајшто се наоѓате.",
+	"nearby-pages-noresults": "Не најдов ниедна страница со тема во близина.",
+	"nearby-pages-noresults-guidance": "Направете нова страница или додајте место во некоја постоечка",
+	"nearby-pages-permission-denied": "Имате одбиено пристап до местоположба за {{SITENAME}}. За да го смените ова, одете во поставките на вашиот прелистувач",
+	"nearby-pages-location-unavailable": "{{SITENAME}} не може да ја утврди вашата местоположба. Обидете се повторно со подобар прием.",
+	"nearby-pages-requirements": "Жалиме! Вашиот прелистувач не поддржува „Во близина“ на {{SITENAME}}.",
+	"nearby-pages-requirements-guidance": "Користете друг прелистувач или вклучете JavaScript ако ви е исклучен.",
+	"nearby-pages-title": "Во близина",
+	"nearby-pages-info-heading": "Места околу вас",
+	"nearby-pages-info-description": "Можете да прочитате интересни статии на {{SITENAME}} за местата околу вас",
+	"nearby-pages-info-show-button": "Прикажи статии во близина"
+}

@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK"
+		]
+	},
+	"nearby-pages-desc": "[[Special:Nearby|Yakın]] özel sayfası ekler",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "{{SITENAME}} Yakılarınızdaki bazı sorunlar yaşıyor.",
+	"nearby-pages-error-guidance": "Konumunuzu yenilemeyi deneyin.",
+	"nearby-pages-noresults": "Burası epey sessiz... Size yakın konuma uygun bir içerik bulunamadı.",
+	"nearby-pages-noresults-guidance": "Yeni bir sayfa oluşturmayı veya mevcut konumunuzu eklemeyi deneyin",
+	"nearby-pages-permission-denied": "{{SITENAME}} için Konum Hizmetlerine erişiminiz engellendi. Bunu değiştirmek için lütfen tarayıcı veya cihaz ayarlarınızı ziyaret edin",
+	"nearby-pages-location-unavailable": "{{SITENAME}} konumunuzu belirleyemiyor. Lütfen daha iyi bir sinyalle tekrar deneyin.",
+	"nearby-pages-requirements": "Üzgünüz! Web tarayıcınız {{SITENAME}} yakınındakileri desteklemiyor.",
+	"nearby-pages-requirements-guidance": "Farklı bir tarayıcı deneyin veya JavaScript devredışı bırakılmışsa etkinleştirin.",
+	"nearby-pages-title": "Yakınındakiler",
+	"nearby-pages-info-heading": "Çevrenizdeki yerler",
+	"nearby-pages-info-description": "Çevrenizdeki yerler hakkında ilginç {{SITENAME}} makaleler hakkında bilgi edinebilirsiniz",
+	"nearby-pages-info-show-button": "Yakındaki maddeleri göster"
+}
