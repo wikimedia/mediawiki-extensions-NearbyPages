@@ -21,7 +21,7 @@
 		"Nearby": "NearbyPages\\SpecialNearby"
 	},
 	"ExtensionMessagesFiles": {
-		"NearbyAliases": "Nearby.alias.php"
+		"NearbyAliases": "NearbyPages.alias.php"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
