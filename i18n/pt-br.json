@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira"
+		]
+	},
+	"nearby-pages-desc": "Adicionar a página especial de [[Special:Nearby|proximidade]]",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "{{SITENAME}} Redondezas está tendo algum problema.",
+	"nearby-pages-error-guidance": "Tente atualizar sua localização.",
+	"nearby-pages-noresults": "Tudo quieto por aqui.. Não encontramos nenhuma página nas redondezas.",
+	"nearby-pages-noresults-guidance": "Tente criar uma nova página ou adicionar localização a uma existente",
+	"nearby-pages-permission-denied": "Recusou à wiki {{SITENAME}} o acesso aos serviços de localização. Para alterar a recusa visite a configuração do seu navegador ou do seu dispositivo.",
+	"nearby-pages-location-unavailable": "A wiki {{SITENAME}} não consegue determinar a sua localização. Tente novamente quando tiver melhor sinal, por favor.",
+	"nearby-pages-requirements": "Desculpa! {{SITENAME}} Redondezas não está disponível para seu navegador.",
+	"nearby-pages-requirements-guidance": "Tente um navegador diferente ou ative o JavaScript se você o tiver desabilitado.",
+	"nearby-pages-title": "Proximidade",
+	"nearby-pages-info-heading": "Lugares nas proximidades",
+	"nearby-pages-info-description": "Pode ler artigos interessantes da {{SITENAME}} sobre lugares à sua volta",
+	"nearby-pages-info-show-button": "Mostrar artigos das proximidades"
+}

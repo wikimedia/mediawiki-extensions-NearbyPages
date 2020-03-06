@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"nearby-pages-desc": "Setzt d'Spezialsäit[[Special:Nearby|Nobäi]] derbäi",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "{{SITENAME}} 'Nobäi' huet e puer Problemer.",
+	"nearby-pages-error-guidance": "Probéiert d'Plaz wou Dir sidd z'aktualiséieren.",
+	"nearby-pages-requirements-guidance": "Probéiert en anere Browser oder aktivéiert JavaScript wann Dir deen ausgeschalt hutt.",
+	"nearby-pages-title": "Nobäi",
+	"nearby-pages-info-heading": "Plaze ronderëm Iech",
+	"nearby-pages-info-show-button": "Artikelen nobäi weisen"
+}

@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98"
+		]
+	},
+	"nearby-pages-desc": "Voegt de [[Special:Nearby|In de buurt]] speciale pagina toe",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "De functie In de buurt van {{SITENAME}} werkt niet zoals het hoort.",
+	"nearby-pages-error-guidance": "Probeer uw locatie bij te werken.",
+	"nearby-pages-noresults": "Het is hier rustig. Er zijn geen pagina's over onderwerpen in de buurt.",
+	"nearby-pages-noresults-guidance": "Probeer een nieuwe pagina aan te maken of een locatie toe te voegen aan een bestaande pagina.",
+	"nearby-pages-location-unavailable": "{{SITENAME}} kan uw locatie niet bepalen. Probeer het opnieuw met een beter signaal.",
+	"nearby-pages-requirements": "Uw browser ondersteunt helaas geen In de buurt voor {{SITENAME}}.",
+	"nearby-pages-requirements-guidance": "Gebruik een andere browser of schakel JavaScript in als u die functie hebt uitgeschakeld.",
+	"nearby-pages-title": "In de buurt",
+	"nearby-pages-info-heading": "Plaatsen in de buurt",
+	"nearby-pages-info-show-button": "Toon pagina's in de buurt"
+}
