@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"NEHAOUA"
 		]
 	},
+	"nearby-pages-error-guidance": "حاول إنعاش موقعك.",
 	"nearby-pages-info-heading": "أماكن حولك",
 	"nearby-pages-info-show-button": "عرض المقالات القريبة"
 }

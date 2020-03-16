@@ -5,5 +5,7 @@
 		]
 	},
 	"nearby-pages-distance": "{{PLURAL:$1|$1 कि.मी.}}",
-	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 मी.}}"
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 मी.}}",
+	"nearby-pages-title": "नजिकैको",
+	"nearby-pages-info-heading": "तपाईको वरिपरिका स्थानहरू"
 }

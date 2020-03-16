@@ -4,6 +4,10 @@
 			"Neptune, the Mystic"
 		]
 	},
+	"nearby-pages-desc": "Dodaje posebnu stranicu „[[Special:Nearby|U blizini]]”",
+	"nearby-pages-noresults": "Tiho je ovdje... Nisu pronađene stranice s temama u blizini.",
+	"nearby-pages-requirements": "Žao nam je! Vaš internetski preglednik ne podržava uslugu „U blizini” projekta {{SITENAME}}.",
 	"nearby-pages-title": "U blizini",
-	"nearby-pages-info-heading": "Mjesta oko Vas"
+	"nearby-pages-info-heading": "Mjesta oko Vas",
+	"nearby-pages-info-description": "Možete čitati zanimljive članke projekta {{SITENAME}} o mjestima u Vašoj blizini"
 }
