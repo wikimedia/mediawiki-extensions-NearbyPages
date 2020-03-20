@@ -8,6 +8,9 @@
 	"AutoloadClasses": {
 		"NearbyPages\\SpecialNearby": "includes/SpecialNearby.php"
 	},
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
 	"MessagesDirs": {
 		"NearbyPages": [
 			"i18n"
