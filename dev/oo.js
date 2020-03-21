@@ -1,0 +1,1 @@
+window.OO = require( 'oojs' );

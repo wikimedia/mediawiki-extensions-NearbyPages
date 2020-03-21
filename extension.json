@@ -18,6 +18,7 @@
 	},
 	"config": {
 		"NearbyRange": 10000,
+		"NearbyRandomButton": false,
 		"NearbyPagesUrl": "https://en.wikipedia.org/w/api.php",
 		"NearbyDisplayWikibaseDescriptions": true
 	},
@@ -37,9 +38,18 @@
 			"styles": "resources/ext.nearby.styles/index.less"
 		},
 		"ext.nearby.scripts": {
-			"dependencies": [ "vue" ],
+			"dependencies": [
+				"vue",
+				"mediawiki.router",
+				"mediawiki.ui.button",
+				"mediawiki.api"
+			],
 			"targets": [ "mobile", "desktop" ],
 			"messages": [
+				"nearby-pages-info-heading",
+				"nearby-pages-info-description",
+				"nearby-pages-info-show-random",
+				"nearby-pages-info-show-button",
 				"nearby-pages-distance",
 				"nearby-pages-distance-meters",
 				"nearby-pages-requirements",
@@ -53,7 +63,13 @@
 			],
 			"packageFiles": [
 				"resources/ext.nearby.scripts/index.js",
-				"resources/ext.nearby.scripts/Errorbox.vue"
+				"resources/ext.nearby.scripts/locationProvider.js",
+				"resources/ext.nearby.scripts/api.js",
+				"resources/ext.nearby.scripts/App.vue",
+				"resources/ext.nearby.scripts/Button.vue",
+				"resources/ext.nearby.scripts/Card.vue",
+				"resources/ext.nearby.scripts/Errorbox.vue",
+				"resources/ext.nearby.scripts/PageList.vue"
 			]
 		},
 		"ext.nearby.images": {
@@ -61,7 +77,7 @@
 			"useDataURI": false,
 			"selector": ".{name}",
 			"images": {
-				"mw-nearby-pages__image-info": "resources/ext.nearby.images/article-illustration.svg"
+				"mw-vue-nearby__image": "resources/ext.nearby.images/article-illustration.svg"
 			}
 		}
 	},

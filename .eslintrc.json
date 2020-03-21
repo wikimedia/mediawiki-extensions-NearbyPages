@@ -1,7 +1,8 @@
 {
 	"root": true,
 	"extends": [
-		"wikimedia"
+		"wikimedia/client",
+		"wikimedia/jquery"
 	],
 	"env": {
 		"browser": true,
@@ -14,5 +15,81 @@
 		"mw": true,
 		"module": "readonly",
 		"require": true
-	}
+	},
+	"overrides": [
+		{
+			"files": [
+				"**/*.vue"
+			],
+			"extends": [
+				"plugin:vue/recommended",
+				"plugin:es/no-2015"
+			],
+			"plugins": [
+				"es"
+			],
+			"parserOptions": {
+				"sourceType": "script",
+				"ecmaFeatures": {
+					"jsx": false
+				}
+			},
+			"rules": {
+				"no-implicit-globals": 0,
+				"vue/html-indent": [
+					"warn",
+					"tab"
+				],
+				"vue/html-closing-bracket-newline": "off",
+				"vue/max-attributes-per-line": [
+					"warn", {
+						"singleline": 2,
+						"multiline": {
+							"max": 1,
+							"allowFirstLine": true
+						}
+					}
+				],
+				"vue/order-in-components": [
+					"error", {
+						"order": [
+							"el",
+							"name",
+							"parent",
+							"functional",
+							[ "delimiters", "comments" ],
+							[ "components", "directives", "filters" ],
+							"extends",
+							"mixins",
+							"inheritAttrs",
+							"model",
+							[ "props", "propsData" ],
+							"asyncData",
+							"data",
+							"computed",
+							"methods",
+							"watch",
+							"fetch",
+							"LIFECYCLE_HOOKS",
+							"head",
+							[ "template", "render" ],
+							"renderError"
+						]
+					}
+				],
+				"vue/v-on-style": [
+					"error",
+					"longform"
+				],
+				"vue/v-bind-style": [
+					"error",
+					"longform"
+				],
+				"vue/v-slot-style": [
+					"error",
+					"longform"
+				]
+			}
+		}
+	]
 }
