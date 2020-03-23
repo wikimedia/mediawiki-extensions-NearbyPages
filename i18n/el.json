@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Geraki"
+		]
+	},
+	"nearby-pages-desc": "Προσθέτει την ειδική σελίδα [[Special:Nearby|Nearby]]",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "Το {{SITENAME}} Nearby έχει κάποια προβλήματα.",
+	"nearby-pages-error-guidance": "Επιχειρήσετε να ανανεώσετε την τοποθεσία σας.",
+	"nearby-pages-noresults": "Ησυχία εδώ γύρω... Δεν βρέθηκαν να υπάρχουν σελίδες με κοντινά θέματα.",
+	"nearby-pages-noresults-guidance": "Δοκιμάστε τη δημιουργία μιας νέας σελίδας ή την προσθήκη τοποθεσίας σε μια υπάρχουσα",
+	"nearby-pages-permission-denied": "Έχετε αρνηθεί πρόσβαση από {{SITENAME}} στις Υπηρεσίες Τοποθεσίας. Για να το αλλάξετε αυτό παρακαλούμε επισκεφτείτε τις ρυθμίσεις το browser ή της συσκευής σας",
+	"nearby-pages-location-unavailable": "{{SITENAME}} δεν μπορεί να προσδιορίσει την τοποθεσία σας. Παρακαλούμε δοκιμάστε ξανά με καλύτερο σήμα.",
+	"nearby-pages-requirements": "Συγνώμη! Ο web browser σας δεν υποστηρίζει το {{SITENAME}} Nearby.",
+	"nearby-pages-requirements-guidance": "Δοκιμάστε ένα διαφορετικό πρόγραμμα περιήγησης ή ενεργοποιήσετε την JavaScript εάν έχετε την απενεργοποιήσει.",
+	"nearby-pages-title": "Κοντινά",
+	"nearby-pages-info-heading": "Μέρη κοντά σας",
+	"nearby-pages-info-description": "Μπορείτε να διαβάσετε ενδιαφέροντα λήμματα {{SITENAME}} για μέρη κοντά σε εσάς",
+	"nearby-pages-info-show-button": "Εμφάνιση κοντινών άρθρων"
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saraiki"
+		]
+	},
+	"nearby-pages-distance": "{{PLURAL:$1|$1 کلومیٹر}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 میٹر}}"
+}
