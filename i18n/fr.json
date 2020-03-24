@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Derugon"
+			"Derugon",
+			"Wladek92"
 		]
 	},
 	"nearby-pages-desc": "Ajoute une page spéciale [[Special:Nearby|À proximité]]",
@@ -10,7 +11,7 @@
 	"nearby-pages-error": "{{SITENAME}} à proximité éprouve quelques problèmes.",
 	"nearby-pages-error-guidance": "Essayez d’actualiser votre emplacement.",
 	"nearby-pages-noresults": "C’est calme ici… Aucune page sur un sujet situé dans les environs n’a été trouvée.",
-	"nearby-pages-noresults-guidance": "Essayez de créer une nouvelle page ou d’ajouter un emplacement à une déjà existante",
+	"nearby-pages-noresults-guidance": "Essayez de créer une nouvelle page ou d’ajouter un emplacement à une page déjà existante",
 	"nearby-pages-permission-denied": "Vous avez refusé l’accès aux services de localisation pour {{SITENAME}}. Pour modifier cela, veuillez vérifier la configuration de votre navigateur ou de votre appareil",
 	"nearby-pages-location-unavailable": "{{SITENAME}} ne peut déterminer votre position. Veuillez réessayer à nouveau avec un meilleur signal.",
 	"nearby-pages-requirements": "Désolé ! Votre navigateur web ne prend pas en charge la fonction « À proximité » de {{SITENAME}}.",
