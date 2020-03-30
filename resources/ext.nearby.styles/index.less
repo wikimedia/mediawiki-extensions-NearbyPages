@@ -1,41 +1,6 @@
-@colorGray7: #72777d;
-@nearbyImageSize: 9.625em;
-
 .client-js {
 	// note this also means non-ResourceLoader enabled browsers hence not using tag
 	.noscript {
 		display: none;
 	}
-}
-
-.client-nojs {
-	// Button should be hidden if no JavaScript is enabled.
-	.mw-nearby-pages__image-info__button-container {
-		display: none;
-	}
-}
-
-.mw-nearby-pages {
-	position: relative;
-	padding: 50px 20px 0;
-	text-align: center;
-}
-
-.mw-nearby-pages__image-info {
-	margin: 0 auto 20px;
-	min-width: @nearbyImageSize;
-	min-height: @nearbyImageSize;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-// be specific in order to override default padding
-.mw-nearby-pages__image-info__heading {
-	font-size: 1em;
-	padding: 0 0 10px;
-}
-
-.mw-nearby-pages__image-info__description {
-	color: @colorGray7;
-	margin-bottom: 20px;
 }

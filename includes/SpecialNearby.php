@@ -45,9 +45,6 @@ class SpecialNearby extends SpecialPage {
 
 		$tp = new TemplateParser( __DIR__ . '/templates' );
 		$html = $tp->processTemplate( 'Nearby', [
-			'heading' => $this->msg( 'nearby-pages-info-heading' )->text(),
-			'description' => $this->msg( 'nearby-pages-info-description' )->text(),
-			'button' => $this->msg( 'nearby-pages-info-show-button' )->text(),
 			'noscript-heading' => $this->msg( 'nearby-pages-requirements' )->text(),
 			'noscript-text' => $this->msg( 'nearby-pages-requirements-guidance' )->text(),
 		] );
