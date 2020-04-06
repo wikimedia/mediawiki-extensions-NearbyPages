@@ -4,7 +4,11 @@
 			"Fitoschido"
 		]
 	},
+	"nearby-pages-desc": "Añade la página especial [[Special:Nearby|Cercanos]]",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
-	"nearby-pages-title": "Cercanos"
+	"nearby-pages-error-guidance": "Prueba a actualizar tu ubicación.",
+	"nearby-pages-requirements-guidance": "Prueba con otro navegador o activa JavaScript si lo has desactivado.",
+	"nearby-pages-title": "Cercanos",
+	"nearby-pages-info-heading": "Lugares cercanos a ti"
 }

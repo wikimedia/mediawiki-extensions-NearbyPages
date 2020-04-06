@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido"
+		]
+	},
+	"nearby-pages-error-guidance": "Pruebe a actualizar su ubicación.",
+	"nearby-pages-requirements-guidance": "Pruebe con otro navegador o active JaveScript si lo ha desactivado.",
+	"nearby-pages-info-heading": "Lugares cercanos a usted"
+}
