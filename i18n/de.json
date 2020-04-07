@@ -1,5 +1,7 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": []
+	},
 	"nearby-pages-desc": "Ergänzt die [[Special:Nearby|In der Nähe]]-Spezialseite",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
