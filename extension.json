@@ -18,6 +18,7 @@
 	},
 	"config": {
 		"NearbyRange": 10000,
+		"NearbyPagesUrl": "https://en.wikipedia.org/w/api.php",
 		"NearbyDisplayWikibaseDescriptions": true
 	},
 	"SpecialPages": {

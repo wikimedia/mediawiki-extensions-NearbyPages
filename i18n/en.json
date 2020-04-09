@@ -17,5 +17,6 @@
 	"nearby-pages-title": "Nearby",
 	"nearby-pages-info-heading": "Places around you",
 	"nearby-pages-info-description": "You can read about interesting {{SITENAME}} articles about places around you",
+	"nearby-pages-info-show-random": "Show random articles",
 	"nearby-pages-info-show-button": "Show nearby articles"
 }

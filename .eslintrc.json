@@ -4,13 +4,15 @@
 		"wikimedia"
 	],
 	"env": {
-		"browser": true
+		"browser": true,
+		"commonjs": true
 	},
 	"rules": {
 		"no-implicit-globals": 0
 	},
 	"globals": {
 		"mw": true,
+		"module": "readonly",
 		"require": true
 	}
 }

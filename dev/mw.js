@@ -24,7 +24,9 @@ window.mw = {
     config: {
         get: function ( name ) {
             switch ( name ) {
-                case 'NearbyRange':
+                case 'wgNearbyPagesUrl':
+                    return 'https://en.wikipedia.org/w/api.php';
+                case 'wgNearbyRange':
                     return 1000;
                 default:
                     return null;

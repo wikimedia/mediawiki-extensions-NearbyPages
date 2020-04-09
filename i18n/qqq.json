@@ -16,5 +16,6 @@
 	"nearby-pages-title": "Title of [[Special:Nearby]].\n{{Identical|Nearby}}",
 	"nearby-pages-info-heading": "Heading title for Nearby info page",
 	"nearby-pages-info-description": "Nearby feature description above 'Show' button",
+	"nearby-pages-info-show-random": "Text on random button",
 	"nearby-pages-info-show-button": "Text on 'Show nearby articles' button"
 }
