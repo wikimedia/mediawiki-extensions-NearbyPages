@@ -2,7 +2,7 @@
 	"@metadata": {
 		"authors": []
 	},
-	"nearby-pages-desc": "Ergänzt die [[Special:Nearby|In der Nähe]]-Spezialseite",
+	"nearby-pages-desc": "Erweitert das Wiki um eine [[Special:Nearby|Spezialseite]] zur Anzeige von Seiten in örtlicher Nähe",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
 	"nearby-pages-error": "„In der Nähe“ von {{SITENAME}} hat einige Probleme.",
