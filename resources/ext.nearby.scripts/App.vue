@@ -31,8 +31,6 @@
 				{{ msg( 'nearby-pages-info-show-random' ) }}
 			</mw-button>
 		</div>
-
-		<div v-if="pending" class="mw-vue-nearby__shield"></div>
 	</div>
 </template>
 
@@ -44,6 +42,17 @@ var api = require( './api.js' ),
 	state = window.history.state,
 	MANAGED_STATE = 'MobileFrontend OverlayManager was here!',
 	locationProvider = require( './locationProvider.js' );
+
+/**
+ * @return {Card[]}
+ */
+function proxyPages() {
+	// Use Array.fill when ES6 support available.
+	var arr = Array.apply( null, Array( 50 ) );
+	return arr.map( function ( value, i ) {
+		return { title: '' }
+	} );
+}
 
 // @vue/component
 /**
@@ -65,7 +74,6 @@ module.exports = {
 	data: function () {
 		return {
 			includeRandomButton: mw.config.get( 'NearbyRandomButton' ),
-			pending: false,
 			pages: [],
 			error: false
 		};
@@ -87,7 +95,6 @@ module.exports = {
 		 * @param {string} msg
 		 */
 		showError: function ( msg ) {
-			this.pending = false;
 			this.error = mw.msg( msg );
 			this.pages = [];
 		},
@@ -97,14 +104,13 @@ module.exports = {
 		 * @param {string} lng
 		 */
 		loadPages: function ( lat, lng ) {
-			this.pending = true;
+			this.pages = proxyPages();
 			router.navigateTo( null, {
 				path: '#/coord/' + lat + ',' + lng,
 				useReplaceState: true
 			} );
 			api.getPagesAtCoordinates( lat, lng ).then( function ( pages ) {
 				this.error = pages.length ? false : mw.msg( 'nearby-pages-noresults' );
-				this.pending = false;
 				this.pages = pages;
 			}.bind( this ), function ( err ) {
 				this.showError( 'nearby-pages-error' );
@@ -182,16 +188,6 @@ module.exports = {
 		min-height: @nearbyImageSize;
 		background-repeat: no-repeat;
 		background-position: center;
-	}
-
-	&__shield {
-		position: absolute;
-		background: #000;
-		opacity: 0.5;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
 	}
 
 	&__footer {

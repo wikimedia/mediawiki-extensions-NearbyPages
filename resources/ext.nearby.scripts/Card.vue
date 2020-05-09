@@ -1,7 +1,7 @@
 <template>
     <div class="mw-vue-card">
         <div class="mw-vue-card__thumb" v-bind:style="thumbnailStyleAttribute"></div>
-        <a class="mw-vue-card__link" v-bind:href="href" aria-hidden="true" tabindex="-1"></a>
+        <a v-if="title" v-bind:title="title" class="mw-vue-card__link" v-bind:href="href" aria-hidden="true" tabindex="-1"></a>
         <div class="mw-vue-card__detail">
             <h3 class="mw-vue-card__heading">{{ title }}</h3>
             <p class="mw-vue-card__extract">{{ description }}</p>
@@ -21,10 +21,11 @@ module.exports = {
     props: [ 'title', 'thumbnail', 'description' ],
     computed: {
         /**
-         * @return {string}
+         * @return {string} if title is empty '#' otherwise
+         *  the local URI to that title
          */
         href: function () {
-            return mw.util.getUrl( this.title );
+            return this.title ? mw.util.getUrl( this.title ) : '';
         },
         /**
          * @return {string} of valid CSS
