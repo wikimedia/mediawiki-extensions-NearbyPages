@@ -6,9 +6,11 @@
 		"recurse": true
 	},
 	"plugins": [
+		"node_modules/jsdoc-vue",
 		"plugins/markdown"
 	],
 	"source": {
+		"includePattern": "\\.(vue|js)$",
 		"include": [ "resources" ]
 	},
 	"templates": {

@@ -10,12 +10,25 @@
 </template>
 
 <script>
+/**
+ * A beautiful card inviting the user to go read more about an article.
+ * @module Card
+ * @param {string} title corresponding to a mediawiki page.
+ * @param {CardThumbnail|null} thumbnail corresponding to an associated image
+ * @param {string} wikidata description of title
+ */
 module.exports = {
     props: [ 'title', 'thumbnail', 'description' ],
     computed: {
+        /**
+         * @return {string}
+         */
         href: function () {
             return mw.util.getUrl( this.title );
         },
+        /**
+         * @return {string} of valid CSS
+         */
         thumbnailStyleAttribute: function () {
             var thumbUrl = this.thumbnail && this.thumbnail.source;
             if ( thumbUrl ) {

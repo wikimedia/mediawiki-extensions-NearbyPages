@@ -46,6 +46,10 @@ var api = require( './api.js' ),
 	locationProvider = require( './locationProvider.js' );
 
 // @vue/component
+/**
+ * The main App component
+ * @module App
+ */
 module.exports = {
 	name: 'App',
 
@@ -55,6 +59,9 @@ module.exports = {
 		errorbox: require( './Errorbox.vue' )
 	},
 
+	/**
+	 * @return {AppData}
+	 */
 	data: function () {
 		return {
 			includeRandomButton: mw.config.get( 'NearbyRandomButton' ),
@@ -65,6 +72,9 @@ module.exports = {
 	},
 
 	methods: {
+		/**
+		 * @param {string} key
+		 */
 		msg: function ( key ) {
 			return mw.msg( key );
 		},
@@ -73,12 +83,19 @@ module.exports = {
 			this.error = false;
 		},
 
+		/**
+		 * @param {string} msg
+		 */
 		showError: function ( msg ) {
 			this.pending = false;
 			this.error = mw.msg( msg );
 			this.pages = [];
 		},
 
+		/**
+		 * @param {string} lat
+		 * @param {string} lng
+		 */
 		loadPages: function ( lat, lng ) {
 			this.pending = true;
 			router.navigateTo( null, {
