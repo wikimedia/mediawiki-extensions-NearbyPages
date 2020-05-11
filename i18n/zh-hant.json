@@ -18,5 +18,6 @@
 	"nearby-pages-title": "Nearby",
 	"nearby-pages-info-heading": "您附近的地點",
 	"nearby-pages-info-description": "您可以閱讀圍繞在您周遭地點、有趣的{{SITENAME}}條目",
+	"nearby-pages-info-show-random": "顯示隨機條目",
 	"nearby-pages-info-show-button": "顯示附近的條目"
 }

@@ -19,5 +19,6 @@
 	"nearby-pages-title": "À proximité",
 	"nearby-pages-info-heading": "Endroits de proximité",
 	"nearby-pages-info-description": "Vous pouvez lire des articles intéressants de {{SITENAME}} concernant les lieux qui vous entourent",
+	"nearby-pages-info-show-random": "Afficher des articles au hasard",
 	"nearby-pages-info-show-button": "Afficher des articles similaires"
 }
