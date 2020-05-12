@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Alexander Yukal"
+			"Alexander Yukal",
+			"Pacha Tchernof"
 		]
 	},
 	"nearby-pages-error": "{{SITENAME}} Поблизости возникают проблемы.",
 	"nearby-pages-location-unavailable": "{{SITENAME}} не возможно определить ваше местоположение. Пожалуйста, попробуйте еще раз с лучшим сигналом.",
+	"nearby-pages-info-show-random": "Показать случайные статьи",
 	"nearby-pages-info-show-button": "Показать близлежащие статьи"
 }
