@@ -6,14 +6,13 @@
 /**
  * @typedef {Object} Card
  * @property {string} title
- * @property {CardThumbnail} thumbnail
- * @property {string} description
+ * @property {CardThumbnail} [thumbnail]
+ * @property {string} [description]
  */
 
 /**
  * @typedef AppData
  * @property {Card[]} pages
- * @property {boolean} pending
  * @property {boolean} includeRandomButton
  * @property {boolean} error
  */

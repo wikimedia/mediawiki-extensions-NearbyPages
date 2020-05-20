@@ -37,10 +37,6 @@
 <script>
 var api = require( './api.js' ),
 	router = require( 'mediawiki.router' ),
-	// Note getPath returns hash minus the '#' character:
-	hash = router.getPath(),
-	state = window.history.state,
-	MANAGED_STATE = 'MobileFrontend OverlayManager was here!',
 	locationProvider = require( './locationProvider.js' );
 
 /**
@@ -49,8 +45,8 @@ var api = require( './api.js' ),
 function proxyPages() {
 	// Use Array.fill when ES6 support available.
 	var arr = Array.apply( null, Array( 50 ) );
-	return arr.map( function ( value, i ) {
-		return { title: '' }
+	return arr.map( function () {
+		return { title: '' };
 	} );
 }
 
@@ -82,6 +78,7 @@ module.exports = {
 	methods: {
 		/**
 		 * @param {string} key
+		 * @return {Message}
 		 */
 		msg: function ( key ) {
 			return mw.msg( key );
@@ -112,7 +109,7 @@ module.exports = {
 			api.getPagesAtCoordinates( lat, lng ).then( function ( pages ) {
 				this.error = pages.length ? false : mw.msg( 'nearby-pages-noresults' );
 				this.pages = pages;
-			}.bind( this ), function ( err ) {
+			}.bind( this ), function () {
 				this.showError( 'nearby-pages-error' );
 			}.bind( this ) );
 		},

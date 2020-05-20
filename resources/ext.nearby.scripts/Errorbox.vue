@@ -1,5 +1,7 @@
 <template>
-    <div class="errorbox">{{ message }}</div>
+	<div class="errorbox">
+		{{ message }}
+	</div>
 </template>
 
 <script>
@@ -9,6 +11,6 @@
  * @param {string} message to display to user. no html allowed.
  */
 module.exports = {
-    props: [ 'message' ]
+	props: [ 'message' ]
 };
 </script>

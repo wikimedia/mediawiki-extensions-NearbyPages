@@ -35,6 +35,7 @@
 				}
 			},
 			"rules": {
+				"vue/html-self-closing": 0,
 				"no-implicit-globals": 0,
 				"vue/html-indent": [
 					"warn",

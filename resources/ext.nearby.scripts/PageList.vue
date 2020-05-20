@@ -1,8 +1,13 @@
 <template>
-<div class="mw-vue-page-list">
-	<card v-for="page in pages" class="mw-vue-page-list__card" v-bind:key="page.pageid"
-		v-bind:title="page.title" v-bind:description="page.description" v-bind:thumbnail="page.thumbnail"></card>
-</div>
+	<div class="mw-vue-page-list">
+		<card v-for="page in pages"
+			v-bind:key="page.pageid"
+			class="mw-vue-page-list__card"
+			v-bind:title="page.title"
+			v-bind:description="page.description"
+			v-bind:thumbnail="page.thumbnail"
+		/>
+	</div>
 </template>
 
 <script>

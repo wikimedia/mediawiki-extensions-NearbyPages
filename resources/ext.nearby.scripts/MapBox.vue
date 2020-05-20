@@ -1,13 +1,14 @@
 <template>
 	<div v-bind:class="className">
-		<div id="nearby-pages-map"></div>
+		<div id="nearby-pages-map" />
 		<div style="display: none">
-			<span>{{latitude}}</span>,<span>{{longitude}}</span>
+			<span>{{ latitude }}</span>,<span>{{ longitude }}</span>
 		</div>
 	</div>
 </template>
 
 <script>
+/* global L */
 /**
  * A good old fashioned mediawiki ui button
  * @module Button
@@ -18,20 +19,23 @@ module.exports = {
 	props: [ 'latitude', 'longitude', 'className' ],
 	data: function () {
 		return {
-			_latitude: this.latitude,
-			_longitude: this.longitude,
+			currentPosition: [
+				this.latitude,
+				this.longitude
+			],
 			map: false
 		};
 	},
 	methods: {
 		setLatLng: function ( latitude, longitude ) {
-			this._longitude = longitude;
-			this._latitude = latitude;
-			this.map.setView( [ this._latitude, this._longitude ] );
+			this.currentPosition = [
+				latitude, longitude
+			];
+			this.map.setView( this.currentPosition );
 		}
 	},
 	updated: function () {
-		this.setLatLng( this.latitude, this.longitude );
+		this.setLatLng.apply( this, this.currentPosition );
 	},
 	mounted: function () {
 		var vm = this;
@@ -45,9 +49,9 @@ module.exports = {
 				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 			} ).addTo( vm.map );
 			vm.map.on( 'dragend', function () {
-				const center = vm.map.getCenter();
+				var center = vm.map.getCenter();
 				this.latitude = center.lat;
-				this.longitude = center.lng
+				this.longitude = center.lng;
 				vm.$emit( 'drag', this.latitude, this.longitude );
 			} );
 		} );
