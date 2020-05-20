@@ -1,4 +1,5 @@
 const i18n = require( '../i18n/en.json' );
+const extConfig = require( '../extension.json' );
 
 const Api = function () {};
 
@@ -11,7 +12,7 @@ Api.prototype.ajax = function ( params ) {
     const q = Object.keys( params ).map( ( key ) => {
         return `${key}=${toQueryStringValue(params[key])}`;
     } ).join('&');
-    return fetch(`https://en.wikipedia.org/w/api.php?${q}`).then( ( r )=>r.json() );
+    return fetch(`${extConfig.config.NearbyPagesUrl}?${q}`).then( ( r )=>r.json() );
 };
 
 window.mw = {
@@ -23,16 +24,8 @@ window.mw = {
     },
     config: {
         get: function ( name ) {
-            switch ( name ) {
-                case "wgNearbyRandomButton":
-                    return true;
-                case 'wgNearbyPagesUrl':
-                    return 'https://en.wikipedia.org/w/api.php';
-                case 'wgNearbyRange':
-                    return 1000;
-                default:
-                    return null;
-            }
+            name = name.replace( 'wg', '' );
+            return extConfig.config[name] || null;
         }
     },
     msg: function ( key ) {
