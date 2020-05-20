@@ -19,7 +19,7 @@
 	"overrides": [
 		{
 			"files": [
-				"**/*.vue"
+				"resources/**/*{js,vue}"
 			],
 			"extends": [
 				"plugin:vue/recommended",

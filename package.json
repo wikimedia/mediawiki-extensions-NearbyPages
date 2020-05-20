@@ -4,7 +4,7 @@
 		"precommit": "npm -s run test",
 		"start": "node dev/build.js && parcel dev/index.html",
 		"lint": "eslint --ext .json . && npm -s run lint:i18n && npm -s run lint:js && npm run lint:css",
-		"lint:js": "eslint --cache --max-warnings 0 --report-unused-disable-directives .",
+		"lint:js": "eslint --cache --max-warnings 0 --report-unused-disable-directives \"**/*.{js,vue}\"",
 		"lint:css": "stylelint '**/*.less'",
 		"lint:i18n": "banana-checker --requireLowerCase=0 i18n/",
 		"test": "npm -s run lint",
