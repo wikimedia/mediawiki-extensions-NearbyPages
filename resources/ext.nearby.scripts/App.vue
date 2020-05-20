@@ -36,6 +36,13 @@
 
 <script>
 var api = require( './api.js' ),
+	apiOptions = {
+		range: mw.config.get( 'wgNearbyRange' ),
+		// T117159
+		language: mw.config.get( 'wgPageContentLanguage' ) || 'en',
+		namespaces: mw.config.get( 'wgNearbyPagesNamespaces' ),
+		wikidata: mw.config.get( 'wgNearbyPagesWikidataCompatibility' )
+	},
 	router = require( 'mediawiki.router' ),
 	locationProvider = require( './locationProvider.js' );
 
@@ -106,7 +113,7 @@ module.exports = {
 				path: '#/coord/' + lat + ',' + lng,
 				useReplaceState: true
 			} );
-			api.getPagesAtCoordinates( lat, lng ).then( function ( pages ) {
+			api.getPagesAtCoordinates( lat, lng, apiOptions ).then( function ( pages ) {
 				this.error = pages.length ? false : mw.msg( 'nearby-pages-noresults' );
 				this.pages = pages;
 			}.bind( this ), function () {

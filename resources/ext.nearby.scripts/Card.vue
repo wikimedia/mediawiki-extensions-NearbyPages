@@ -29,14 +29,16 @@
  * @param {string} wikidata description of title
  */
 module.exports = {
-	props: [ 'title', 'thumbnail', 'description' ],
+	props: [ 'title', 'thumbnail', 'description', 'url' ],
 	computed: {
 		/**
+		 * Must be called only if title or url are set.
 		 * @return {string} if title is empty '#' otherwise
 		 *  the local URI to that title
 		 */
 		href: function () {
-			return this.title ? mw.util.getUrl( this.title ) : '';
+			return this.url ? this.url :
+				mw.util.getUrl( this.title );
 		},
 		/**
 		 * @return {string} of valid CSS

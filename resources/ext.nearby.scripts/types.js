@@ -4,10 +4,20 @@
  */
 
 /**
+ * @typedef {Object} ApiOptions
+ * @property {number} [range] of request in meters
+ * @property {string} [language] of api request
+ * @property {boolean} [wikidata] whether the api
+ *  should operate in wikidata compatibility mode.
+ * @property {Array} [namespaces] to search for nearby pages
+ */
+
+/**
  * @typedef {Object} Card
  * @property {string} title
  * @property {CardThumbnail} [thumbnail]
  * @property {string} [description]
+ * @property {string} [url] if present the title will not be used as the URI
  */
 
 /**

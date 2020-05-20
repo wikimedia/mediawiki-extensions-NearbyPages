@@ -4,6 +4,7 @@
 			v-bind:key="page.pageid"
 			class="mw-vue-page-list__card"
 			v-bind:title="page.title"
+			v-bind:url="page.url"
 			v-bind:description="page.description"
 			v-bind:thumbnail="page.thumbnail"
 		/>
