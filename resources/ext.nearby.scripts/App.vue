@@ -2,26 +2,32 @@
 	<!-- eslint-disable vue/html-self-closing -->
 	<!-- self closing tags are preferred but not used here because of https://github.com/parcel-bundler/parcel/issues/1294 -->
 	<div class="mw-vue-nearby">
-		<div v-if="pages.length === 0">
-			<div class="mw-vue-nearby__image"></div>
-			<h3 class="mw-vue-nearby__heading">
-				{{ msg( 'nearby-pages-info-heading' ) }}
-			</h3>
-			<div class="mw-vue-nearby__description">
-				{{ msg( 'nearby-pages-info-description' ) }}
+		<div class="mw-vue-nearby__main">
+			<div v-if="!interacted"
+				class="mw-vue-nearby__bootscreen">
+				<div class="mw-vue-nearby__image"></div>
+				<h3 class="mw-vue-nearby__heading">
+					{{ msg( 'nearby-pages-info-heading' ) }}
+				</h3>
+				<div class="mw-vue-nearby__description">
+					{{ msg( 'nearby-pages-info-description' ) }}
+				</div>
 			</div>
+			<div v-bind:class="contentClass">
+				<errorbox v-if="error" v-bind:message="error"></errorbox>
+				<pagelist
+					v-if="pages.length"
+					v-bind:pages="pages"
+					class="mw-vue-nearby__pagelist">
+				</pagelist>
+			</div>
+
+			<mapbox v-if="mapEnabled"
+				class="mw-vue-nearby__map"
+				v-bind:latitude="latitude"
+				v-bind:longitude="longitude"
+				v-on:drag="loadPages"></mapbox>
 		</div>
-
-		<div v-if="error">
-			<errorbox v-bind:message="error" />
-		</div>
-
-		<pagelist
-			v-if="pages.length"
-			v-bind:pages="pages"
-			class="mw-vue-nearby__pagelist">
-		</pagelist>
-
 		<div class="mw-vue-nearby__footer">
 			<mw-button primary="true" v-on:click="showNearbyArticles">
 				{{ msg( 'nearby-pages-info-show-button' ) }}
@@ -44,6 +50,8 @@ var api = require( './api.js' ),
 		wikidata: mw.config.get( 'wgNearbyPagesWikidataCompatibility' )
 	},
 	router = require( 'mediawiki.router' ),
+	mapBoxSupported = mw.loader.getState( 'mapbox' ) !== null &&
+		mw.config.get( 'wgNearbyExplorer' ),
 	locationProvider = require( './locationProvider.js' );
 
 /**
@@ -67,6 +75,7 @@ module.exports = {
 
 	components: {
 		'mw-button': require( './Button.vue' ),
+		mapbox: require( './MapBox.vue' ),
 		pagelist: require( './PageList.vue' ),
 		errorbox: require( './Errorbox.vue' )
 	},
@@ -76,12 +85,32 @@ module.exports = {
 	 */
 	data: function () {
 		return {
-			includeRandomButton: mw.config.get( 'NearbyRandomButton' ),
+			includeRandomButton: mw.config.get( 'wgNearbyRandomButton' ),
 			pages: [],
+			interacted: false,
+			mapExplorerEnabled: mapBoxSupported,
+			latitude: 0.1,
+			longitude: 0.1,
 			error: false
 		};
 	},
 
+	computed: {
+		/**
+		 * @return {boolean}
+		 */
+		mapEnabled: function () {
+			return this.mapExplorerEnabled && this.interacted;
+		},
+		/**
+		 * @return {Object}
+		 */
+		contentClass: function () {
+			return {
+				' mw-vue-nearby__content': this.mapExplorerEnabled
+			};
+		}
+	},
 	methods: {
 		/**
 		 * @param {string} key
@@ -91,21 +120,29 @@ module.exports = {
 			return mw.msg( key );
 		},
 
+		/**
+		 * reset app data.
+		 */
 		reset: function () {
 			this.error = false;
+			this.interacted = true;
+			this.pages = proxyPages();
+			this.latitude = 0;
+			this.longitude = 0;
 		},
 
 		/**
 		 * @param {string} msg
 		 */
 		showError: function ( msg ) {
+			this.reset();
 			this.error = mw.msg( msg );
-			this.pages = [];
 		},
 		/**
 		 * @param {string} title
 		 */
 		loadPagesNearTitle: function ( title ) {
+			this.reset();
 			router.navigateTo( null, {
 				path: '#/page/' + title,
 				useReplaceState: true
@@ -119,6 +156,7 @@ module.exports = {
 		 * @param {string} lng
 		 */
 		loadPages: function ( lat, lng ) {
+			this.reset();
 			router.navigateTo( null, {
 				path: '#/coord/' + lat + ',' + lng,
 				useReplaceState: true
@@ -130,13 +168,16 @@ module.exports = {
 
 		/**
 		 * @param {jQuery.Deferred} promise that will resolve to pages
+		 * @return {jQuery.Deferred}
 		 */
 		loadPagesFromPromise: function ( promise ) {
-			this.pages = proxyPages();
-			promise.then( function ( result ) {
+			return promise.then( function ( result ) {
 				var pages = result.pages;
+
 				this.error = pages.length ? false : mw.msg( 'nearby-pages-noresults' );
 				this.pages = pages;
+				this.latitude = result.latitude;
+				this.longitude = result.longitude;
 			}.bind( this ), function () {
 				this.showError( 'nearby-pages-error' );
 			}.bind( this ) );
@@ -190,7 +231,7 @@ module.exports = {
 };
 </script>
 
-<style  lang="less">
+<style lang="less">
 @gutter-end: 60px;
 @nearbyImageSize: 154px;
 @colorGray7: #72777d;
@@ -198,7 +239,12 @@ module.exports = {
 .mw-vue-nearby {
 	position: relative;
 	min-height: 90vh;
+	height: 100%;
 	padding-bottom: @gutter-end;
+
+	&__bootscreen {
+		width: 100%;
+	}
 
 	&__heading {
 		font-size: 1em;
@@ -225,8 +271,30 @@ module.exports = {
 		box-sizing: border-box;
 	}
 
-	&__pagelist + &__footer {
-		position: sticky;
+	&__main {
+		height: 100%;
+	}
+
+	&__content {
+		height: 100%;
+		min-height: 500px;
+	}
+
+	&__map {
+		// only revealed if enough space
+		display: none;
+		box-sizing: border-box;
+		width: 400px;
+		height: 400px;
+		box-sizing: border-box;
+		z-index: 1;
+		position: absolute;
+		top: 2px;
+		right: 2px;
+	}
+
+	&__footer {
+		position: fixed;
 		bottom: 0;
 		background: #fff;
 		left: 0;
@@ -236,5 +304,17 @@ module.exports = {
 		padding: 12px 0 0;
 		z-index: 2;
 	}
+}
+
+@media all and (min-width: 1200px) {
+	.mw-vue-nearby__map {
+		display: block;
+	}
+
+	.mw-vue-nearby__content {
+		height: 100%;
+		margin-right: 400px;
+	}
+
 }
 </style>

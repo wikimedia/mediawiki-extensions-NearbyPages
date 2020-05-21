@@ -32,6 +32,7 @@ module.exports = {
 	.mw-vue-page-list {
 		display: flex;
 		flex-flow: row wrap;
+		align-content: flex-start;
 
 		&__card {
 			width: 30%;

@@ -34,6 +34,7 @@ class SpecialNearby extends SpecialPage {
 		$out->addJsConfigVars( [
 			'wgNearbyPagesWikidataCompatibility' => $this->config->get( 'NearbyPagesWikidataCompatibility' ),
 			'wgNearbyPagesNamespaces' => $this->config->get( 'NearbyPagesNamespaces' ),
+			'wgNearbyExplorer' => $this->config->get( 'NearbyExplorer' ),
 			'wgNearbyRange' => $this->config->get( 'NearbyRange' ),
 			'wgNearbyRandomButton' => $this->config->get( 'NearbyRandomButton' ),
 			'wgNearbyPagesUrl' => $this->config->get( 'NearbyPagesUrl' ),

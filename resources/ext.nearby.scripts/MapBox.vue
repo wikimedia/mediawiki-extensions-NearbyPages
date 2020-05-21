@@ -1,14 +1,17 @@
 <template>
-	<div v-bind:class="className">
-		<div id="nearby-pages-map" />
+	<div>
+		<div id="nearby-pages-map"></div>
 		<div style="display: none">
-			<span>{{ latitude }}</span>,<span>{{ longitude }}</span>
+			<span>{{ latitude }}</span>, <span>{{ longitude }}</span>
 		</div>
 	</div>
 </template>
 
 <script>
 /* global L */
+var URL = 'https://www.openstreetmap.org/copyright',
+	ATTRIBUTION = '&copy; <a href="' + URL + '">OpenStreetMap</a> contributors';
+
 /**
  * A good old fashioned mediawiki ui button
  * @module Button
@@ -16,9 +19,10 @@
  */
 module.exports = {
 	name: 'mapbox',
-	props: [ 'latitude', 'longitude', 'className' ],
+	props: [ 'latitude', 'longitude' ],
 	data: function () {
 		return {
+			query: null,
 			currentPosition: [
 				this.latitude,
 				this.longitude
@@ -35,18 +39,20 @@ module.exports = {
 		}
 	},
 	updated: function () {
-		this.setLatLng.apply( this, this.currentPosition );
+		this.query.then( function () {
+			this.setLatLng( this.latitude, this.longitude );
+		}.bind( this ) );
 	},
 	mounted: function () {
 		var vm = this;
-		mw.loader.using( 'mapbox' ).then( function () {
+		this.query = mw.loader.using( 'mapbox' ).then( function () {
 			vm.map = L.map( 'nearby-pages-map', {
 				dragging: true,
 				zoom: 13,
 				center: [ vm.latitude || 0, vm.longitude || 0 ]
 			} );
 			L.tileLayer( 'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png?lang=en', {
-				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+				attribution: ATTRIBUTION
 			} ).addTo( vm.map );
 			vm.map.on( 'dragend', function () {
 				var center = vm.map.getCenter();

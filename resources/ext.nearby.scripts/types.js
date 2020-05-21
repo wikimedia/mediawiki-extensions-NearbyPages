@@ -25,4 +25,8 @@
  * @property {Card[]} pages
  * @property {boolean} includeRandomButton
  * @property {boolean} error
+ * @property {boolean} interacted true if the user is displaying results
+ * @property {boolean} mapExplorerEnabled is the map shown?
+ * @property {number} latitude
+ * @property {number} longitude
  */

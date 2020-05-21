@@ -39,6 +39,19 @@ module.exports = {
             return a;
         }
     },
+    loader: {
+        getState: function () {
+            return 'ready';
+        },
+        using: function ( module ) {
+            switch ( module ) {
+                case 'mapbox':
+                    return Promise.resolve();
+                default:
+                    return Promise.reject();
+            }
+        }
+    },
     msg: function ( key ) {
         return i18n[key];
     }

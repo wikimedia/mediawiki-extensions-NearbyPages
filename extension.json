@@ -17,6 +17,7 @@
 		]
 	},
 	"config": {
+		"NearbyExplorer": true,
 		"NearbyRange": 10000,
 		"NearbyRandomButton": false,
 		"NearbyPagesNamespaces": [ 0 ],
@@ -70,6 +71,7 @@
 				"resources/ext.nearby.scripts/Button.vue",
 				"resources/ext.nearby.scripts/Card.vue",
 				"resources/ext.nearby.scripts/Errorbox.vue",
+				"resources/ext.nearby.scripts/MapBox.vue",
 				"resources/ext.nearby.scripts/PageList.vue"
 			]
 		},
