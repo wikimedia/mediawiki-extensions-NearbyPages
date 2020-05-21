@@ -2,12 +2,13 @@
 	"private": true,
 	"scripts": {
 		"precommit": "npm -s run test",
+		"test:unit": "jest",
 		"start": "node dev/build.js && parcel dev/index.html",
 		"lint": "eslint --ext .json . && npm -s run lint:i18n && npm -s run lint:js && npm run lint:css",
 		"lint:js": "eslint --cache --max-warnings 0 --report-unused-disable-directives \"**/*.{js,vue}\"",
 		"lint:css": "stylelint '**/*.less'",
 		"lint:i18n": "banana-checker --requireLowerCase=0 i18n/",
-		"test": "npm -s run lint",
+		"test": "npm -s run lint && npm run test:unit",
 		"jsdoc": "jsdoc -c jsdoc.json",
 		"doc": "npm run jsdoc"
 	},
@@ -22,13 +23,16 @@
 	},
 	"devDependencies": {
 		"@vue/component-compiler-utils": "3.1.1",
+		"@vue/test-utils": "1.0.3",
+		"babel-core": "6.26.3",
 		"eslint-config-wikimedia": "0.15.3",
 		"eslint-plugin-es": "1.2.0",
 		"eslint-plugin-vue": "6.1.2",
 		"grunt-banana-checker": "0.9.0",
+		"jest": "^24.9.0",
+		"jquery": "3.4.1",
 		"jsdoc": "3.6.3",
 		"jsdoc-vue": "1.0.0",
-		"jquery": "3.4.1",
 		"less": "3.11.1",
 		"mustache": "3.0.1",
 		"oojs": "3.0.1",
@@ -39,6 +43,7 @@
 		"stylelint-config-wikimedia": "0.10.1",
 		"vue": "2.6.11",
 		"vue-hot-reload-api": "2.3.4",
+		"vue-jest": "^3.0.5",
 		"vue-template-compiler": "2.6.11"
 	}
 }

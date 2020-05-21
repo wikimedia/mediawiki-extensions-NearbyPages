@@ -15,7 +15,7 @@ Api.prototype.ajax = function ( params ) {
     return fetch(`${extConfig.config.NearbyPagesUrl}?${q}`).then( ( r )=>r.json() );
 };
 
-window.mw = {
+module.exports = {
     Api,
     util: {
         getUrl: function ( title ) {
