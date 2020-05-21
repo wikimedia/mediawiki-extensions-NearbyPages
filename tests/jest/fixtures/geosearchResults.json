@@ -1,0 +1,28 @@
+{
+	"query": {
+		"pages": [
+			{
+				"title": "Something"
+			},
+			{
+				"title": "Capital",
+				"coordinates": [ { "dist": 4000 } ]
+			},
+			{
+				"title": "Lounge",
+				"coordinates": [ { "dist": 4 } ]
+			},
+			{
+				"title": "Garden",
+				"coordinates": [ { "dist": 5 } ]
+			},
+			{
+				"title": "Kitchen",
+				"coordinates": [ { "dist": 6 } ]
+			},
+			{
+				"title": "Soul"
+			}
+		]
+	}
+}

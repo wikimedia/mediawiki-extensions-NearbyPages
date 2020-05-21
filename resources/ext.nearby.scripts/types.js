@@ -16,7 +16,7 @@
  * @typedef {Object} Card
  * @property {string} title
  * @property {CardThumbnail} [thumbnail]
- * @property {string} [description]
+ * @property {Array} [description]
  * @property {string} [url] if present the title will not be used as the URI
  */
 

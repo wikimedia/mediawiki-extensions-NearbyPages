@@ -10,7 +10,7 @@ describe( 'Card', () => {
 				thumbnail: {
 					source: 'kitten.gif'
 				},
-				description: 'A nice greeting'
+				description: [ 'A nice greeting' ]
 			}
 		} );
 
@@ -29,7 +29,7 @@ describe( 'Card', () => {
 		const card = VueTestUtils.mount( Card, {
 			propsData: {
 				title: 'Hello',
-				description: 'A nice greeting',
+				description: [ 'A nice greeting' ],
 				url: '/wikiiiiii.html'
 			}
 		} );

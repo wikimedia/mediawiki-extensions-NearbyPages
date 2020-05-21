@@ -34,6 +34,11 @@ module.exports = {
             return extConfig.config[name] || null;
         }
     },
+    language: {
+        convertNumber: function ( a ) {
+            return a;
+        }
+    },
     msg: function ( key ) {
         return i18n[key];
     }

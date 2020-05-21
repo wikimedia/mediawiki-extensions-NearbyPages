@@ -13,8 +13,10 @@
 			<h3 class="mw-vue-card__heading">
 				{{ title }}
 			</h3>
-			<p class="mw-vue-card__extract">
-				{{ description }}
+			<p v-for="desc in description"
+				v-bind:key="desc"
+				class="mw-vue-card__extract">
+				{{ desc }}
 			</p>
 		</div>
 	</div>

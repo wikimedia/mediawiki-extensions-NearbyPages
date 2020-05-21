@@ -1,4 +1,7 @@
 const api = require( '../../resources/ext.nearby.scripts/api.js' );
+const MSG_KM = 'nearby-pages-distance';
+const MSG_M = 'nearby-pages-distance-meters';
+let mockFn;
 
 let apiMock;
 
@@ -19,6 +22,16 @@ describe( 'api.js', () => {
 			global.$.ajax = jest.fn( () => Promise.resolve( {} ) );
 			api.getPagesAtCoordinates( '1.0', '9.5', {} ).then( ( result ) => {
 				expect( result ).toStrictEqual( [] );
+			} );
+		} );
+
+		it( 'Sorts by distance', () => {
+			global.$.ajax = jest.fn( () => Promise.resolve(
+				require( './fixtures/geosearchResults.json' )
+			) );
+			api.getPagesAtCoordinates( '1.0', '9.5', {} ).then( ( result ) => {
+				expect( result[ 0 ].title ).toStrictEqual( 'Soul' );
+				expect( result[ 5 ].title ).toStrictEqual( 'Capital' );
 			} );
 		} );
 
@@ -94,6 +107,13 @@ describe( 'api.js', () => {
 	} );
 
 	describe( 'toCard', () => {
+
+		beforeEach( () => {
+			mockFn = jest.fn();
+			global.mw.msg = mockFn;
+			mockFn.mockReturnValue( '1km' );
+		} );
+
 		it( 'can resolve without wikidata terms', () => {
 			expect(
 				api.test.toCard( {
@@ -105,7 +125,7 @@ describe( 'api.js', () => {
 				} )
 			).toStrictEqual( {
 				url: undefined,
-				description: 'text',
+				description: [ 'text' ],
 				thumbnail: {
 					source: 'source.gif'
 				},
@@ -123,7 +143,7 @@ describe( 'api.js', () => {
 					}
 				} )
 			).toStrictEqual( {
-				description: 'desc',
+				description: [ 'desc' ],
 				thumbnail: undefined,
 				title: 'label',
 				url: '#/wiki/Q1'
@@ -139,11 +159,60 @@ describe( 'api.js', () => {
 					}
 				} )
 			).toStrictEqual( {
-				description: 'desc',
+				description: [ 'desc' ],
 				thumbnail: undefined,
 				title: 'Q1',
 				url: undefined
 			} );
 		} );
+
+		it( 'includes distance in description', () => {
+			expect(
+				api.test.toCard( {
+					title: 'MOMA',
+					description: 'desc',
+					coordinates: [
+						{
+							dist: 1000
+						}
+					]
+				} )
+			).toStrictEqual( {
+				description: [ 'desc', '1km' ],
+				thumbnail: undefined,
+				title: 'MOMA',
+				url: undefined
+			} );
+		} );
 	} );
+
+	describe( 'getDistanceMessage', () => {
+
+		beforeEach( () => {
+			mockFn = jest.fn();
+			global.mw.msg = mockFn;
+		} );
+
+		it( 'does meters', () => {
+			api.test.getDistanceMessage( 0.9 );
+			expect( mockFn ).toHaveBeenCalledWith( MSG_M, 900 );
+		} );
+
+		it( 'but rounds up', () => {
+			api.test.getDistanceMessage( 0.9999999 );
+			expect( mockFn ).toHaveBeenCalledWith( MSG_KM, '1' );
+		} );
+
+		it( 'can do km', () => {
+			api.test.getDistanceMessage( 5 );
+			expect( mockFn ).toHaveBeenCalledWith( MSG_KM, '5.0' );
+		} );
+
+		it( 'and does not use too many decimals', () => {
+			api.test.getDistanceMessage( 5.5555553 );
+			expect( mockFn ).toHaveBeenCalledWith( MSG_KM, '5.6' );
+		} );
+
+	} );
+
 } );
