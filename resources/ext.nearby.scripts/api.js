@@ -63,20 +63,18 @@ function toCard( obj ) {
 
 /**
  *
- * @param {string} lat
- * @param {string} lng
+ * @param {Object} reqData to send to the api request
  * @param {ApiOptions} options
  * @return {jQuery.Deferred}
  */
-function getPagesAtCoordinates( lat, lng, options ) {
-	var coord = lat + '|' + lng,
-		wikidataMode = options.wikidata,
+function getPages( reqData, options ) {
+	var wikidataMode = options.wikidata,
 		namespace = options.namespaces || [ 0 ],
 		// T117159
 		language = options.language || 'en',
 		additionalProps = wikidataMode ? [ 'pageterms', 'description' ] : [];
 
-	return mwApi.ajax( {
+	return mwApi.ajax( $.extend( {
 		wbptterms: wikidataMode ? [ 'label', 'description' ] : undefined,
 		action: 'query',
 		format: 'json',
@@ -93,25 +91,58 @@ function getPagesAtCoordinates( lat, lng, options ) {
 		// T253215
 		redirects: 'no',
 		uselang: language,
-		ggscoord: coord,
 		ppprop: 'displaytitle',
 		piprop: 'thumbnail',
 		pithumbsize: 150,
-		pilimit: 50,
-		codistancefrompoint: coord
-	} ).then( function ( data ) {
-		return data && data.query ?
-			data.query.pages.sort( function ( a, b ) {
+		pilimit: 50
+	}, reqData ) ).then( function ( data ) {
+		var queryPages = data && data.query ? data.query.pages : [],
+			pages = queryPages.sort( function ( a, b ) {
 				var c = a.coordinates || [ { dist: 0 } ],
 					d = b.coordinates || [ { dist: 0 } ];
 
 				return c[ 0 ].dist < d[ 0 ].dist ? -1 : 1;
-			} ).map( toCard ) : [];
+			} ).map( toCard ),
+			coords = queryPages.length && queryPages[ 0 ].coordinates || [ {} ];
+
+		return {
+			pages: pages,
+			latitude: coords[ 0 ].lat,
+			longitude: coords[ 0 ].lon
+		};
 	} );
+}
+
+/**
+ * @param {string} lat
+ * @param {string} lng
+ * @param {ApiOptions} options
+ * @return {jQuery.Object}
+ */
+function getPagesAtCoordinates( lat, lng, options ) {
+	var coord = lat + '|' + lng;
+
+	return getPages( {
+		codistancefrompoint: coord,
+		ggscoord: coord
+	}, options );
+}
+
+/**
+ * @param {string} title to get coordinates for
+ * @param {ApiOptions} options
+ * @return {jQuery.Deferred}
+ */
+function getPagesNearbyPage( title, options ) {
+	return getPages( {
+		codistancefrompage: title,
+		ggspage: title
+	}, options );
 }
 
 module.exports = {
 	getPagesAtCoordinates: getPagesAtCoordinates,
+	getPagesNearbyPage: getPagesNearbyPage,
 	test: {
 		toCard: toCard,
 		getDistanceMessage: getDistanceMessage

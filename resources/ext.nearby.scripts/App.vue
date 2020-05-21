@@ -102,18 +102,39 @@ module.exports = {
 			this.error = mw.msg( msg );
 			this.pages = [];
 		},
-
+		/**
+		 * @param {string} title
+		 */
+		loadPagesNearTitle: function ( title ) {
+			router.navigateTo( null, {
+				path: '#/page/' + title,
+				useReplaceState: true
+			} );
+			this.loadPagesFromPromise(
+				api.getPagesNearbyPage( title, apiOptions )
+			);
+		},
 		/**
 		 * @param {string} lat
 		 * @param {string} lng
 		 */
 		loadPages: function ( lat, lng ) {
-			this.pages = proxyPages();
 			router.navigateTo( null, {
 				path: '#/coord/' + lat + ',' + lng,
 				useReplaceState: true
 			} );
-			api.getPagesAtCoordinates( lat, lng, apiOptions ).then( function ( pages ) {
+			this.loadPagesFromPromise(
+				api.getPagesAtCoordinates( lat, lng, apiOptions )
+			);
+		},
+
+		/**
+		 * @param {jQuery.Deferred} promise that will resolve to pages
+		 */
+		loadPagesFromPromise: function ( promise ) {
+			this.pages = proxyPages();
+			promise.then( function ( result ) {
+				var pages = result.pages;
 				this.error = pages.length ? false : mw.msg( 'nearby-pages-noresults' );
 				this.pages = pages;
 			}.bind( this ), function () {
@@ -153,10 +174,15 @@ module.exports = {
 
 	mounted: function () {
 		var vm = this,
+			pageRegex = /^\/page\/(.+)$/,
 			coordinateRegex = /^\/coord\/(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)/;
 
 		router.addRoute( coordinateRegex, function ( latitude, longitude ) {
 			vm.loadPages( latitude, longitude );
+		} );
+
+		router.addRoute( pageRegex, function ( title ) {
+			vm.loadPagesNearTitle( title );
 		} );
 
 		router.checkRoute();

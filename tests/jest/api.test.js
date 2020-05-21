@@ -21,7 +21,7 @@ describe( 'api.js', () => {
 		it( 'Works with empty response', () => {
 			global.$.ajax = jest.fn( () => Promise.resolve( {} ) );
 			api.getPagesAtCoordinates( '1.0', '9.5', {} ).then( ( result ) => {
-				expect( result ).toStrictEqual( [] );
+				expect( result.pages ).toStrictEqual( [] );
 			} );
 		} );
 
@@ -30,8 +30,8 @@ describe( 'api.js', () => {
 				require( './fixtures/geosearchResults.json' )
 			) );
 			api.getPagesAtCoordinates( '1.0', '9.5', {} ).then( ( result ) => {
-				expect( result[ 0 ].title ).toStrictEqual( 'Soul' );
-				expect( result[ 5 ].title ).toStrictEqual( 'Capital' );
+				expect( result.pages[ 0 ].title ).toStrictEqual( 'Soul' );
+				expect( result.pages[ 5 ].title ).toStrictEqual( 'Capital' );
 			} );
 		} );
 
@@ -103,6 +103,17 @@ describe( 'api.js', () => {
 				pilimit: 50,
 				codistancefrompoint: '1.0|9.5'
 			} );
+		} );
+
+		it( 'can search by pages', () => {
+			global.$.ajax = apiMock;
+			api.getPagesNearbyPage( 'Spain', {
+				namespaces: [ 5 ],
+				wikidata: true
+			} );
+			const data = apiMock.mock.calls[ 0 ][ 0 ].data;
+			expect( data.ggspage ).toBe( 'Spain' );
+			expect( data.codistancefrompage ).toBe( 'Spain' );
 		} );
 	} );
 
