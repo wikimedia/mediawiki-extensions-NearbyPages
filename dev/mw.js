@@ -3,16 +3,22 @@ const extConfig = require( '../extension.json' );
 
 const Api = function () {};
 
-const toQueryStringValue = ( value ) => {
-    return encodeURIComponent( typeof value === 'object' ? value.join( '|' ) : value );
-};
-
 Api.prototype.ajax = function ( params ) {
-    params['origin'] = '*';
-    const q = Object.keys( params ).map( ( key ) => {
-        return `${key}=${toQueryStringValue(params[key])}`;
-    } ).join('&');
-    return fetch(`${extConfig.config.NearbyPagesUrl}?${q}`).then( ( r )=>r.json() );
+    let data = {};
+    Object.keys( params ).forEach ( ( key ) => {
+        if ( Array.isArray( params[ key ] ) ) {
+            data[ key ] = params[ key ].join( '|' );
+        } else {
+            data[ key ] = params[ key ];
+        }
+    } );
+    return $.ajax( {
+        url: extConfig.config.NearbyPagesUrl,
+        xhrFields: {
+            withCredentials: false
+        },
+        data
+    } );
 };
 
 window.mw = {
