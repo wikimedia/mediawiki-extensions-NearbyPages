@@ -7,5 +7,6 @@
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
 	"nearby-pages-title": "근처",
-	"nearby-pages-info-heading": "주변 장소"
+	"nearby-pages-info-heading": "주변 장소",
+	"nearby-pages-info-show-random": "임의 문서 표시"
 }
