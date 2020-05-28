@@ -21,7 +21,7 @@ Api.prototype.ajax = function ( params ) {
     } );
 };
 
-window.mw = {
+module.exports = {
     Api,
     util: {
         getUrl: function ( title ) {
