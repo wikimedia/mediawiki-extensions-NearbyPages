@@ -1,10 +1,9 @@
-/node_modules/
-/vendor/
-/docs/*
-.DS_Store
-/.eslintcache
+/.cache
+/composer.lock
 /dev/index.html
 /dist/
-.cache
-.eslintcache
-composer.lock
+/docs/*
+/.DS_Store
+/.eslintcache
+/node_modules/
+/vendor/
