@@ -1,5 +1,6 @@
 /.cache
 /composer.lock
+/coverage/
 /dev/index.html
 /dist/
 /docs/*
