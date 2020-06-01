@@ -190,7 +190,7 @@ module.exports = {
 };
 </script>
 
-<style  lang="less">
+<style lang="less">
 @gutter-end: 60px;
 @nearbyImageSize: 154px;
 @colorGray7: #72777d;
