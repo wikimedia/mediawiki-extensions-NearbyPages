@@ -29,7 +29,7 @@
 		"eslint-plugin-es": "1.2.0",
 		"eslint-plugin-vue": "6.1.2",
 		"grunt-banana-checker": "0.9.0",
-		"jest": "^24.9.0",
+		"jest": "24.9.0",
 		"jquery": "3.5.1",
 		"jsdoc": "3.6.3",
 		"jsdoc-vue": "1.0.0",
@@ -43,7 +43,7 @@
 		"stylelint-config-wikimedia": "0.10.1",
 		"vue": "2.6.11",
 		"vue-hot-reload-api": "2.3.4",
-		"vue-jest": "^3.0.5",
+		"vue-jest": "3.0.5",
 		"vue-template-compiler": "2.6.11"
 	}
 }
