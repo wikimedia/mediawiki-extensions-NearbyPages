@@ -31,6 +31,24 @@ function userClickShowNearbyPages(
 }
 
 describe( 'App', () => {
+	describe( 'Route handlers', () => {
+		it( 'Is possible to find pages near an existing title', () => {
+			const vm = {
+				loadPagesNearTitle: jest.fn()
+			};
+			App.test.showPagesNearPageHandler( vm )( 'Paris' );
+			expect( vm.loadPagesNearTitle ).toHaveBeenCalledWith( 'Paris' );
+		} );
+
+		it( 'Is possible to find pages near an existing location', () => {
+			const vm = {
+				loadPages: jest.fn()
+			};
+			App.test.showPagesNearLocationHandler( vm )( 20, 30 );
+			expect( vm.loadPages ).toHaveBeenCalledWith( 20, 30 );
+		} );
+	} );
+
 	describe( 'At start up', () => {
 
 		it( 'renders a splash screen without errors', () => {
@@ -185,6 +203,31 @@ describe( 'App', () => {
 						} );
 					} );
 				} );
+		} );
+
+		it( 'renders near a given page if title prop given', () => {
+			const result = require( './fixtures/geosearchResults.json' );
+			const p = Promise.resolve( {
+				pages: result.query.pages
+			} );
+			api.getPagesNearbyPage = jest.fn( () => p );
+			VueTestUtils.mount( App, {
+				propsData: {
+					title: 'Barcelona'
+				}
+			} );
+
+			expect(
+				api.getPagesNearbyPage
+			).toHaveBeenCalledWith(
+				'Barcelona',
+				{
+					language: 'en',
+					namespaces: [ 0 ],
+					range: 10000,
+					wikidata: null
+				}
+			);
 		} );
 
 		it( 'renders an error when no results', () => {

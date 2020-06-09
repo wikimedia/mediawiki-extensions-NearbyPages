@@ -47,6 +47,26 @@ var api = require( './api.js' ),
 	locationProvider = require( './locationProvider.js' );
 
 /**
+ * @param {App} vm
+ * @return {Function}
+ */
+function showPagesNearPageHandler( vm ) {
+	return function ( title ) {
+		vm.loadPagesNearTitle( title );
+	};
+}
+
+/**
+ * @param {App} vm
+ * @return {Function}
+ */
+function showPagesNearLocationHandler( vm ) {
+	return function ( latitude, longitude ) {
+		vm.loadPages( latitude, longitude );
+	};
+}
+
+/**
  * @return {Card[]}
  */
 function proxyPages() {
@@ -64,6 +84,11 @@ function proxyPages() {
  */
 module.exports = {
 	name: 'App',
+	props: [ 'title' ],
+	test: {
+		showPagesNearPageHandler: showPagesNearPageHandler,
+		showPagesNearLocationHandler: showPagesNearLocationHandler
+	},
 
 	components: {
 		'mw-button': require( './Button.vue' ),
@@ -177,15 +202,12 @@ module.exports = {
 			pageRegex = /^\/page\/(.+)$/,
 			coordinateRegex = /^\/coord\/(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)/;
 
-		router.addRoute( coordinateRegex, function ( latitude, longitude ) {
-			vm.loadPages( latitude, longitude );
-		} );
-
-		router.addRoute( pageRegex, function ( title ) {
-			vm.loadPagesNearTitle( title );
-		} );
-
+		router.addRoute( coordinateRegex, showPagesNearLocationHandler( vm ) );
+		router.addRoute( pageRegex, showPagesNearPageHandler( vm ) );
 		router.checkRoute();
+		if ( this.title ) {
+			vm.loadPagesNearTitle( this.title );
+		}
 	}
 };
 </script>
