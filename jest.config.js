@@ -2,6 +2,10 @@
 // https://jestjs.io/docs/en/configuration.html
 
 module.exports = {
+	moduleNameMapper: {
+		oo: '<rootDir>/dev/oo.js',
+		'mediawiki.router': '<rootDir>/tests/jest/fakes/router.js'
+	},
 	// Automatically clear mock calls and instances between every test
 	clearMocks: true,
 
@@ -19,7 +23,9 @@ module.exports = {
 
 	// An array of regexp pattern strings used to skip coverage collection
 	coveragePathIgnorePatterns: [
-		'/node_modules/'
+		'/node_modules/',
+		// This is a minimal bootstrap file. No need to collect coverage.
+		'/resources/ext.nearby.scripts/index.js'
 	],
 
 	// An object that configures minimum threshold enforcement for coverage results
