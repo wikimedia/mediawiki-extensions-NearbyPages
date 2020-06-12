@@ -13,7 +13,10 @@
 
 <script>
 module.exports = {
-	props: [ 'pages' ],
+	name: 'pagelist',
+	props: {
+		pages: Array
+	},
 	components: {
 		card: require( './Card.vue' )
 	}

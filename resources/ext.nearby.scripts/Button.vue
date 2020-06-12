@@ -25,6 +25,8 @@ module.exports = {
 			};
 		}
 	},
-	props: [ 'primary' ]
+	props: {
+		primary: Boolean
+	}
 };
 </script>

@@ -31,7 +31,13 @@
  * @param {string} wikidata description of title
  */
 module.exports = {
-	props: [ 'title', 'thumbnail', 'description', 'url' ],
+	name: 'card',
+	props: {
+		title: String,
+		thumbnail: Object,
+		description: Array,
+		url: String
+	},
 	computed: {
 		/**
 		 * Must be called only if title or url are set.

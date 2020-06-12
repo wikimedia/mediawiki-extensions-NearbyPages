@@ -181,7 +181,7 @@ describe( 'App', () => {
 				pages: [
 					{
 						title: 'A',
-						description: 'B'
+						description: [ 'B' ]
 					}
 				]
 			} );
