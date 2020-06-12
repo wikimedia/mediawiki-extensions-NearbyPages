@@ -23,7 +23,7 @@
 		</pagelist>
 
 		<div class="mw-vue-nearby__footer">
-			<mw-button primary="true" v-on:click="showNearbyArticles">
+			<mw-button v-bind:primary="true" v-on:click="showNearbyArticles">
 				{{ msg( 'nearby-pages-info-show-button' ) }}
 			</mw-button>
 
@@ -84,7 +84,9 @@ function proxyPages() {
  */
 module.exports = {
 	name: 'App',
-	props: [ 'title' ],
+	props: {
+		title: String
+	},
 	test: {
 		showPagesNearPageHandler: showPagesNearPageHandler,
 		showPagesNearLocationHandler: showPagesNearLocationHandler
