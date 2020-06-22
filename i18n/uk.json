@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Piramidion"
+			"Piramidion",
+			"Ата"
 		]
 	},
 	"nearby-pages-desc": "Додає спеціальну сторінку «[[Special:Nearby|Поблизу]]»",
@@ -18,5 +19,6 @@
 	"nearby-pages-title": "Поблизу",
 	"nearby-pages-info-heading": "Місця навколо вас",
 	"nearby-pages-info-description": "Ви можете читати цікаві статті із сайту {{SITENAME}} про місця навколо вас",
+	"nearby-pages-info-show-random": "Показати випадкові статті",
 	"nearby-pages-info-show-button": "Показати статті поблизу"
 }
