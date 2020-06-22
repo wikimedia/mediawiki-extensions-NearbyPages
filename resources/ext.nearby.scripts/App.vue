@@ -1,6 +1,4 @@
 <template>
-	<!-- eslint-disable vue/html-self-closing -->
-	<!-- self closing tags are preferred but not used here because of https://github.com/parcel-bundler/parcel/issues/1294 -->
 	<div class="mw-vue-nearby">
 		<div v-if="pages.length === 0">
 			<div class="mw-vue-nearby__image"></div>
@@ -13,7 +11,7 @@
 		</div>
 
 		<div v-if="error">
-			<errorbox v-bind:message="error" />
+			<errorbox v-bind:message="error"></errorbox>
 		</div>
 
 		<pagelist

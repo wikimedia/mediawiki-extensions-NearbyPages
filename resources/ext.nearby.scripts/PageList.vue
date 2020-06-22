@@ -7,7 +7,8 @@
 			v-bind:url="page.url"
 			v-bind:description="page.description"
 			v-bind:thumbnail="page.thumbnail"
-		/>
+		>
+		</card>
 	</div>
 </template>
 

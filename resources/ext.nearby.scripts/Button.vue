@@ -2,7 +2,7 @@
 	<button class="mw-ui-button"
 		v-bind:class="additionalClassNames"
 		v-on:click="$emit('click')">
-		<slot />
+		<slot></slot>
 	</button>
 </template>
 
