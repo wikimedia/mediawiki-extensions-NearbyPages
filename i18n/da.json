@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Saederup92"
+			"Saederup92",
+			"Weblars"
 		]
 	},
 	"nearby-pages-title": "I nærheden",
 	"nearby-pages-info-heading": "Steder omkring dig",
+	"nearby-pages-info-description": "Du kan læse interessante {{SITENAME}}-artikler om steder nær dig",
 	"nearby-pages-info-show-random": "Vis tilfældige artikler",
 	"nearby-pages-info-show-button": "Vis artikler i nærheden"
 }
