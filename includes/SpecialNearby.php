@@ -2,8 +2,6 @@
 
 namespace NearbyPages;
 
-use Config;
-use MediaWiki\MediaWikiServices;
 use SpecialPage;
 use TemplateParser;
 
@@ -12,15 +10,8 @@ use TemplateParser;
  */
 class SpecialNearby extends SpecialPage {
 
-	/**
-	 * @var Config
-	 */
-	private $config;
-
 	public function __construct() {
 		parent::__construct( 'Nearby' );
-		$services = MediaWikiServices::getInstance();
-		$this->config = $services->getService( 'MobileFrontend.Config' );
 	}
 
 	/**
@@ -31,12 +22,13 @@ class SpecialNearby extends SpecialPage {
 		parent::execute( $par );
 		$out = $this->getOutput();
 		// set config
+		$config = $this->getConfig();
 		$out->addJsConfigVars( [
-			'wgNearbyPagesWikidataCompatibility' => $this->config->get( 'NearbyPagesWikidataCompatibility' ),
-			'wgNearbyPagesNamespaces' => $this->config->get( 'NearbyPagesNamespaces' ),
-			'wgNearbyRange' => $this->config->get( 'NearbyRange' ),
-			'wgNearbyRandomButton' => $this->config->get( 'NearbyRandomButton' ),
-			'wgNearbyPagesUrl' => $this->config->get( 'NearbyPagesUrl' ),
+			'wgNearbyPagesWikidataCompatibility' => $config->get( 'NearbyPagesWikidataCompatibility' ),
+			'wgNearbyPagesNamespaces' => $config->get( 'NearbyPagesNamespaces' ),
+			'wgNearbyRange' => $config->get( 'NearbyRange' ),
+			'wgNearbyRandomButton' => $config->get( 'NearbyRandomButton' ),
+			'wgNearbyPagesUrl' => $config->get( 'NearbyPagesUrl' ),
 		] );
 		$out->addModuleStyles( [
 			'ext.nearby.images',
