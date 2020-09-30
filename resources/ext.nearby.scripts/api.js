@@ -7,6 +7,7 @@ var mwApi = new mw.Api( {
 /**
  * Returns a human readable string stating the distance in meters or kilometers
  * depending on size.
+ *
  * @param {number} d distance in kilometers
  * @return {string} for current language
  */

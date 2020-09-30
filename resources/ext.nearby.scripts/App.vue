@@ -78,6 +78,7 @@ function proxyPages() {
 // @vue/component
 /**
  * The main App component
+ *
  * @module App
  */
 module.exports = {

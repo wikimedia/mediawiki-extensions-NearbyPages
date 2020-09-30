@@ -9,6 +9,7 @@
 <script>
 /**
  * A good old fashioned mediawiki ui button
+ *
  * @module Button
  * @param {boolean} primary whether the button should be considered primary
  */

@@ -25,6 +25,7 @@
 <script>
 /**
  * A beautiful card inviting the user to go read more about an article.
+ *
  * @module Card
  * @param {string} title corresponding to a mediawiki page.
  * @param {CardThumbnail|null} thumbnail corresponding to an associated image
@@ -41,6 +42,7 @@ module.exports = {
 	computed: {
 		/**
 		 * Must be called only if title or url are set.
+		 *
 		 * @return {string} if title is empty '#' otherwise
 		 *  the local URI to that title
 		 */

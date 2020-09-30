@@ -12,6 +12,9 @@
 	"rules": {
 		"no-implicit-globals": "off",
 		"vue/html-self-closing": "off",
+		"vue/v-on-style": "off",
+		"vue/v-bind-style": "off",
+		"jsdoc/no-undefined-types": "off",
 		"mediawiki/msg-doc": "off",
 		"mediawiki/valid-package-file-require": "off"
 	},

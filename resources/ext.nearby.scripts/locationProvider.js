@@ -7,6 +7,7 @@ var $ = window.$,
 
 /**
  * Detect if browser supports geolocation
+ *
  * @instance
  * @return {boolean}
  */
@@ -18,6 +19,7 @@ function isAvailable() {
  * Obtain users current location and return a deferred object with the
  * longitude and latitude values
  * Resolve return object with 'incompatible' if browser doesn't support geo location
+ *
  * @instance
  * @return {jQuery.Deferred}
  */
@@ -63,6 +65,7 @@ function getCurrentPosition() {
  * Obtain users current location and return a deferred object with the
  * longitude and latitude values
  * Resolve return object with 'incompatible' if browser doesn't support geo location
+ *
  * @instance
  * @return {jQuery.Deferred}
  */
