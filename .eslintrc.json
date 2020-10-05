@@ -17,9 +17,5 @@
 		"jsdoc/no-undefined-types": "off",
 		"mediawiki/msg-doc": "off",
 		"mediawiki/valid-package-file-require": "off"
-	},
-	"globals": {
-		"module": "readonly",
-		"require": true
 	}
 }
