@@ -42,7 +42,7 @@ describe( 'api.js', () => {
 				language: 'fr'
 			} );
 			expect( apiMock.mock.calls[ 0 ][ 0 ].data ).toStrictEqual( {
-				wbptterms: undefined,
+				wbetterms: undefined,
 				action: 'query',
 				format: 'json',
 				origin: '*',
@@ -75,7 +75,7 @@ describe( 'api.js', () => {
 				wikidata: true
 			} );
 			expect( apiMock.mock.calls[ 0 ][ 0 ].data ).toStrictEqual( {
-				wbptterms: [
+				wbetterms: [
 					'label',
 					'description'
 				].join( '|' ),
@@ -85,7 +85,7 @@ describe( 'api.js', () => {
 				formatversion: 2,
 				prop: [
 					'coordinates', 'pageprops', 'pageimages', 'description',
-					'pageterms', 'description'
+					'entityterms'
 				].join( '|' ),
 				colimit: 'max',
 				generator: 'geosearch',
@@ -148,7 +148,7 @@ describe( 'api.js', () => {
 			expect(
 				api.test.toCard( {
 					title: 'Q1',
-					terms: {
+					entityterms: {
 						description: [ 'desc' ],
 						label: [ 'label' ]
 					}
@@ -165,7 +165,7 @@ describe( 'api.js', () => {
 			expect(
 				api.test.toCard( {
 					title: 'Q1',
-					terms: {
+					entityterms: {
 						description: [ 'desc' ]
 					}
 				} )
