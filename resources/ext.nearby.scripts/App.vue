@@ -21,7 +21,7 @@
 		</pagelist>
 
 		<div class="mw-vue-nearby__footer">
-			<mw-button v-bind:primary="true" v-on:click="showNearbyArticles">
+			<mw-button action="progressive" v-on:click="showNearbyArticles">
 				{{ msg( 'nearby-pages-info-show-button' ) }}
 			</mw-button>
 
@@ -92,7 +92,7 @@ module.exports = {
 	},
 
 	components: {
-		'mw-button': require( './Button.vue' ),
+		'mw-button': require( 'wvui' ).WvuiButton,
 		pagelist: require( './PageList.vue' ),
 		errorbox: require( './Errorbox.vue' )
 	},

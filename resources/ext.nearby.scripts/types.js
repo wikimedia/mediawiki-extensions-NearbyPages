@@ -16,7 +16,8 @@
  * @typedef {Object} Card
  * @property {string} title
  * @property {CardThumbnail} [thumbnail]
- * @property {Array} [description]
+ * @property {string} [description]
+ * @property {string} [proximity] of landmark with unit in km or meters
  * @property {string} [url] if present the title will not be used as the URI
  */
 

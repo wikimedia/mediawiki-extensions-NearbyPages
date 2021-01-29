@@ -43,21 +43,14 @@ function getDistanceMessage( d ) {
 function toCard( obj ) {
 	var terms = obj.entityterms || {},
 		coords = obj.coordinates || [ {} ],
-		descriptions = [],
 		description = terms.description ? terms.description[ 0 ] : obj.description,
-		footnote = coords[ 0 ].dist ? getDistanceMessage( coords[ 0 ].dist / 1000 ) : '';
-
-	if ( description ) {
-		descriptions.push( description );
-	}
-	if ( footnote ) {
-		descriptions.push( footnote );
-	}
+		proximity = coords[ 0 ].dist ? getDistanceMessage( coords[ 0 ].dist / 1000 ) : undefined;
 
 	return {
 		url: terms.label ? mw.util.getUrl( obj.title ) : undefined,
 		title: terms.label ? terms.label[ 0 ] : obj.title,
-		description: descriptions,
+		description: description,
+		proximity: proximity,
 		thumbnail: obj.thumbnail
 	};
 }

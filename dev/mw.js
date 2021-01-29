@@ -40,6 +40,11 @@ module.exports = {
         }
     },
     msg: function ( key ) {
-        return i18n[key];
+        const params = Array.from(arguments).slice(1);
+        let value = i18n[key].replace(/{{PLURAL\:\$1|.*\|(.*)}}/g, '$1');
+        ( params ).forEach((val, i) => {
+            value = value.replace('$' + ( i + 1 ), val);
+        })
+        return value;
     }
 };

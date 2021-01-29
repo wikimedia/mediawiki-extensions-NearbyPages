@@ -8,7 +8,10 @@ describe( 'PageList', () => {
 			propsData: {
 				pages: [
 					{
-						title: 'Foo'
+						title: 'Foo',
+						thumbnail: {
+							source: 'banana.gif'
+						}
 					},
 					{
 						title: 'Bar'
@@ -18,7 +21,7 @@ describe( 'PageList', () => {
 		} );
 
 		expect(
-			pagelist.findAll( '.mw-vue-card' ).length
+			pagelist.findAll( '.mw-vue-page-list__card' ).length
 		).toBe( 2 );
 	} );
 } );

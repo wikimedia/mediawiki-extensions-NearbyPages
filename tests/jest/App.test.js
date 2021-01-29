@@ -3,8 +3,8 @@ const Vue = require( 'vue' );
 const App = require( '../../resources/ext.nearby.scripts/App.vue' );
 const locationProvider = require( '../../resources/ext.nearby.scripts/locationProvider.js' );
 const api = require( '../../resources/ext.nearby.scripts/api.js' );
-const Card = require( '../../resources/ext.nearby.scripts/Card.vue' );
-const Button = require( '../../resources/ext.nearby.scripts/Button.vue' );
+const Card = require( 'wvui' ).WvuiTypeaheadSuggestion;
+const Button = require( 'wvui' ).WvuiButton;
 const ErrorBox = require( '../../resources/ext.nearby.scripts/Errorbox.vue' );
 
 /**

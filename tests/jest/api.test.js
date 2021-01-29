@@ -136,7 +136,8 @@ describe( 'api.js', () => {
 				} )
 			).toStrictEqual( {
 				url: undefined,
-				description: [ 'text' ],
+				description: 'text',
+				proximity: undefined,
 				thumbnail: {
 					source: 'source.gif'
 				},
@@ -154,7 +155,8 @@ describe( 'api.js', () => {
 					}
 				} )
 			).toStrictEqual( {
-				description: [ 'desc' ],
+				description: 'desc',
+				proximity: undefined,
 				thumbnail: undefined,
 				title: 'label',
 				url: '#/wiki/Q1'
@@ -170,7 +172,8 @@ describe( 'api.js', () => {
 					}
 				} )
 			).toStrictEqual( {
-				description: [ 'desc' ],
+				description: 'desc',
+				proximity: undefined,
 				thumbnail: undefined,
 				title: 'Q1',
 				url: undefined
@@ -189,7 +192,8 @@ describe( 'api.js', () => {
 					]
 				} )
 			).toStrictEqual( {
-				description: [ 'desc', '1km' ],
+				description: 'desc',
+				proximity: '1km',
 				thumbnail: undefined,
 				title: 'MOMA',
 				url: undefined

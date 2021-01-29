@@ -3,6 +3,7 @@
 
 module.exports = {
 	moduleNameMapper: {
+		wvui: '<rootDir>/tests/jest/fakes/wvui.js',
 		oo: '<rootDir>/dev/oo.js',
 		'mediawiki.router': '<rootDir>/tests/jest/fakes/router.js'
 	},
