@@ -16,6 +16,7 @@
 		"vue/v-bind-style": "off",
 		"jsdoc/no-undefined-types": "off",
 		"mediawiki/msg-doc": "off",
-		"mediawiki/valid-package-file-require": "off"
+		"mediawiki/valid-package-file-require": "off",
+		"compat/compat": "warn"
 	}
 }
