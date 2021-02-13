@@ -1,4 +1,6 @@
 var $ = window.$,
+	api = require( './api.js' ),
+	/** @type {Coordinates[]} */ randomLocations = [],
 	ERROR_PERMISSION_DENIED = 'permission',
 	ERROR_TIMEOUT = 'timeout',
 	ERROR_POSITION_UNAVAILABLE = 'location',
@@ -62,6 +64,19 @@ function getCurrentPosition() {
 }
 
 /**
+ * Pop a random location from the previously obtained seeds.
+ *
+ * @return {Coordinate}
+ */
+function popRandomLocation() {
+	var coord = randomLocations.pop();
+	return {
+		latitude: coord.lat,
+		longitude: coord.lon
+	};
+}
+
+/**
  * Obtain users current location and return a deferred object with the
  * longitude and latitude values
  * Resolve return object with 'incompatible' if browser doesn't support geo location
@@ -70,25 +85,32 @@ function getCurrentPosition() {
  * @return {jQuery.Deferred}
  */
 function getRandomLocation() {
-	var
-		getValue = function () {
-			var choice = Math.floor( Math.random() * 100 );
-			if ( choice < 25 ) {
-				return [ 48.8497, 2.3521 ];
-			} else if ( choice < 50 ) {
-				return [ 31.1552, 121.4758 ];
-			} else if ( choice < 75 ) {
-				return [ -22.9181, -43.1965 ];
+	var result = $.Deferred();
+	if ( randomLocations.length < 20 ) {
+		// we don't have enough to choose from. Try to find another.
+		return api.getRandomPages().then( function ( pages ) {
+			randomLocations = randomLocations.concat(
+				pages.map( function ( page ) {
+					return page.coordinates ? page.coordinates[ 0 ] : null;
+				} ).filter( function ( coords ) {
+					return coords !== null;
+				} )
+			);
+			// In the very unlikely case that failed let's generate a random coordinate
+			if ( randomLocations.length < 20 ) {
+				return {
+					latitude: ( Math.random() * 180 ) - 90,
+					longitude: ( Math.random() * 360 ) - 180
+				};
 			} else {
-				return [ 37.78340926669369, -122.46877232748169 ];
+				result.resolve( popRandomLocation() );
+				return result;
 			}
-		},
-		coordinate = getValue();
-
-	return $.Deferred().resolve( {
-		latitude: coordinate[ 0 ],
-		longitude: coordinate[ 1 ]
-	} );
+		} );
+	} else {
+		result.resolve( popRandomLocation() );
+	}
+	return result;
 }
 
 module.exports = {

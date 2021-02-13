@@ -102,7 +102,7 @@ module.exports = {
 	 */
 	data: function () {
 		return {
-			includeRandomButton: mw.config.get( 'NearbyRandomButton' ),
+			includeRandomButton: mw.config.get( 'wgNearbyRandomButton' ),
 			pages: [],
 			error: false
 		};

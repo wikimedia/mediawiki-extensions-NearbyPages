@@ -10,6 +10,8 @@
 		"OO": "readonly"
 	},
 	"rules": {
+		"es/no-array-from": "off",
+		"no-restricted-properties": "off",
 		"no-implicit-globals": "off",
 		"max-len": "off",
 		"one-var": "off"

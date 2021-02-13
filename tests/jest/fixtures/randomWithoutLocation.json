@@ -1,0 +1,16 @@
+{
+	"batchcomplete": true,
+	"continue": {
+		"grncontinue": "0.725934075248|0.7259521073470001|25760870|0",
+		"continue": "grncontinue||"
+	},
+	"query": {
+		"pages": [
+			{
+				"pageid": 51762,
+				"ns": 0,
+				"title": "Nearby Pages"
+			}
+		]
+	}
+}

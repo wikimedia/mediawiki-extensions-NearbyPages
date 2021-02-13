@@ -56,6 +56,25 @@ function toCard( obj ) {
 }
 
 /**
+ * @return {jQuery.Deferred} resolving to a list of pages.
+ */
+function getRandomPages() {
+	return mwApi.ajax( {
+		action: 'query',
+		format: 'json',
+		origin: '*',
+		prop: 'coordinates',
+		generator: 'random',
+		formatversion: 2,
+		colimit: 100,
+		grnnamespace: 0,
+		grnlimit: 100
+	} ).then( function ( data ) {
+		return data.query.pages;
+	} );
+}
+
+/**
  *
  * @param {Object} reqData to send to the api request
  * @param {ApiOptions} options
@@ -135,6 +154,7 @@ function getPagesNearbyPage( title, options ) {
 }
 
 module.exports = {
+	getRandomPages: getRandomPages,
 	getPagesAtCoordinates: getPagesAtCoordinates,
 	getPagesNearbyPage: getPagesNearbyPage,
 	test: {

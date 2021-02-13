@@ -27,3 +27,9 @@
  * @property {boolean} includeRandomButton
  * @property {boolean} error
  */
+
+/**
+ * @typedef {Object} Coordinate
+ * @property {number} latitude
+ * @property {number} longitude
+ */

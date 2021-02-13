@@ -1,0 +1,719 @@
+{
+	"batchcomplete": true,
+	"continue": {
+		"grncontinue": "0.518533492370|0.518549859267|2961593|0",
+		"continue": "grncontinue||"
+	},
+	"query": {
+		"pages": [
+			{
+				"pageid": 119787,
+				"ns": 0,
+				"title": "Gonvick, Minnesota",
+				"coordinates": [
+					{
+						"lat": 47.7375,
+						"lon": -95.51361111,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 159835,
+				"ns": 0,
+				"title": "Fusional language"
+			},
+			{
+				"pageid": 169351,
+				"ns": 0,
+				"title": "Mount Etna",
+				"coordinates": [
+					{
+						"lat": 37.755,
+						"lon": 14.995,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 179766,
+				"ns": 0,
+				"title": "Wakayama Prefecture",
+				"coordinates": [
+					{
+						"lat": 34.05,
+						"lon": 135.35,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 290855,
+				"ns": 0,
+				"title": "Mount Usborne",
+				"coordinates": [
+					{
+						"lat": -51.69722222,
+						"lon": -58.83444444,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 753283,
+				"ns": 0,
+				"title": "Fiat Dino"
+			},
+			{
+				"pageid": 769511,
+				"ns": 0,
+				"title": "World Game"
+			},
+			{
+				"pageid": 987536,
+				"ns": 0,
+				"title": "Rowing at the 2004 Summer Olympics – Women's single sculls"
+			},
+			{
+				"pageid": 1420564,
+				"ns": 0,
+				"title": "Rúaidhrí de Valera"
+			},
+			{
+				"pageid": 1691196,
+				"ns": 0,
+				"title": "Ar-Namys"
+			},
+			{
+				"pageid": 2032411,
+				"ns": 0,
+				"title": "University of Houston–Victoria",
+				"coordinates": [
+					{
+						"lat": 28.816396,
+						"lon": -96.976372,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 2196506,
+				"ns": 0,
+				"title": "Ioannis Kolettis"
+			},
+			{
+				"pageid": 2393673,
+				"ns": 0,
+				"title": "Edwige Fenech"
+			},
+			{
+				"pageid": 2499765,
+				"ns": 0,
+				"title": "Javorník (Jeseník District)",
+				"coordinates": [
+					{
+						"lat": 50.39083333,
+						"lon": 17.00277778,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 2513911,
+				"ns": 0,
+				"title": "2Mex"
+			},
+			{
+				"pageid": 2696966,
+				"ns": 0,
+				"title": "Jean Arthuis"
+			},
+			{
+				"pageid": 3026202,
+				"ns": 0,
+				"title": "Microelectronics Education Programme"
+			},
+			{
+				"pageid": 3872494,
+				"ns": 0,
+				"title": "Accademia Angelica Costantiniana"
+			},
+			{
+				"pageid": 4766481,
+				"ns": 0,
+				"title": "Gaysweek"
+			},
+			{
+				"pageid": 4985582,
+				"ns": 0,
+				"title": "Zone Zeal"
+			},
+			{
+				"pageid": 6596631,
+				"ns": 0,
+				"title": "Wild, Wild Women"
+			},
+			{
+				"pageid": 7020055,
+				"ns": 0,
+				"title": "Sir Thomas Frankland, 5th Baronet"
+			},
+			{
+				"pageid": 7317190,
+				"ns": 0,
+				"title": "Ghost catshark"
+			},
+			{
+				"pageid": 8300831,
+				"ns": 0,
+				"title": "Jonestown: The Power and the Myth of Alan Jones"
+			},
+			{
+				"pageid": 8507050,
+				"ns": 0,
+				"title": "Kate Jennings"
+			},
+			{
+				"pageid": 8562117,
+				"ns": 0,
+				"title": "Jan Hartl"
+			},
+			{
+				"pageid": 9546850,
+				"ns": 0,
+				"title": "Government Agent (Sri Lanka)"
+			},
+			{
+				"pageid": 12060599,
+				"ns": 0,
+				"title": "3rd Quebec Legislature"
+			},
+			{
+				"pageid": 12892865,
+				"ns": 0,
+				"title": "Lepinia"
+			},
+			{
+				"pageid": 15595219,
+				"ns": 0,
+				"title": "Maresches",
+				"coordinates": [
+					{
+						"lat": 50.2933,
+						"lon": 3.5756,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 15741056,
+				"ns": 0,
+				"title": "Cambridge Buddhist Association"
+			},
+			{
+				"pageid": 17258642,
+				"ns": 0,
+				"title": "Cleveland Township, Davis County, Iowa",
+				"coordinates": [
+					{
+						"lat": 40.74138889,
+						"lon": -92.40722222,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 17656594,
+				"ns": 0,
+				"title": "Dramlje",
+				"coordinates": [
+					{
+						"lat": 46.27741944,
+						"lon": 15.395375,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 19829553,
+				"ns": 0,
+				"title": "Skrobocin",
+				"coordinates": [
+					{
+						"lat": 52.754376,
+						"lon": 20.689005,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 20098499,
+				"ns": 0,
+				"title": "The Rainbow (1989 film)"
+			},
+			{
+				"pageid": 20588962,
+				"ns": 0,
+				"title": "Tour de Capriona",
+				"coordinates": [
+					{
+						"lat": 41.70777778,
+						"lon": 8.79027778,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 20997351,
+				"ns": 0,
+				"title": "Bill Tobin (American football)"
+			},
+			{
+				"pageid": 22058597,
+				"ns": 0,
+				"title": "Buyaso",
+				"coordinates": [
+					{
+						"lat": 43.35,
+						"lon": -6.8,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 22107012,
+				"ns": 0,
+				"title": "Lincoln Township, Sherman County, Kansas",
+				"coordinates": [
+					{
+						"lat": 39.31722222,
+						"lon": -101.88444444,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 22423008,
+				"ns": 0,
+				"title": "Soyuz/Vostok"
+			},
+			{
+				"pageid": 23005165,
+				"ns": 0,
+				"title": "Deliberative process privilege"
+			},
+			{
+				"pageid": 23139836,
+				"ns": 0,
+				"title": "List of compositions by Wilhelm Kienzl"
+			},
+			{
+				"pageid": 23203055,
+				"ns": 0,
+				"title": "Concepción Pápalo",
+				"coordinates": [
+					{
+						"lat": 17.85,
+						"lon": -96.86666667,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 24861601,
+				"ns": 0,
+				"title": "Chacarilla Municipality",
+				"coordinates": [
+					{
+						"lat": -17.5,
+						"lon": -68.1667,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 25697045,
+				"ns": 0,
+				"title": "Shakin' It 4 Daddy"
+			},
+			{
+				"pageid": 28201903,
+				"ns": 0,
+				"title": "Ma'agan Michael Ship"
+			},
+			{
+				"pageid": 29069837,
+				"ns": 0,
+				"title": "Robin Humphreys"
+			},
+			{
+				"pageid": 29539368,
+				"ns": 0,
+				"title": "Alpha (Lombard)"
+			},
+			{
+				"pageid": 29719233,
+				"ns": 0,
+				"title": "Kenfield Nunatak",
+				"coordinates": [
+					{
+						"lat": -73.76666667,
+						"lon": -99.05,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 29776424,
+				"ns": 0,
+				"title": "Tonight We Improvise"
+			},
+			{
+				"pageid": 30858407,
+				"ns": 0,
+				"title": "Not even wrong"
+			},
+			{
+				"pageid": 31492298,
+				"ns": 0,
+				"title": "2700 West Sugar Factory Road station",
+				"coordinates": [
+					{
+						"lat": 40.59904,
+						"lon": -111.95672,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 31804424,
+				"ns": 0,
+				"title": "Coleophora juncivora"
+			},
+			{
+				"pageid": 32294625,
+				"ns": 0,
+				"title": "Oasis Hiroba 21",
+				"coordinates": [
+					{
+						"lat": 33.23805556,
+						"lon": 131.60166667,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 32314281,
+				"ns": 0,
+				"title": "Pogonodaptus"
+			},
+			{
+				"pageid": 32696200,
+				"ns": 0,
+				"title": "Dread Dominion"
+			},
+			{
+				"pageid": 32748793,
+				"ns": 0,
+				"title": "Feild"
+			},
+			{
+				"pageid": 32956598,
+				"ns": 0,
+				"title": "Glycine clandestina"
+			},
+			{
+				"pageid": 33416705,
+				"ns": 0,
+				"title": "Fibrocartilaginous mesenchymoma of bone"
+			},
+			{
+				"pageid": 33863310,
+				"ns": 0,
+				"title": "Pyramid G1-a",
+				"coordinates": [
+					{
+						"lat": 29.97883611,
+						"lon": 31.13626111,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 36133096,
+				"ns": 0,
+				"title": "In My Blood (Black Stone Cherry song)"
+			},
+			{
+				"pageid": 36355111,
+				"ns": 0,
+				"title": "Anthony Cole"
+			},
+			{
+				"pageid": 38331156,
+				"ns": 0,
+				"title": "Cerro El Sol",
+				"coordinates": [
+					{
+						"lat": 6.11277778,
+						"lon": -62.55027778,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 38418894,
+				"ns": 0,
+				"title": "Outer Holm of Skaw",
+				"coordinates": [
+					{
+						"lat": 60.389079,
+						"lon": -0.905512,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 38672376,
+				"ns": 0,
+				"title": "Margaret Murray Robertson"
+			},
+			{
+				"pageid": 39126534,
+				"ns": 0,
+				"title": "List of Kate Winslet performances"
+			},
+			{
+				"pageid": 39422097,
+				"ns": 0,
+				"title": "Kristian Chong"
+			},
+			{
+				"pageid": 39594276,
+				"ns": 0,
+				"title": "Litton (surname)"
+			},
+			{
+				"pageid": 40335187,
+				"ns": 0,
+				"title": "Mars Outpost"
+			},
+			{
+				"pageid": 41662923,
+				"ns": 0,
+				"title": "List of foreign Ligue 1 players: K"
+			},
+			{
+				"pageid": 42071751,
+				"ns": 0,
+				"title": "Risk-based internal audit"
+			},
+			{
+				"pageid": 42243827,
+				"ns": 0,
+				"title": "Solar map"
+			},
+			{
+				"pageid": 42483368,
+				"ns": 0,
+				"title": "Death Has a Bad Reputation"
+			},
+			{
+				"pageid": 42659245,
+				"ns": 0,
+				"title": "Pearse Peninsula",
+				"coordinates": [
+					{
+						"lat": 50.79,
+						"lon": -126.55888889,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 42962570,
+				"ns": 0,
+				"title": "Relationship square"
+			},
+			{
+				"pageid": 46241898,
+				"ns": 0,
+				"title": "Camille Solis"
+			},
+			{
+				"pageid": 46417047,
+				"ns": 0,
+				"title": "The Endless Road"
+			},
+			{
+				"pageid": 46831662,
+				"ns": 0,
+				"title": "San Pablo Viejo",
+				"coordinates": [
+					{
+						"lat": 8.4833,
+						"lon": -82.5,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 46884788,
+				"ns": 0,
+				"title": "Theatre Row"
+			},
+			{
+				"pageid": 47239506,
+				"ns": 0,
+				"title": "Nuraghe Palmavera",
+				"coordinates": [
+					{
+						"lat": 40.595,
+						"lon": 8.2428,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 47304259,
+				"ns": 0,
+				"title": "Zeesenboot"
+			},
+			{
+				"pageid": 47351275,
+				"ns": 0,
+				"title": "Kalpana Patowary"
+			},
+			{
+				"pageid": 48854367,
+				"ns": 0,
+				"title": "Tuberculobasis arara"
+			},
+			{
+				"pageid": 48898100,
+				"ns": 0,
+				"title": "C. Kilmer Myers"
+			},
+			{
+				"pageid": 49641249,
+				"ns": 0,
+				"title": "Swimming at the 1982 Asian Games"
+			},
+			{
+				"pageid": 49653517,
+				"ns": 0,
+				"title": "Sphigmothorax bicinctus"
+			},
+			{
+				"pageid": 50657436,
+				"ns": 0,
+				"title": "Dominik Greif"
+			},
+			{
+				"pageid": 51876663,
+				"ns": 0,
+				"title": "Shiksha (disambiguation)"
+			},
+			{
+				"pageid": 52469286,
+				"ns": 0,
+				"title": "Mathematics, Science, and Arts Academy - East",
+				"coordinates": [
+					{
+						"lat": 30.2893,
+						"lon": -91.1127,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 55180675,
+				"ns": 0,
+				"title": "Tom Doerr"
+			},
+			{
+				"pageid": 55829268,
+				"ns": 0,
+				"title": "Chantal Dällenbach"
+			},
+			{
+				"pageid": 56316783,
+				"ns": 0,
+				"title": "2017–18 Washington Huskies women's basketball team"
+			},
+			{
+				"pageid": 56792228,
+				"ns": 0,
+				"title": "Lachaise's climbing mouse"
+			},
+			{
+				"pageid": 57235765,
+				"ns": 0,
+				"title": "Alexander Hollman"
+			},
+			{
+				"pageid": 57562788,
+				"ns": 0,
+				"title": "Gooitske Marsman"
+			},
+			{
+				"pageid": 58722509,
+				"ns": 0,
+				"title": "Jon Hinrichsen"
+			},
+			{
+				"pageid": 61341606,
+				"ns": 0,
+				"title": "Stanislav Sondermajer"
+			},
+			{
+				"pageid": 61446268,
+				"ns": 0,
+				"title": "Reanimation Package of Reforms"
+			},
+			{
+				"pageid": 61692351,
+				"ns": 0,
+				"title": "Nicopolis (Cilicia)",
+				"coordinates": [
+					{
+						"lat": 37.027158,
+						"lon": 36.633389,
+						"primary": true,
+						"globe": "earth"
+					}
+				]
+			},
+			{
+				"pageid": 62166570,
+				"ns": 0,
+				"title": "Morozovo, Verkhovazhsky District, Vologda Oblast"
+			}
+		]
+	}
+}

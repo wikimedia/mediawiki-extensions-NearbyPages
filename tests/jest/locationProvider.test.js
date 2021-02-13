@@ -11,7 +11,65 @@ const geolocationRejectWithErrorCode = ( code ) => {
 	};
 };
 
+let apiMock, apiMockNoLocation;
+
 describe( 'LocationProvider', () => {
+	describe( 'getRandomLocation', () => {
+		beforeEach( () => {
+			apiMock = jest.fn( () =>
+				Promise.resolve(
+					// 100 pages, 26 of which have locations
+					require( './fixtures/random.json' )
+				)
+			);
+			apiMockNoLocation = jest.fn( () =>
+				Promise.resolve(
+					// 100 pages, 26 of which have locations
+					require( './fixtures/randomWithoutLocation.json' )
+				)
+			);
+		} );
+
+		it( 'Considers the fact that random pages may yield no results', () => {
+			global.$.ajax = apiMockNoLocation;
+			return locationProvider.getRandomLocation().then( ( r ) => {
+				expect( apiMockNoLocation ).toHaveBeenCalledTimes( 1 );
+				expect( r.latitude ).not.toBe( undefined );
+				expect( r.longitude ).not.toBe( undefined );
+			} );
+		} );
+
+		it( 'Returns a location that\'s difference each time from a single API request', () => {
+			let results = [];
+			global.$.ajax = apiMock;
+			// First location request hits API and gets a result. We get 100 articles, only 50 of which
+			// have location data.
+			return locationProvider.getRandomLocation().then( ( r ) => {
+				results.push( r );
+				expect( apiMock ).toHaveBeenCalledTimes( 1 );
+			} ).then( () => Promise.all(
+				// We run 6 more calls so that our cache becomes 19
+				( new Array( 6 ).fill( 0 ) ).map( () => {
+					return locationProvider.getRandomLocation().then( ( r ) => {
+						results.push( r );
+					} );
+				} )
+			) ).then( () => {
+				// After running 6 more getRandomLocation calls,
+				// the cache is now depleted: 26 possibilities - 7 => 19
+				expect( results.length ).toBe( 7 );
+				// all results are unique
+				expect( Array.from( new Set( results ) ).length ).toBe( 7 );
+				// But no additional  API requests.. subsequent requests load from cache
+				expect( apiMock ).toHaveBeenCalledTimes( 1 );
+				return locationProvider.getRandomLocation();
+			} ).then( () => {
+				// Because our cache has fallen below 20 pages, a new request gets made
+				expect( apiMock ).toHaveBeenCalledTimes( 2 );
+			} );
+		} );
+	} );
+
 	describe( 'getCurrentPosition', () => {
 		it( 'rejects when no support', () => {
 			delete global.window.navigator.geolocation;

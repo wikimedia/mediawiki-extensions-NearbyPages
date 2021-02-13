@@ -18,7 +18,7 @@
 	},
 	"config": {
 		"NearbyRange": 10000,
-		"NearbyRandomButton": false,
+		"NearbyRandomButton": true,
 		"NearbyPagesNamespaces": [ 0 ],
 		"NearbyPagesUrl": "https://en.wikipedia.org/w/api.php",
 		"NearbyPagesWikidataCompatibility": false

@@ -6,6 +6,23 @@ let mockFn;
 let apiMock;
 
 describe( 'api.js', () => {
+	describe( 'getRandomPages', () => {
+		beforeEach( () => {
+			apiMock = jest.fn( () =>
+				Promise.resolve(
+					require( './fixtures/random.json' )
+				)
+			);
+		} );
+
+		it( 'Gets a random location', () => {
+			global.$.ajax = apiMock;
+			return api.getRandomPages().then( ( result ) => {
+				expect( result.length ).toBe( 100 );
+			} );
+		} );
+	} );
+
 	describe( 'getPagesAtCoordinates', () => {
 
 		beforeEach( () => {
