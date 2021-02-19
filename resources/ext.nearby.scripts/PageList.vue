@@ -55,6 +55,7 @@ module.exports = {
 	font-size: 14px;
 
 	&__card {
+		position: relative;
 		height: 100%;
 		box-sizing: border-box;
 	}
@@ -62,7 +63,7 @@ module.exports = {
 	&__card-proximity {
 		position: absolute;
 		right: 8px;
-		bottom: -8px;
+		bottom: 0;
 		font-size: 0.8em;
 		background: white;
 		padding: 0 8px;
@@ -75,6 +76,10 @@ module.exports = {
 		display: flex;
 		flex-flow: row wrap;
 		align-items: center;
+
+		&__card-proximity {
+			bottom: -8px;
+		}
 
 		&__card {
 			width: 30%;
