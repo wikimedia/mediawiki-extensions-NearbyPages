@@ -1,0 +1,3 @@
+# Used by Netlify
+/w/index.php title=:title&search=:search https://en.wikipedia.org/wiki/:search 200
+
