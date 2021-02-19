@@ -44,7 +44,7 @@ function toCard( obj ) {
 	var terms = obj.entityterms || {},
 		coords = obj.coordinates || [ {} ],
 		description = terms.description ? terms.description[ 0 ] : obj.description,
-		proximity = coords[ 0 ].dist ? getDistanceMessage( coords[ 0 ].dist / 1000 ) : undefined;
+		proximity = coords[ 0 ].dist !== undefined ? getDistanceMessage( coords[ 0 ].dist / 1000 ) : undefined;
 
 	return {
 		url: terms.label ? mw.util.getUrl( obj.title ) : undefined,
