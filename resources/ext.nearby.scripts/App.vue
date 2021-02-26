@@ -20,7 +20,7 @@
 			class="mw-vue-nearby__pagelist">
 		</pagelist>
 
-		<div class="mw-vue-nearby__footer">
+		<div :class="footerClass">
 			<mw-button action="progressive" v-on:click="showNearbyArticles">
 				{{ msg( 'nearby-pages-info-show-button' ) }}
 			</mw-button>
@@ -106,6 +106,15 @@ module.exports = {
 			pages: [],
 			error: false
 		};
+	},
+
+	computed: {
+		footerClass: function () {
+			return {
+				'mw-vue-nearby__footer--with-random': this.includeRandomButton,
+				'mw-vue-nearby__footer': true
+			};
+		}
 	},
 
 	methods: {
@@ -214,9 +223,10 @@ module.exports = {
 </script>
 
 <style lang="less">
+@import 'variables.less';
 @gutter-end: 60px;
+@gutter-end-with-random: 100px;
 @nearbyImageSize: 154px;
-@colorGray7: #72777d;
 
 .mw-vue-nearby {
 	position: relative;
@@ -246,6 +256,10 @@ module.exports = {
 	&__footer {
 		text-align: center;
 		box-sizing: border-box;
+
+		> button:first-child {
+			margin-bottom: 8px;
+		}
 	}
 
 	&__pagelist + &__footer {
@@ -258,6 +272,10 @@ module.exports = {
 		height: @gutter-end;
 		padding: 12px 0 0;
 		z-index: 2;
+
+		&--with-random {
+			height: @gutter-end-with-random;
+		}
 	}
 }
 </style>
