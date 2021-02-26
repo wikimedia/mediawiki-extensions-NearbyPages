@@ -232,6 +232,7 @@ module.exports = {
 	position: relative;
 	min-height: 90vh;
 	padding-bottom: @gutter-end;
+	background: white;
 
 	&__heading {
 		font-size: 1em;

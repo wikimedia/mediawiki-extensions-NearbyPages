@@ -49,7 +49,7 @@ module.exports = {
 </script>
 
 <style lang="less">
-@width-breakpoint-tablet: 720px;
+@import 'variables.less';
 
 .mw-vue-page-list {
 	font-size: 14px;
@@ -60,13 +60,19 @@ module.exports = {
 		box-sizing: border-box;
 	}
 
+	.wvui-typeahead-suggestion {
+		min-height: 60px;
+	}
+
 	&__card-proximity {
 		position: absolute;
-		right: 8px;
-		bottom: 0;
-		font-size: 0.8em;
+		color: @colorGray7;
+		font-size: 10px;
+		min-width: 36px;
 		background: white;
-		padding: 0 8px;
+		bottom: 0;
+		left: 12px;
+		text-align: center;
 	}
 }
 
@@ -78,7 +84,11 @@ module.exports = {
 		align-items: center;
 
 		&__card-proximity {
-			bottom: -8px;
+			right: 8px;
+			left: auto;
+			min-width: auto;
+			bottom: -5px;
+			padding: 0 8px;
 		}
 
 		&__card {
