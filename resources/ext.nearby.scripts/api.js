@@ -43,13 +43,17 @@ function getDistanceMessage( d ) {
 function toCard( obj ) {
 	var terms = obj.entityterms || {},
 		coords = obj.coordinates || [ {} ],
+		coordinates = coords[ 0 ],
 		description = terms.description ? terms.description[ 0 ] : obj.description,
-		proximity = coords[ 0 ].dist !== undefined ? getDistanceMessage( coords[ 0 ].dist / 1000 ) : undefined;
+		proximity = coordinates.dist !== undefined ?
+			getDistanceMessage( coordinates.dist / 1000 ) : undefined;
 
 	return {
 		url: terms.label ? mw.util.getUrl( obj.title ) : undefined,
 		title: terms.label ? terms.label[ 0 ] : obj.title,
 		description: description,
+		geoURI: coordinates.lat && coordinates.lon ?
+			'geo:' + coordinates.lat + ',' + coordinates.lon : undefined,
 		proximity: proximity,
 		thumbnail: obj.thumbnail
 	};

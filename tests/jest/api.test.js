@@ -154,6 +154,7 @@ describe( 'api.js', () => {
 			).toStrictEqual( {
 				url: undefined,
 				description: 'text',
+				geoURI: undefined,
 				proximity: undefined,
 				thumbnail: {
 					source: 'source.gif'
@@ -173,6 +174,7 @@ describe( 'api.js', () => {
 				} )
 			).toStrictEqual( {
 				description: 'desc',
+				geoURI: undefined,
 				proximity: undefined,
 				thumbnail: undefined,
 				title: 'label',
@@ -190,6 +192,7 @@ describe( 'api.js', () => {
 				} )
 			).toStrictEqual( {
 				description: 'desc',
+				geoURI: undefined,
 				proximity: undefined,
 				thumbnail: undefined,
 				title: 'Q1',
@@ -204,12 +207,15 @@ describe( 'api.js', () => {
 					description: 'desc',
 					coordinates: [
 						{
+							lat: 37.7858,
+							lon: -122.4008,
 							dist: 1000
 						}
 					]
 				} )
 			).toStrictEqual( {
 				description: 'desc',
+				geoURI: 'geo:37.7858,-122.4008',
 				proximity: '1km',
 				thumbnail: undefined,
 				title: 'MOMA',

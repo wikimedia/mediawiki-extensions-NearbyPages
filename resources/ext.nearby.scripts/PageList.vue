@@ -10,7 +10,9 @@
 				:show-thumbnail="true"
 			>
 			</wvui-typeahead-suggestion>
-			<span class="mw-vue-page-list__card-proximity">{{ suggestion.proximity }}</span>
+			<a :href="suggestion.geoURI" class="mw-vue-page-list__card-proximity">
+				{{ suggestion.proximity }}
+			</a>
 		</div>
 	</div>
 </template>
@@ -19,19 +21,26 @@
 module.exports = {
 	name: 'pagelist',
 	props: {
-		pages: Array
+		pages: Array,
+		supportsGeoUrlProtocol: {
+			type: Boolean,
+			// Chrome and FF will refuse navigation to such pages on desktop.
+			default: !!( navigator.userAgent.match( /Chrome/ ) || navigator.userAgent.match( /Firefox/ ) )
+		}
 	},
 	computed: {
 		/**
 		 * @return {Array}
 		 */
 		pagesToSuggestions: function () {
+			var supportsGeoUrlProtocol = this.supportsGeoUrlProtocol;
 			return this.pages.map( function ( page ) {
 				return {
 					id: page.pageid,
 					title: page.title,
 					proximity: page.proximity,
 					description: page.description,
+					geoURI: supportsGeoUrlProtocol ? page.geoURI : undefined,
 					thumbnail: page.thumbnail ? {
 						mimetype: 'image/jpeg',
 						width: 200,
