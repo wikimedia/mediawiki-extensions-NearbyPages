@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"nearby-pages-desc": "Aggiunge 'a pàgena spaciale [[Special:Nearby|Jndr'à le vicinanze]]",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "{{SITENAME}} jndr'à le vicinanze ste ave de le probbleme.",
+	"nearby-pages-error-guidance": "Pruève ad aggiornà 'a posiziona toje.",
+	"nearby-pages-noresults": "Jè tranguille da ste vanne... non ge amme acchiate pàggene cu arguminde de 'nderesse jndr'à le vicinanze",
+	"nearby-pages-noresults-guidance": "Pruève a ccrejà 'na pàgena nove o a aggiungere le coordinate d'a posizione a une esistende",
+	"nearby-pages-title": "Jndr'à le vicinanze"
+}
