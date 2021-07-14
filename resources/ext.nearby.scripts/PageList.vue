@@ -85,6 +85,7 @@ module.exports = {
 
 	&__card {
 		position: relative;
+		width: 100%;
 		height: 100%;
 		box-sizing: border-box;
 	}
@@ -121,7 +122,6 @@ module.exports = {
 		}
 
 		&__card {
-			width: 30%;
 			margin-right: 1%;
 			border: 1px solid rgba(0,0,0,0.2);
 			margin-bottom: 10px;
@@ -137,6 +137,12 @@ module.exports = {
 				border-radius: 0 0 @borderRadius @borderRadius;
 			}
 		}
+	}
+}
+
+@media all and ( min-width: @width-breakpoint-desktop ) {
+	.mw-vue-page-list__card {
+		width: 30%;
 	}
 }
 </style>
