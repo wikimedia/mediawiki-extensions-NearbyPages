@@ -15,6 +15,7 @@
 /**
  * @typedef {Object} Card
  * @property {string} title
+ * @property {string} id usually same as title, except on Wikidata.org
  * @property {CardThumbnail} [thumbnail]
  * @property {string} [description]
  * @property {string} [proximity] of landmark with unit in km or meters

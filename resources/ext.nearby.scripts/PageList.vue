@@ -5,6 +5,7 @@
 			class="mw-vue-page-list__card">
 			<wvui-typeahead-suggestion
 				:suggestion="suggestion"
+				:url-generator="generator"
 				:show-description="true"
 				query=""
 				:show-thumbnail="true"
@@ -26,9 +27,28 @@ module.exports = {
 			type: Boolean,
 			// Chrome and FF will refuse navigation to such pages on desktop.
 			default: !!( navigator.userAgent.match( /Chrome/ ) || navigator.userAgent.match( /Firefox/ ) )
+		},
+		cardUrl: {
+			type: String,
+			default: ''
 		}
 	},
 	computed: {
+		/**
+		 * @return {Object}
+		 */
+		generator: function () {
+			var cardUrl = this.cardUrl;
+			return {
+				/**
+				 * @param {Card} suggestion
+				 * @return {string}
+				 */
+				generateUrl: function ( suggestion ) {
+					return cardUrl.replace( '$1', suggestion.id );
+				}
+			};
+		},
 		/**
 		 * @return {Array}
 		 */
@@ -36,7 +56,7 @@ module.exports = {
 			var supportsGeoUrlProtocol = this.supportsGeoUrlProtocol;
 			return this.pages.map( function ( page ) {
 				return {
-					id: page.pageid,
+					id: page.id,
 					title: page.title,
 					proximity: page.proximity,
 					description: page.description,

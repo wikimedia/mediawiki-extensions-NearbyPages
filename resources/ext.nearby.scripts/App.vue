@@ -17,6 +17,7 @@
 		<pagelist
 			v-if="pages.length"
 			v-bind:pages="pages"
+			:card-url="cardUrl"
 			class="mw-vue-nearby__pagelist">
 		</pagelist>
 
@@ -102,6 +103,7 @@ module.exports = {
 	 */
 	data: function () {
 		return {
+			cardUrl: mw.config.get( 'wgNearbyCardUrl' ),
 			includeRandomButton: mw.config.get( 'wgNearbyRandomButton' ),
 			pages: [],
 			error: false

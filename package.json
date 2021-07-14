@@ -4,6 +4,7 @@
 		"precommit": "npm -s run test",
 		"test:unit": "jest",
 		"start": "node dev/build.js && parcel dev/index.html",
+		"start:wikidata": "node dev/build.js --wikidata && parcel dev/index.html",
 		"lint": "eslint --ext .json . && npm -s run lint:i18n && npm -s run lint:js && npm run lint:css",
 		"lint:js": "eslint --cache \"**/*.{js,vue}\"",
 		"lint:css": "stylelint '**/*.less'",

@@ -21,6 +21,8 @@ Api.prototype.ajax = function ( params ) {
     } );
 };
 
+let config = extConfig.config || {};
+
 module.exports = {
     Api,
     util: {
@@ -29,9 +31,12 @@ module.exports = {
         }
     },
     config: {
+        set: function ( obj ) {
+            config = Object.assign( config, obj );
+        },
         get: function ( name ) {
             name = name.replace( 'wg', '' );
-            return extConfig.config[name] || null;
+            return config[name] || null;
         }
     },
     language: {

@@ -27,6 +27,7 @@ class SpecialNearby extends SpecialPage {
 			'wgNearbyPagesWikidataCompatibility' => $config->get( 'NearbyPagesWikidataCompatibility' ),
 			'wgNearbyPagesNamespaces' => $config->get( 'NearbyPagesNamespaces' ),
 			'wgNearbyRange' => $config->get( 'NearbyRange' ),
+			'wgNearbyCardUrl' => $config->get( 'NearbyCardUrl' ),
 			'wgNearbyRandomButton' => $config->get( 'NearbyRandomButton' ),
 			'wgNearbyPagesUrl' => $config->get( 'NearbyPagesUrl' ),
 		] );

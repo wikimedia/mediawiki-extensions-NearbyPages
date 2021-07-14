@@ -169,7 +169,14 @@ describe( 'App', () => {
 
 		it( 'Shows pages on clicking random', () => {
 			// Mock 'NearbyRandomButton'
-			mw.config.get = jest.fn( () => true );
+			mw.config.get = jest.fn( ( key ) => {
+				switch ( key ) {
+					case 'wgNearbyRandomButton':
+						return true;
+					default:
+						return '';
+				}
+			} );
 			const randomLocationResult = Promise.resolve( {
 				latitude: 9,
 				longitude: 10

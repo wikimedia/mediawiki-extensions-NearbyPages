@@ -51,6 +51,7 @@ function toCard( obj ) {
 	return {
 		url: terms.label ? mw.util.getUrl( obj.title ) : undefined,
 		title: terms.label ? terms.label[ 0 ] : obj.title,
+		id: obj.title,
 		description: description,
 		geoURI: coordinates.lat && coordinates.lon ?
 			'geo:' + coordinates.lat + ',' + coordinates.lon : undefined,

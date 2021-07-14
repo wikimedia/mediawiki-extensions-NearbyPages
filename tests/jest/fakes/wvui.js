@@ -1,9 +1,13 @@
 module.exports = {
 	WvuiTypeaheadSuggestion: {
 		name: 'wvui-typeahead-suggestion-mock',
+		props: {
+			urlGenerator: Object
+		},
 		render: function ( h ) {
+			var url = this.urlGenerator.generateUrl( { id: '1' } );
 			return h( 'div', [
-				'mock suggestion ' + Math.random()
+				'mock suggestion ' + Math.random() + url
 			] );
 		}
 	},
