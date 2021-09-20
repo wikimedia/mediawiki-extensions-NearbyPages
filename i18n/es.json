@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Fewasser Traduce",
 			"Fitoschido",
 			"Geryescalier"
 		]
@@ -12,5 +13,5 @@
 	"nearby-pages-requirements-guidance": "Prueba con otro navegador o activa JavaScript si lo has desactivado.",
 	"nearby-pages-title": "Cercanos",
 	"nearby-pages-info-heading": "Lugares cercanos a ti",
-	"nearby-pages-info-show-random": "Mostrar artículos al azar"
+	"nearby-pages-info-show-random": "Mostrar páginas aleatorias"
 }
