@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Matma Rex",
 			"Rail"
 		]
 	},
@@ -17,7 +18,7 @@
 	"nearby-pages-requirements-guidance": "Spróbuj innej przeglądarki lub włącz obsługę JavaScript, jeżeli masz teraz wyłączoną.",
 	"nearby-pages-title": "W pobliżu",
 	"nearby-pages-info-heading": "Miejsca w twojej okolicy",
-	"nearby-pages-info-description": "Możesz przeczytać interesujące artykuły z {{GRAMMAR:D.lp|{{SITENAME}}}} na temat miejsc w twojej okolicy",
-	"nearby-pages-info-show-random": "Pokaż losowe artykuły",
-	"nearby-pages-info-show-button": "Pokaż artykuły w pobliżu"
+	"nearby-pages-info-description": "Możesz przeczytać interesujące strony {{GRAMMAR:D.lp|{{SITENAME}}}} na temat miejsc w twojej okolicy",
+	"nearby-pages-info-show-random": "Pokaż losowe strony",
+	"nearby-pages-info-show-button": "Pokaż strony w pobliżu"
 }
