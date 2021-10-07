@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"FarsiNevis"
+			"FarsiNevis",
+			"Jeeputer"
 		]
 	},
-	"nearby-pages-info-show-random": "مقاله‌هایی تصادفی نشان بده"
+	"nearby-pages-info-show-random": "نمایش صفحه‌های تصادفی"
 }
