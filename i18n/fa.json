@@ -5,5 +5,10 @@
 			"Jeeputer"
 		]
 	},
-	"nearby-pages-info-show-random": "نمایش صفحه‌های تصادفی"
+	"nearby-pages-distance": "{{PLURAL:$1|$1 کیلومتر}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 متر}}",
+	"nearby-pages-title": "در نزدیکی",
+	"nearby-pages-info-heading": "مکان‌های اطراف شما",
+	"nearby-pages-info-show-random": "نمایش صفحه‌های تصادفی",
+	"nearby-pages-info-show-button": "نمایش صفحه‌های اطراف"
 }
