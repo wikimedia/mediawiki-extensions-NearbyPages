@@ -17,7 +17,7 @@
 	"nearby-pages-requirements-guidance": "Користете друг прелистувач или вклучете JavaScript ако ви е исклучен.",
 	"nearby-pages-title": "Во близина",
 	"nearby-pages-info-heading": "Места околу вас",
-	"nearby-pages-info-description": "Можете да прочитате интересни статии на {{SITENAME}} за местата околу вас",
-	"nearby-pages-info-show-random": "Прикажи случајни статии",
-	"nearby-pages-info-show-button": "Прикажи статии во близина"
+	"nearby-pages-info-description": "Можете да прочитате интересни страници на {{SITENAME}} за местата околу вас",
+	"nearby-pages-info-show-random": "Прикажи случајни страници",
+	"nearby-pages-info-show-button": "Прикажи страници во близина"
 }
