@@ -11,5 +11,10 @@
 	"nearby-pages-error-guidance": "Pruève ad aggiornà 'a posiziona toje.",
 	"nearby-pages-noresults": "Jè tranguille da ste vanne... non ge amme acchiate pàggene cu arguminde de 'nderesse jndr'à le vicinanze",
 	"nearby-pages-noresults-guidance": "Pruève a ccrejà 'na pàgena nove o a aggiungere le coordinate d'a posizione a une esistende",
-	"nearby-pages-title": "Jndr'à le vicinanze"
+	"nearby-pages-permission-denied": "T'ha state negate l'accesse a le Location Services pe {{SITENAME}}. Pe resolvere 'u probbleme 'ndruche le 'mbostaziune d'u dispositive tune o d'u browser",
+	"nearby-pages-location-unavailable": "{{SITENAME}} non ge riesce a pigghià 'a posiziona toje. Pe piacere pruève arrete cu 'nu segnale cchiù forte.",
+	"nearby-pages-requirements": "Ne despiace| 'U browser tune non ge supporte \"Jndr'à le vicinanze\" de {{SITENAME}}.",
+	"nearby-pages-requirements-guidance": "Pruève 'nu browser diverse o abbilite 'u JavaScript ce 'u tìne disabbilitate.",
+	"nearby-pages-title": "Jndr'à le vicinanze",
+	"nearby-pages-info-heading": "Luèche vecine a te"
 }
