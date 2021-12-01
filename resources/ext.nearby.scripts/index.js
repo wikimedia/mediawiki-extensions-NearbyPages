@@ -1,11 +1,7 @@
 // eslint-disable no-implicit-globals
-var Vue = require( 'vue' ),
+var Vue = require( 'vue' ).default || require( 'vue' ),
 	App = require( './App.vue' );
 
-// eslint-disable-next-line no-new
-new Vue( {
-	el: '#mw-nearby-pages',
-	render: function ( h ) {
-		return h( App );
-	}
-} );
+// @ts-ignore
+Vue.createMwApp( App, {} )
+	.mount( document.getElementById( 'mw-nearby-pages' ) );
