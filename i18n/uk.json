@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Piramidion",
-			"Ата"
+			"Ата",
+			"DDPAT"
 		]
 	},
 	"nearby-pages-desc": "Додає спеціальну сторінку «[[Special:Nearby|Поблизу]]»",
@@ -10,7 +11,7 @@
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 м}}",
 	"nearby-pages-error": "«{{SITENAME}} Поблизу» має певні проблеми.",
 	"nearby-pages-error-guidance": "Спробуйте оновити своє місце перебування.",
-	"nearby-pages-noresults": "Тихо тут… Ніяких сторінок не знайдено в темах поблизу.",
+	"nearby-pages-noresults": "Тихо тут… Жодних сторінок не знайдено в темах поблизу.",
 	"nearby-pages-noresults-guidance": "Спробуйте створити нову сторінку або додайте розташування до вже наявної",
 	"nearby-pages-permission-denied": "Ви заборонили доступ до сервісів геолокації для сайту {{SITENAME}}. Щоб змінити це, будь ласка, перегляньте налаштування свого браузера або пристрою",
 	"nearby-pages-location-unavailable": "{{SITENAME}} не може визначити ваше поточне розташування. Будь ласка, спробуйте ще раз із кращим зв'язком.",

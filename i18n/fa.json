@@ -1,8 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"FarsiNevis"
+			"FarsiNevis",
+			"Jeeputer"
 		]
 	},
+	"nearby-pages-distance": "{{PLURAL:$1|$1 کیلومتر}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 متر}}",
+	"nearby-pages-title": "در نزدیکی",
+	"nearby-pages-info-heading": "مکان‌های اطراف شما",
 	"nearby-pages-info-show-random": "مقاله‌هایی تصادفی نشان بده"
 }
