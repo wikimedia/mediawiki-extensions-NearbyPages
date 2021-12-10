@@ -13,7 +13,7 @@ Api.prototype.ajax = function ( params ) {
         }
     } );
     return $.ajax( {
-        url: extConfig.config.NearbyPagesUrl,
+        url: extConfig.config.NearbyPagesUrl.value,
         xhrFields: {
             withCredentials: false
         },
@@ -36,7 +36,7 @@ module.exports = {
         },
         get: function ( name ) {
             name = name.replace( 'wg', '' );
-            return config[name] || null;
+            return config[name] ? config[name].value : null;
         }
     },
     language: {

@@ -17,12 +17,26 @@
 		]
 	},
 	"config": {
-		"NearbyRange": 10000,
-		"NearbyCardUrl": "/wiki/$1",
-		"NearbyRandomButton": true,
-		"NearbyPagesNamespaces": [ 0 ],
-		"NearbyPagesUrl": "https://en.wikipedia.org/w/api.php",
-		"NearbyPagesWikidataCompatibility": false
+		"NearbyRange": {
+			"value": 10000
+		},
+		"NearbyCardUrl": {
+			"value": "/wiki/$1"
+		},
+		"NearbyRandomButton": {
+			"value": true
+		},
+		"NearbyPagesNamespaces": {
+			"value": [
+				0
+			]
+		},
+		"NearbyPagesUrl": {
+			"value": "https://en.wikipedia.org/w/api.php"
+		},
+		"NearbyPagesWikidataCompatibility": {
+			"value": false
+		}
 	},
 	"SpecialPages": {
 		"Nearby": "NearbyPages\\SpecialNearby"
@@ -82,5 +96,5 @@
 			}
 		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

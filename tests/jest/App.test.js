@@ -232,7 +232,7 @@ describe( 'App', () => {
 					language: 'en',
 					namespaces: [ 0 ],
 					range: 10000,
-					wikidata: null
+					wikidata: false
 				}
 			);
 		} );
