@@ -19,7 +19,8 @@ class SpecialNearby extends SpecialPage {
 	 * @param string|null $par Parameter submitted as subpage
 	 */
 	public function execute( $par = '' ) {
-		parent::execute( $par );
+		$this->setHeaders();
+		$this->outputHeader();
 		$out = $this->getOutput();
 		// set config
 		$config = $this->getConfig();
