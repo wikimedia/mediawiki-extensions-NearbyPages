@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"ToprakM"
 		]
 	},
 	"nearby-pages-desc": "[[Special:Nearby|Yakın]] özel sayfası ekler",
@@ -15,7 +16,7 @@
 	"nearby-pages-location-unavailable": "{{SITENAME}} konumunuzu belirleyemiyor. Lütfen daha iyi bir sinyalle tekrar deneyin.",
 	"nearby-pages-requirements": "Üzgünüz! Web tarayıcınız {{SITENAME}} yakınındakileri desteklemiyor.",
 	"nearby-pages-requirements-guidance": "Farklı bir tarayıcı deneyin veya JavaScript devredışı bırakılmışsa etkinleştirin.",
-	"nearby-pages-title": "Yakınındakiler",
+	"nearby-pages-title": "Yakınımdakiler",
 	"nearby-pages-info-heading": "Çevrenizdeki yerler",
 	"nearby-pages-info-description": "Çevrenizdeki yerler hakkında ilginç {{SITENAME}} makaleler hakkında bilgi edinebilirsiniz",
 	"nearby-pages-info-show-random": "Rastgele maddeleri göster",

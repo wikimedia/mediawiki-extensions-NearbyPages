@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"NGC 54"
+		]
+	},
+	"nearby-pages-desc": "Adaugă pagina specială [[Special:Nearby|Aproape]]",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "Funcția În apropiere de la {{SITENAME}} întâmpină niște dificultăți.",
+	"nearby-pages-error-guidance": "Încercați să vă reîmprospătați locația.",
+	"nearby-pages-noresults": "Cam liniște pe aici... Nu s-a găsit nicio pagină cu subiecte din apropiere.",
+	"nearby-pages-noresults-guidance": "Încercați să creați o pagină nouă sau să adăugați locația pentru una deja existentă",
+	"nearby-pages-permission-denied": "Ați interzis accesul la Serviciile de Locație {{SITENAME}}. Pentru a schimba asta, vă rugăm să vizitați setările browser-ului sau dispozitivului dvs.",
+	"nearby-pages-location-unavailable": "{{SITENAME}} nu poate determina locația dvs. Vă rugăm să încercați din nou cu un semnal mai bun.",
+	"nearby-pages-requirements": "Ne pare rău! Browser-ul web al dumneavoastră nu suportă funcția În apropiere de la {{SITENAME}}.",
+	"nearby-pages-requirements-guidance": "Încercați un alt browser sau activați JavaScript dacă l-ați dezactivat.",
+	"nearby-pages-title": "Aproape",
+	"nearby-pages-info-heading": "Locuri din jurul dvs."
+}

@@ -5,7 +5,8 @@
 		]
 	},
 	"nearby-pages-requirements": "對唔住！你嘅瀏覽器唔支援{{SITENAME}}附近功能。",
-	"nearby-pages-info-heading": "你附近嘅地方",
+	"nearby-pages-title": "左近",
+	"nearby-pages-info-heading": "喺你左近嘅地方",
 	"nearby-pages-info-description": "你可以睇你有興趣而又喺你附近嘅文章版",
 	"nearby-pages-info-show-random": "顯示是但一版",
 	"nearby-pages-info-show-button": "顯示附近嘅文章"

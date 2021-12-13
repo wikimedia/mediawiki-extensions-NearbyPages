@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fierodelveneto"
+		]
+	},
+	"nearby-pages-desc": "El xonta ła voxe speçałe [[Special:Nearby|Arente cuà]]",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "{{SITENAME}} el xe drio vere calche problema.",
+	"nearby-pages-error-guidance": "Proa a atuałixar ła to poxision.",
+	"nearby-pages-noresults": "A xe trancuiło in ste xone. No ghemo catà fora voxe co argomentasion de intarese arente cuà.",
+	"nearby-pages-noresults-guidance": "Proa a crear na nova voxe o xontare łe coordenae de ła poxision a una che xa ghe xe.",
+	"nearby-pages-permission-denied": "Te ghè negà ła entrada ai servisi de locałixasion a {{SITENAME}}. Cànbia sta opsion inte łe inpostasion del to dispoxidivo.",
+	"nearby-pages-location-unavailable": "{{SITENAME}} no el xe bon de catar ła to locałixasion. Riproa da novo co on mejo segnałe.",
+	"nearby-pages-requirements": "Ne despiaxe! El to navegador web no el suporta \"Arente cuà\" de {{SITENAME}}",
+	"nearby-pages-requirements-guidance": "Proa a doparar on navegadore web difarente o controła de no ver dexativà JavaScript.",
+	"nearby-pages-title": "Arente cuà",
+	"nearby-pages-info-heading": "Posti arente a ti"
+}

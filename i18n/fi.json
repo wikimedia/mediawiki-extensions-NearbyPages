@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"MITO",
+			"Moj",
+			"Rönttönen"
+		]
+	},
+	"nearby-pages-desc": "Lisää toimintosivun [[Special:Nearby|Nearby]]",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-permission-denied": "Olet estänyt sivuston {{SITENAME}} pääsyn sijaintitietoihisi. Voit korjata asian selaimesi tai laitteesi asetuksista",
+	"nearby-pages-title": "Lähistöllä",
+	"nearby-pages-info-heading": "Ympärilläsi olevat paikat"
+}
