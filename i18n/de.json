@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Brettchenweber"
+		]
 	},
 	"nearby-pages-desc": "Erweitert das Wiki um eine [[Special:Nearby|Spezialseite]] zur Anzeige von Seiten in örtlicher Nähe",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
@@ -15,7 +17,7 @@
 	"nearby-pages-requirements-guidance": "Versuche einen anderen Browser oder aktiviere JavaScript, falls deaktiviert.",
 	"nearby-pages-title": "In der Nähe",
 	"nearby-pages-info-heading": "Orte in deiner Umgebung",
-	"nearby-pages-info-description": "Du kannst interessante {{SITENAME}}-Seiten über Orte in deiner Umgebung lesen",
+	"nearby-pages-info-description": "Du kannst interessante {{SITENAME}}-Seiten über Orte in deiner Umgebung lesen.",
 	"nearby-pages-info-show-random": "Zufällige Seiten anzeigen",
 	"nearby-pages-info-show-button": "Seiten in der Nähe anzeigen"
 }
