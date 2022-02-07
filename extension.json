@@ -5,8 +5,8 @@
 	"descriptionmsg": "nearby-pages-desc",
 	"license-name": "GPL-2.0-or-later",
 	"type": "specialpage",
-	"AutoloadClasses": {
-		"NearbyPages\\SpecialNearby": "includes/SpecialNearby.php"
+	"AutoloadNamespaces": {
+		"NearbyPages\\": "includes/"
 	},
 	"requires": {
 		"MediaWiki": ">= 1.35.0"
