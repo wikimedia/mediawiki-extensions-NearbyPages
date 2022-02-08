@@ -10,7 +10,7 @@ describe( 'ErrorBox', () => {
 			}
 		} );
 
-		expect( errorBox.classes() ).toContain( 'errorbox' );
+		expect( errorBox.classes() ).toContain( 'mw-message-box-error' );
 		expect( errorBox.text() ).toBe( 'A nasty error' );
 	} );
 } );

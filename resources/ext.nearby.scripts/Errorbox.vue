@@ -1,5 +1,5 @@
 <template>
-	<div class="errorbox">
+	<div class="mw-message-box mw-message-box-error">
 		{{ message }}
 	</div>
 </template>
