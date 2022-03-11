@@ -1,4 +1,4 @@
-var mwApi = new mw.Api( {
+const mwApi = new mw.Api( {
 	ajax: {
 		url: mw.config.get( 'wgNearbyPagesUrl' )
 	}
@@ -12,7 +12,7 @@ var mwApi = new mw.Api( {
  * @return {string} for current language
  */
 function getDistanceMessage( d ) {
-	var km;
+	let km;
 	if ( d < 1 ) {
 		d *= 100;
 		d = Math.ceil( d ) * 10;
@@ -41,7 +41,7 @@ function getDistanceMessage( d ) {
  * @return {Card}
  */
 function toCard( obj ) {
-	var terms = obj.entityterms || {},
+	const terms = obj.entityterms || {},
 		coords = obj.coordinates || [ {} ],
 		coordinates = coords[ 0 ],
 		description = terms.description ? terms.description[ 0 ] : obj.description,
@@ -86,7 +86,7 @@ function getRandomPages() {
  * @return {jQuery.Deferred}
  */
 function getPages( reqData, options ) {
-	var wikidataMode = options.wikidata,
+	const wikidataMode = options.wikidata,
 		namespace = options.namespaces || [ 0 ],
 		// T117159
 		language = options.language || 'en',
@@ -114,9 +114,9 @@ function getPages( reqData, options ) {
 		pithumbsize: 150,
 		pilimit: 50
 	}, reqData ) ).then( function ( data ) {
-		var queryPages = data && data.query ? data.query.pages : [],
+		const queryPages = data && data.query ? data.query.pages : [],
 			pages = queryPages.sort( function ( a, b ) {
-				var c = a.coordinates || [ { dist: 0 } ],
+				const c = a.coordinates || [ { dist: 0 } ],
 					d = b.coordinates || [ { dist: 0 } ];
 
 				return c[ 0 ].dist < d[ 0 ].dist ? -1 : 1;
@@ -138,7 +138,7 @@ function getPages( reqData, options ) {
  * @return {jQuery.Object}
  */
 function getPagesAtCoordinates( lat, lng, options ) {
-	var coord = lat + '|' + lng;
+	const coord = lat + '|' + lng;
 
 	return getPages( {
 		codistancefrompoint: coord,

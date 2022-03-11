@@ -14,37 +14,35 @@
 		"doc": "npm run jsdoc"
 	},
 	"engines": {
-		"node": "10.15.2"
+		"node": "12.21.0"
 	},
 	"pre-commit": "precommit",
 	"alias": {
 		"mediawiki.router": "./dev/router.js",
-		"vue": "./dev/vue.js",
-		"wvui": "./dev/wvui.js",
 		"$": "./dev/jquery.js"
 	},
 	"devDependencies": {
-		"@vue/component-compiler-utils": "3.1.1",
-		"@vue/test-utils": "1.0.3",
-		"@wikimedia/wvui": "0.1.0",
+		"@babel/preset-env": "7.16.11",
+		"@parcel/transformer-less": "2.3.2",
+		"@parcel/transformer-vue": "2.3.2",
+		"@vue/test-utils": "2.0.0-rc.17",
+		"@vue/vue3-jest": "27.0.0-alpha.4",
+		"@wikimedia/codex": "0.1.0-alpha.10",
 		"babel-core": "6.26.3",
 		"eslint-config-wikimedia": "0.20.0",
 		"grunt-banana-checker": "0.9.0",
-		"jest": "24.9.0",
+		"jest": "27.4.7",
 		"jquery": "3.5.1",
-		"jsdoc": "3.6.7",
-		"jsdoc-vue": "1.0.0",
-		"less": "3.11.1",
+		"jsdoc": "3.6.10",
+		"jsdoc-vuejs": "4.0.0",
+		"less": "4.1.2",
 		"mustache": "3.0.1",
 		"oojs": "3.0.1",
 		"oojs-router": "0.3.0",
-		"parcel-bundler": "1.12.4",
+		"parcel": "2.3.2",
 		"pre-commit": "1.2.2",
 		"stylelint": "13.8.0",
 		"stylelint-config-wikimedia": "0.11.1",
-		"vue": "2.6.11",
-		"vue-hot-reload-api": "2.3.4",
-		"vue-jest": "3.0.5",
-		"vue-template-compiler": "2.6.11"
+		"vue": "3.2.37"
 	}
 }

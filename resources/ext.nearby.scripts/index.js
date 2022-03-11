@@ -1,7 +1,7 @@
 // eslint-disable no-implicit-globals
-var Vue = require( 'vue' ).default || require( 'vue' ),
-	App = require( './App.vue' );
+const Vue = require( 'vue' ),
+	App = require( './App.vue' ).default || require( './App.vue' );
 
 // @ts-ignore
-Vue.createMwApp( App, {} )
+Vue.createMwApp( App )
 	.mount( document.getElementById( 'mw-nearby-pages' ) );

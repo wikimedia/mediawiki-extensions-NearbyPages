@@ -1,12 +1,11 @@
-var $ = window.$,
+const $ = window.$,
 	api = require( './api.js' ),
-	/** @type {Coordinates[]} */ randomLocations = [],
 	ERROR_PERMISSION_DENIED = 'permission',
 	ERROR_TIMEOUT = 'timeout',
 	ERROR_POSITION_UNAVAILABLE = 'location',
 	ERROR_UNKNOWN = 'unknown',
 	ERROR_SERVICE_UNAVAILABLE = 'incompatible';
-
+let /** @type {Coordinates[]} */ randomLocations = [];
 /**
  * Detect if browser supports geolocation
  *
@@ -26,7 +25,7 @@ function isAvailable() {
  * @return {jQuery.Deferred}
  */
 function getCurrentPosition() {
-	var result = $.Deferred();
+	const result = $.Deferred();
 	if ( isAvailable() ) {
 		navigator.geolocation.getCurrentPosition(
 			function ( geo ) {
@@ -36,7 +35,7 @@ function getCurrentPosition() {
 				} );
 			},
 			function ( err ) {
-				var error;
+				let error;
 				switch ( err.code ) {
 					case err.PERMISSION_DENIED:
 						error = ERROR_PERMISSION_DENIED;
@@ -69,7 +68,7 @@ function getCurrentPosition() {
  * @return {Coordinate}
  */
 function popRandomLocation() {
-	var coord = randomLocations.pop();
+	const coord = randomLocations.pop();
 	return {
 		latitude: coord.lat,
 		longitude: coord.lon
@@ -85,7 +84,7 @@ function popRandomLocation() {
  * @return {jQuery.Deferred}
  */
 function getRandomLocation() {
-	var result = $.Deferred();
+	const result = $.Deferred();
 	if ( randomLocations.length < 20 ) {
 		// we don't have enough to choose from. Try to find another.
 		return api.getRandomPages().then( function ( pages ) {

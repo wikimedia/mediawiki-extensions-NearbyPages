@@ -11,30 +11,35 @@
 		</div>
 
 		<div v-if="error">
-			<errorbox v-bind:message="error"></errorbox>
+			<cdx-message type="error">
+				{{ error }}
+			</cdx-message>
 		</div>
 
 		<pagelist
 			v-if="pages.length"
-			v-bind:pages="pages"
+			:pages="pages"
 			:card-url="cardUrl"
 			class="mw-vue-nearby__pagelist">
 		</pagelist>
 
 		<div :class="footerClass">
-			<mw-button action="progressive" v-on:click="showNearbyArticles">
+			<cdx-button action="progressive" v-on:click="showNearbyArticles">
 				{{ msg( 'nearby-pages-info-show-button' ) }}
-			</mw-button>
+			</cdx-button>
 
-			<mw-button v-if="includeRandomButton" v-on:click="showRandomNearbyArticles">
+			<cdx-button v-if="includeRandomButton" v-on:click="showRandomNearbyArticles">
 				{{ msg( 'nearby-pages-info-show-random' ) }}
-			</mw-button>
+			</cdx-button>
 		</div>
 	</div>
 </template>
 
 <script>
-var api = require( './api.js' ),
+const api = require( './api.js' ),
+	PageList = require( './PageList.vue' ),
+	codex = require( '@wikimedia/codex' ),
+	Vue = require( 'vue' ),
 	apiOptions = {
 		range: mw.config.get( 'wgNearbyRange' ),
 		// T117159
@@ -66,13 +71,25 @@ function showPagesNearLocationHandler( vm ) {
 }
 
 /**
+ * Resets the app to initial state with no pages.
+ *
+ * @param {App} vm
+ * @return {Function}
+ */
+function showHomeHandler( vm ) {
+	return function () {
+		vm.clearPages();
+	};
+}
+
+/**
  * @return {Card[]}
  */
 function proxyPages() {
-	// Use Array.fill when ES6 support available.
-	var arr = Array.apply( null, Array( 50 ) );
-	return arr.map( function () {
-		return { title: '' };
+	// eslint-disable-next-line compat/compat
+	return Array( 50 ).fill( {
+		title: '‎ ',
+		description: '‎ '
 	} );
 }
 
@@ -82,20 +99,21 @@ function proxyPages() {
  *
  * @module App
  */
-module.exports = {
+module.exports = exports = Vue.defineComponent( {
 	name: 'App',
 	props: {
 		title: String
 	},
 	test: {
+		showHomeHandler: showHomeHandler,
 		showPagesNearPageHandler: showPagesNearPageHandler,
 		showPagesNearLocationHandler: showPagesNearLocationHandler
 	},
 
 	components: {
-		'mw-button': require( 'wvui' ).WvuiButton,
-		pagelist: require( './PageList.vue' ),
-		errorbox: require( './Errorbox.vue' )
+		CdxButton: codex.CdxButton,
+		pagelist: PageList.name ? PageList : PageList.default,
+		CdxMessage: codex.CdxMessage
 	},
 
 	/**
@@ -130,6 +148,10 @@ module.exports = {
 
 		reset: function () {
 			this.error = false;
+		},
+
+		clearPages: function () {
+			this.pages = [];
 		},
 
 		/**
@@ -171,7 +193,7 @@ module.exports = {
 		loadPagesFromPromise: function ( promise ) {
 			this.pages = proxyPages();
 			promise.then( function ( result ) {
-				var pages = result.pages;
+				const pages = result.pages;
 				this.error = pages.length ? false : mw.msg( 'nearby-pages-noresults' );
 				this.pages = pages;
 			}.bind( this ), function () {
@@ -180,7 +202,7 @@ module.exports = {
 		},
 
 		showRandomNearbyArticles: function () {
-			var vm = this;
+			const vm = this;
 			this.reset();
 			locationProvider.getRandomLocation().then( function ( coordinate ) {
 				vm.loadPages( coordinate.latitude, coordinate.longitude );
@@ -188,7 +210,7 @@ module.exports = {
 		},
 
 		showNearbyArticles: function () {
-			var vm = this;
+			const vm = this;
 			this.reset();
 
 			locationProvider.getCurrentPosition().then( function ( coordinate ) {
@@ -210,18 +232,21 @@ module.exports = {
 	},
 
 	mounted: function () {
-		var vm = this,
+		const vm = this,
 			pageRegex = /^\/page\/(.+)$/,
 			coordinateRegex = /^\/coord\/(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)/;
 
 		router.addRoute( coordinateRegex, showPagesNearLocationHandler( vm ) );
 		router.addRoute( pageRegex, showPagesNearPageHandler( vm ) );
+		router.addRoute( '', showHomeHandler( vm ) );
 		router.checkRoute();
 		if ( this.title ) {
 			vm.loadPagesNearTitle( this.title );
+		} else {
+			this.clearPages();
 		}
 	}
-};
+} );
 </script>
 
 <style lang="less">
@@ -279,6 +304,10 @@ module.exports = {
 		&--with-random {
 			height: @gutter-end-with-random;
 		}
+	}
+
+	.cdx-message {
+		margin-bottom: 16px;
 	}
 }
 </style>

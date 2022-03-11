@@ -8,3 +8,4 @@
 /.eslintcache
 /node_modules/
 /vendor/
+/.parcel-cache/

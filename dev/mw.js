@@ -21,8 +21,12 @@ Api.prototype.ajax = function ( params ) {
     } );
 };
 
-let config = extConfig.config || {};
-
+const configEl = document.getElementById( 'config' );
+const htmlConfig = configEl ? JSON.parse( configEl.textContent ) : {};
+let config = Object.assign( {}, htmlConfig );
+Object.keys( extConfig.config ).forEach( ( key ) => {
+    config[ `wg${key}` ] = extConfig.config[ key ].value;
+} )
 module.exports = {
     Api,
     util: {
@@ -35,8 +39,7 @@ module.exports = {
             config = Object.assign( config, obj );
         },
         get: function ( name ) {
-            name = name.replace( 'wg', '' );
-            return config[name] ? config[name].value : null;
+            return config[name];
         }
     },
     language: {

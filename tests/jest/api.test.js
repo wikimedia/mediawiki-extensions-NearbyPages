@@ -32,7 +32,7 @@ describe( 'api.js', () => {
 				)
 			);
 
-			global.mw.config.get = jest.fn( key => `config:${key}` );
+			global.mw.config.get = jest.fn( ( key ) => `config:${key}` );
 		} );
 
 		it( 'Works with empty response', () => {
@@ -47,7 +47,8 @@ describe( 'api.js', () => {
 				require( './fixtures/geosearchResults.json' )
 			) );
 			api.getPagesAtCoordinates( '1.0', '9.5', {} ).then( ( result ) => {
-				expect( result.pages[ 0 ].title ).toStrictEqual( 'Soul' );
+				expect( result.pages[ 0 ].title ).toStrictEqual( 'Something' );
+				expect( result.pages[ 1 ].title ).toStrictEqual( 'Soul' );
 				expect( result.pages[ 5 ].title ).toStrictEqual( 'Capital' );
 			} );
 		} );
