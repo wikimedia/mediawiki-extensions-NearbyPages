@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yupik"
+		]
+	},
+	"nearby-pages-distance": "{{PLURAL:$1|$1 ǩm}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}"
+}
