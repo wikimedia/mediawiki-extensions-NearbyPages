@@ -40,10 +40,6 @@ module.exports = exports = vue.defineComponent( {
 			type: Boolean,
 			// Chrome and FF will refuse navigation to such pages on desktop.
 			default: !!( navigator.userAgent.match( /Chrome/ ) || navigator.userAgent.match( /Firefox/ ) )
-		},
-		cardUrl: {
-			type: String,
-			default: ''
 		}
 	},
 	computed: {
@@ -52,10 +48,9 @@ module.exports = exports = vue.defineComponent( {
 		 */
 		pagesToSuggestions: function () {
 			const supportsGeoUrlProtocol = this.supportsGeoUrlProtocol;
-			const cardUrl = this.cardUrl;
 			return this.pages.map( function ( page ) {
 				return {
-					url: page.id ? cardUrl.replace( '$1', page.id ) : '',
+					url: page.url,
 					id: page.id,
 					label: page.title,
 					proximity: page.proximity,

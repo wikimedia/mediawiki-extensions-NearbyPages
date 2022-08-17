@@ -6,14 +6,11 @@ const i18n = require( '../i18n/en.json' );
 
 const WIKIDATA_CONFIG = {
     NearbyPagesNamespaces: [ 640, 146, 0 ],
-    NearbyCardUrl: 'https://www.wikidata.org/wiki/$1',
     NearbyPagesUrl: 'https://www.wikidata.org/w/api.php',
     NearbyPagesWikidataCompatibility: true
 };
 
-const DEFAULT_CONFIG = {
-    NearbyCardUrl: 'https://en.wikipedia.org/wiki/$1'
-};
+const DEFAULT_CONFIG = {};
 
 const mwConfig = process.argv.includes( '--wikidata' ) ? WIKIDATA_CONFIG : DEFAULT_CONFIG;
 

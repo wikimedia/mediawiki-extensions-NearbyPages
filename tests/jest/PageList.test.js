@@ -6,7 +6,6 @@ describe( 'PageList', () => {
 		const pagelist = VueTestUtils.mount( PageList, {
 			propsData: {
 				supportsGeoUrlProtocol: true,
-				cardUrl: '/wiki/$1',
 				pages: [
 					{
 						title: 'Foo',
@@ -18,6 +17,7 @@ describe( 'PageList', () => {
 						}
 					},
 					{
+						url: '/wiki/Bar',
 						title: 'Bar'
 					}
 				]
@@ -47,6 +47,7 @@ describe( 'PageList where no geo uri support', () => {
 				pages: [
 					{
 						title: 'Foo',
+						url: '/wiki/Foo',
 						geoURI: 'geo:0,0',
 						thumbnail: {
 							source: 'banana.gif'

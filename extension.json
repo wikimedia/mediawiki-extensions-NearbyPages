@@ -20,9 +20,6 @@
 		"NearbyRange": {
 			"value": 10000
 		},
-		"NearbyCardUrl": {
-			"value": "/wiki/$1"
-		},
 		"NearbyRandomButton": {
 			"value": true
 		},

@@ -66,11 +66,12 @@ describe( 'api.js', () => {
 				origin: '*',
 				formatversion: 2,
 				prop: [
-					'coordinates', 'pageprops', 'pageimages', 'description'
+					'coordinates', 'pageprops', 'pageimages', 'description', 'info'
 				].join( '|' ),
 				colimit: 'max',
 				generator: 'geosearch',
 				ggsradius: 500,
+				inprop: 'url',
 				ggsnamespace: '0',
 				ggslimit: 50,
 				// T253215
@@ -103,11 +104,13 @@ describe( 'api.js', () => {
 				formatversion: 2,
 				prop: [
 					'coordinates', 'pageprops', 'pageimages', 'description',
+					'info',
 					'entityterms'
 				].join( '|' ),
 				colimit: 'max',
 				generator: 'geosearch',
 				ggsradius: 10000,
+				inprop: 'url',
 				ggsnamespace: '5',
 				ggslimit: 50,
 				// T253215
@@ -169,6 +172,7 @@ describe( 'api.js', () => {
 			expect(
 				api.test.toCard( {
 					title: 'Q1',
+					fullurl: '/wiki/Q1',
 					entityterms: {
 						description: [ 'desc' ],
 						label: [ 'label' ]
@@ -181,7 +185,7 @@ describe( 'api.js', () => {
 				proximity: undefined,
 				thumbnail: undefined,
 				title: 'label',
-				url: '#/wiki/Q1'
+				url: '/wiki/Q1'
 			} );
 		} );
 

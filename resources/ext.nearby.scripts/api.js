@@ -49,7 +49,7 @@ function toCard( obj ) {
 			getDistanceMessage( coordinates.dist / 1000 ) : undefined;
 
 	return {
-		url: terms.label ? mw.util.getUrl( obj.title ) : undefined,
+		url: obj.fullurl,
 		title: terms.label ? terms.label[ 0 ] : obj.title,
 		id: obj.title,
 		description: description,
@@ -68,7 +68,8 @@ function getRandomPages() {
 		action: 'query',
 		format: 'json',
 		origin: '*',
-		prop: 'coordinates',
+		prop: 'coordinates|info',
+		inprop: 'url',
 		generator: 'random',
 		formatversion: 2,
 		colimit: 100,
@@ -99,8 +100,9 @@ function getPages( reqData, options ) {
 		origin: '*',
 		formatversion: 2,
 		prop: [
-			'coordinates', 'pageprops', 'pageimages', 'description'
+			'coordinates', 'pageprops', 'pageimages', 'description', 'info'
 		].concat( additionalProps ),
+		inprop: 'url',
 		colimit: 'max',
 		generator: 'geosearch',
 		ggsradius: options.range || 10000,
