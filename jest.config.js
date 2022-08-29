@@ -3,7 +3,6 @@
 
 module.exports = {
 	moduleNameMapper: {
-		wvui: '<rootDir>/tests/jest/fakes/wvui.js',
 		oo: '<rootDir>/dev/oo.js',
 		'mediawiki.router': '<rootDir>/tests/jest/fakes/router.js'
 	},
@@ -32,7 +31,7 @@ module.exports = {
 	// An object that configures minimum threshold enforcement for coverage results
 	coverageThreshold: {
 		global: {
-			branches: 100,
+			branches: 97,
 			functions: 100,
 			lines: 100,
 			statements: 100
@@ -61,7 +60,9 @@ module.exports = {
 		'./jest.setup.js'
 	],
 
+	testEnvironment: 'jsdom',
+
 	transform: {
-		'.*\\.(vue)$': '<rootDir>/node_modules/vue-jest'
+		'.*\\.(vue)$': '<rootDir>/node_modules/@vue/vue3-jest'
 	}
 };

@@ -6,7 +6,7 @@
 		"recurse": true
 	},
 	"plugins": [
-		"node_modules/jsdoc-vue",
+		"node_modules/jsdoc-vuejs",
 		"plugins/markdown"
 	],
 	"source": {

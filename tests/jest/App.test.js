@@ -3,9 +3,9 @@ const Vue = require( 'vue' );
 const App = require( '../../resources/ext.nearby.scripts/App.vue' );
 const locationProvider = require( '../../resources/ext.nearby.scripts/locationProvider.js' );
 const api = require( '../../resources/ext.nearby.scripts/api.js' );
-const Card = require( 'wvui' ).WvuiTypeaheadSuggestion;
-const Button = require( 'wvui' ).WvuiButton;
-const ErrorBox = require( '../../resources/ext.nearby.scripts/Errorbox.vue' );
+const Card = require( '@wikimedia/codex' ).CdxCard;
+const Button = require( '@wikimedia/codex' ).CdxButton;
+const ErrorBox = require( '@wikimedia/codex' ).CdxMessage;
 
 /**
  * @param {Wrapper} app to click the button
@@ -47,6 +47,14 @@ describe( 'App', () => {
 			App.test.showPagesNearLocationHandler( vm )( 20, 30 );
 			expect( vm.loadPages ).toHaveBeenCalledWith( 20, 30 );
 		} );
+
+		it( 'Empty fragment resets pages', () => {
+			const vm = {
+				clearPages: jest.fn()
+			};
+			App.test.showHomeHandler( vm )();
+			expect( vm.clearPages ).toHaveBeenCalledWith();
+		} );
 	} );
 
 	describe( 'At start up', () => {
@@ -65,21 +73,21 @@ describe( 'App', () => {
 			).toBe( false );
 		} );
 
-		it( 'registers two routes', () => {
+		it( 'registers three routes', () => {
 			const addRoute = jest.fn();
 			require( './fakes/router' ).addRoute = addRoute;
 			VueTestUtils.mount( App );
 
 			expect(
 				addRoute
-			).toHaveBeenCalledTimes( 2 );
+			).toHaveBeenCalledTimes( 3 );
 		} );
 	} );
 
 	describe( 'On button click', () => {
-		let navigateTo = jest.fn();
+		const navigateTo = jest.fn();
 		beforeEach( () => {
-			global.mw.msg = jest.fn( key => key );
+			global.mw.msg = jest.fn( ( key ) => key );
 			require( './fakes/router' ).navigateTo = navigateTo;
 		} );
 
@@ -197,7 +205,7 @@ describe( 'App', () => {
 			);
 
 			const app = VueTestUtils.mount( App );
-			return app.findAllComponents( Button ).at( 1 )
+			return app.findAllComponents( Button )[ 1 ]
 				.trigger( 'click' )
 				.then( () => {
 					return randomLocationResult.then( () => {

@@ -11,6 +11,7 @@ describe( 'PageList', () => {
 					{
 						title: 'Foo',
 						id: 'Foo',
+						url: '/wiki/Foo',
 						geoURI: 'geo:1,1',
 						thumbnail: {
 							source: 'banana.gif'
@@ -24,14 +25,17 @@ describe( 'PageList', () => {
 		} );
 
 		expect(
-			pagelist.findAll( '.mw-vue-page-list__card' ).length
+			pagelist.findAll( '.cdx-card' ).length
 		).toBe( 2 );
 
 		expect(
-			pagelist.findAll( '.mw-vue-page-list__card' )
-				.at( 0 ).find( '.mw-vue-page-list__card-proximity' )
+			pagelist.findAll( '.cdx-card' )[ 0 ]
+				.find( '.mw-vue-page-list__card-proximity' )
 				.element.getAttribute( 'href' )
 		).toBe( 'geo:1,1' );
+		expect(
+			pagelist.find( '.cdx-card__text__title' ).text()
+		).toBe( 'Foo' );
 	} );
 } );
 
@@ -52,6 +56,9 @@ describe( 'PageList where no geo uri support', () => {
 			}
 		} );
 
+		expect(
+			pagelist.find( '.cdx-card__text__title' ).text()
+		).toBe( 'Foo' );
 		expect(
 			pagelist.find( '.mw-vue-page-list__card-proximity' ).element.getAttribute( 'href' )
 		).toBe( null );

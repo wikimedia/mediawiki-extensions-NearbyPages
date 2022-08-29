@@ -40,7 +40,7 @@ describe( 'LocationProvider', () => {
 		} );
 
 		it( 'Returns a location that\'s difference each time from a single API request', () => {
-			let results = [];
+			const results = [];
 			global.$.ajax = apiMock;
 			// First location request hits API and gets a result. We get 100 articles, only 50 of which
 			// have location data.

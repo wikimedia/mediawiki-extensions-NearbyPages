@@ -1,27 +1,40 @@
 <template>
 	<div class="mw-vue-page-list">
-		<div v-for="(suggestion, i) in pagesToSuggestions"
-			:key="i"
-			class="mw-vue-page-list__card">
-			<wvui-typeahead-suggestion
-				:suggestion="suggestion"
-				:url-generator="generator"
-				:show-description="true"
-				query=""
-				:show-thumbnail="true"
-			>
-			</wvui-typeahead-suggestion>
-			<a :href="suggestion.geoURI" class="mw-vue-page-list__card-proximity">
-				{{ suggestion.proximity }}
-			</a>
-		</div>
+		<cdx-card
+			v-for="card in pagesToSuggestions"
+			:key="card.pageid"
+			:url="card.url"
+			:force-thumbnail="true"
+			:thumbnail="card.thumbnail"
+		>
+			<template #title>
+				{{ card.label }}
+			</template>
+			<template #description>
+				{{ card.description }}
+			</template>
+			<template #supporting-text>
+				<!-- Link will only work if device supports https://en.wikipedia.org/wiki/Geo_URI_scheme */ -->
+				<a :href="card.geoURI" class="mw-vue-page-list__card-proximity">
+					<cdx-icon :icon="supportingIcon"></cdx-icon> {{ card.proximity }}
+				</a>
+			</template>
+		</cdx-card>
 	</div>
 </template>
 
 <script>
-module.exports = {
+const codex = require( '@wikimedia/codex' );
+const cdxIconMapPin = require( './icons.json' ).cdxIconMapPin;
+const vue = require( 'vue' );
+
+module.exports = exports = vue.defineComponent( {
 	name: 'pagelist',
 	props: {
+		supportingIcon: {
+			type: String,
+			default: cdxIconMapPin
+		},
 		pages: Array,
 		supportsGeoUrlProtocol: {
 			type: Boolean,
@@ -35,29 +48,16 @@ module.exports = {
 	},
 	computed: {
 		/**
-		 * @return {Object}
-		 */
-		generator: function () {
-			var cardUrl = this.cardUrl;
-			return {
-				/**
-				 * @param {Card} suggestion
-				 * @return {string}
-				 */
-				generateUrl: function ( suggestion ) {
-					return cardUrl.replace( '$1', suggestion.id );
-				}
-			};
-		},
-		/**
 		 * @return {Array}
 		 */
 		pagesToSuggestions: function () {
-			var supportsGeoUrlProtocol = this.supportsGeoUrlProtocol;
+			const supportsGeoUrlProtocol = this.supportsGeoUrlProtocol;
+			const cardUrl = this.cardUrl;
 			return this.pages.map( function ( page ) {
 				return {
+					url: page.id ? cardUrl.replace( '$1', page.id ) : '',
 					id: page.id,
-					title: page.title,
+					label: page.title,
 					proximity: page.proximity,
 					description: page.description,
 					geoURI: supportsGeoUrlProtocol ? page.geoURI : undefined,
@@ -72,77 +72,40 @@ module.exports = {
 		}
 	},
 	components: {
-		'wvui-typeahead-suggestion': require( 'wvui' ).WvuiTypeaheadSuggestion
+		cdxCard: codex.CdxCard,
+		cdxIcon: codex.CdxIcon
 	}
-};
+} );
 </script>
 
 <style lang="less">
 @import 'variables.less';
 
 .mw-vue-page-list {
-	font-size: 14px;
+	font-size: 16px;
 
-	&__card {
-		position: relative;
+	.cdx-card {
 		width: 100%;
-		height: 100%;
+		margin-bottom: 10px;
 		box-sizing: border-box;
 	}
-
-	.wvui-typeahead-suggestion {
-		min-height: 60px;
-	}
-
-	&__card-proximity {
-		position: absolute;
-		color: @colorGray7;
-		font-size: 10px;
-		min-width: 36px;
-		background: white;
-		bottom: 0;
-		left: 12px;
-		text-align: center;
-	}
 }
 
-@borderRadius: 2px;
-@media all and ( min-width: @width-breakpoint-tablet ) {
-	.mw-vue-page-list {
-		display: flex;
-		flex-flow: row wrap;
-		align-items: center;
+@supports ( display: grid ) {
+	@media all and ( min-width: @width-breakpoint-desktop )  {
+		.mw-vue-page-list {
+			display: grid;
+			grid-template-columns: repeat( 3, 1fr );
+			grid-auto-rows: 1fr;
+			row-gap: 10px;
+			column-gap: 10px;
 
-		&__card-proximity {
-			right: 8px;
-			left: auto;
-			min-width: auto;
-			bottom: -5px;
-			padding: 0 8px;
-		}
-
-		&__card {
-			margin-right: 1%;
-			border: 1px solid rgba(0,0,0,0.2);
-			margin-bottom: 10px;
-			position: relative;
-			border-radius: 2px;
-
-			// Apply radius to top & bottom cards when stacked
-			&:first-child {
-				border-radius: @borderRadius @borderRadius 0 0;
-			}
-
-			&:last-child {
-				border-radius: 0 0 @borderRadius @borderRadius;
+			.cdx-card {
+				width: auto;
+				margin-bottom: 0;
 			}
 		}
 	}
 }
 
-@media all and ( min-width: @width-breakpoint-desktop ) {
-	.mw-vue-page-list__card {
-		width: 30%;
-	}
-}
 </style>

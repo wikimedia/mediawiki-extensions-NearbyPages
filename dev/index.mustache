@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
         <link rel="stylesheet" href="https://en.wikipedia.org/w/load.php?lang=en-gb&modules=mediawiki.ui.button|mediawiki.legacy.shared|skins.vector.styles&only=styles&skin=vector">
         <link rel="stylesheet" href="../resources/ext.nearby.styles/index.less">
-        <link rel="stylesheet" href="~/../node_modules/@wikimedia/wvui/dist/wvui.css">
+        <link rel="stylesheet" href="../node_modules/@wikimedia/codex/dist/codex.style.css">
         <style>
             .mw-vue-nearby__image {
                 background-image: url(../resources/ext.nearby.images/article-illustration.svg)
@@ -13,12 +13,12 @@
         </style>
     </head>
     <body>
+        <noscript id="config" type="text/json">{"NearbyCardUrl":"https://en.wikipedia.org/wiki/$1"}</noscript>
         <script>document.documentElement.className="client-js";</script>
         {{{html-body}}}
-        <script src="./jquery.js"></script>
-        <script src="./windowMw.js"></script>
-        <script>{{{html-config}}}</script>
-        <script src="./oo.js"></script>
-        <script src="../resources/ext.nearby.scripts/index.js"></script>
+        <script type="module" src="./jquery.js"></script>
+        <script type="module" src="./windowMw.js"></script>
+        <script type="module" src="./oo.js"></script>
+        <script type="module" src="../resources/ext.nearby.scripts/index.js"></script>
     </body>
 </html>
