@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"nearby-pages-desc": "Adde un pagina special [[Special:Nearby|A proximitate]]",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "\"{{SITENAME}} a proximitate\" ha alcun problemas.",
+	"nearby-pages-error-guidance": "Proba refrescar tu position.",
+	"nearby-pages-noresults": "Es calme hic... Il non ha paginas con themas vicin.",
+	"nearby-pages-noresults-guidance": "Tenta crear un nove pagina o adder un position geographic a un pagina existente.",
+	"nearby-pages-permission-denied": "Tu ha refusate le accesso al servicios de localisation pro {{SITENAME}}. Pro cambiar isto, per favor modifica le parametros de tu navigator o apparato.",
+	"nearby-pages-location-unavailable": "{{SITENAME}} non pote localisar te. Tenta lo de novo con un melior signal.",
+	"nearby-pages-requirements": "Regrettabilemente, tu navigator del web non supporta \"{{SITENAME}} a proximitate\".",
+	"nearby-pages-requirements-guidance": "Proba un altere navigator o activa JavaScript si tu lo ha disactivate.",
+	"nearby-pages-title": "A proximitate",
+	"nearby-pages-info-heading": "Locos vicin a te"
+}
