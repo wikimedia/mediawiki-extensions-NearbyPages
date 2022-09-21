@@ -41,7 +41,7 @@ function getDistanceMessage( d ) {
  * @return {Card}
  */
 function toCard( obj ) {
-	const terms = obj.entityterms || {},
+	const terms = obj.entityterms || obj.terms || {},
 		coords = obj.coordinates || [ {} ],
 		coordinates = coords[ 0 ],
 		description = terms.description ? terms.description[ 0 ] : obj.description,
@@ -91,7 +91,7 @@ function getPages( reqData, options ) {
 		namespace = options.namespaces || [ 0 ],
 		// T117159
 		language = options.language || 'en',
-		additionalProps = wikidataMode ? [ 'entityterms' ] : [];
+		additionalProps = wikidataMode ? [ 'entityterms' ] : [ 'pageterms' ];
 
 	return mwApi.ajax( $.extend( {
 		wbetterms: wikidataMode ? [ 'label', 'description' ] : undefined,

@@ -66,7 +66,7 @@ describe( 'api.js', () => {
 				origin: '*',
 				formatversion: 2,
 				prop: [
-					'coordinates', 'pageprops', 'pageimages', 'description', 'info'
+					'coordinates', 'pageprops', 'pageimages', 'description', 'info', 'pageterms'
 				].join( '|' ),
 				colimit: 'max',
 				generator: 'geosearch',
