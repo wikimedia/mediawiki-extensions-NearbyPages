@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eleassar"
+			"Eleassar",
+			"Dbc334"
 		]
 	},
+	"nearby-pages-title": "Bližnje",
 	"nearby-pages-info-heading": "Kraji okoli vas",
 	"nearby-pages-info-description": "Preberete si lahko zanimive članke projekta {{SITENAME}} o krajih okoli vas.",
 	"nearby-pages-info-show-button": "Prikaži bližnje članke"
