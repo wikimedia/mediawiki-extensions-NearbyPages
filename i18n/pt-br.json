@@ -18,7 +18,7 @@
 	"nearby-pages-requirements-guidance": "Tente um navegador diferente ou ative o JavaScript se você o tiver desabilitado.",
 	"nearby-pages-title": "Proximidade",
 	"nearby-pages-info-heading": "Lugares nas proximidades",
-	"nearby-pages-info-description": "Pode ler artigos interessantes da {{SITENAME}} sobre lugares à sua volta",
-	"nearby-pages-info-show-random": "Mostrar artigos aleatórios",
-	"nearby-pages-info-show-button": "Mostrar artigos das proximidades"
+	"nearby-pages-info-description": "Pode ler páginas interessantes da {{SITENAME}} sobre lugares à sua volta",
+	"nearby-pages-info-show-random": "Mostrar páginas aleatórias",
+	"nearby-pages-info-show-button": "Mostrar páginas nas proximidades"
 }
