@@ -1,11 +1,25 @@
 {
 	"@metadata": {
 		"authors": [
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Larske",
+			"Sabelöga"
 		]
 	},
+	"nearby-pages-desc": "Lägger till specialsidan [[Special:Nearby|I närheten]]",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "{{SITENAME}} I närheten har problem.",
 	"nearby-pages-error-guidance": "Prova att uppdatera din plats.",
-	"nearby-pages-info-heading": "Platser runtomkring dig"
+	"nearby-pages-noresults": "Här var det ödsligt... Inga sidor med näraliggande ämnen hittades.",
+	"nearby-pages-noresults-guidance": "Försök skapa en ny sida eller lägga till platsinformation till en befintlig sida.",
+	"nearby-pages-permission-denied": "Du har nekat tillgång till platstjänster för {{SITENAME}}. För att ändra på detta, gå till inställningarna för din webbläsare eller dator.",
+	"nearby-pages-location-unavailable": "{{SITENAME}} kan inte avgöra din position. Försök igen med en bättre signal.",
+	"nearby-pages-requirements": "Tyvärr! Din webbläsare stöder inte {{SITENAME}} I närheten.",
+	"nearby-pages-requirements-guidance": "Försök med en annan webbläsare eller aktivera JavaScript om du har inaktiverat det.",
+	"nearby-pages-title": "I närheten",
+	"nearby-pages-info-heading": "Platser runtomkring dig",
+	"nearby-pages-info-description": "Du kan läsa om intressanta {{SITENAME}}-sidor om platser i din närhet",
+	"nearby-pages-info-show-random": "Visa slumpmässigt valda sidor",
+	"nearby-pages-info-show-button": "Visa sidor i närheten"
 }
