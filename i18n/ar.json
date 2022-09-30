@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Maroen1990",
 			"NEHAOUA",
 			"محمد أحمد عبد الفتاح"
 		]
 	},
+	"nearby": "صفحات فيها مواضيع قريبة منك",
 	"nearby-pages-error-guidance": "حاول إنعاش موقعك.",
 	"nearby-pages-info-heading": "أماكن حولك",
 	"nearby-pages-info-show-button": "عرض المقالات القريبة"

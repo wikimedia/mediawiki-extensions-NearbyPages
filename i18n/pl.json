@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Matma Rex",
-			"Rail"
+			"Rail",
+			"The Polish"
 		]
 	},
+	"nearby": "Strony na temat obiektów znajdujących się w pobliżu",
 	"nearby-pages-desc": "Dodaje stronę [[Special:Nearby|Specjalna:Nearby]]",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",

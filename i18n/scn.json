@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ajeje Brazorf"
+			"Ajeje Brazorf",
+			"Sarvaturi"
 		]
 	},
+	"nearby": "Pàggini supra argumenti ntê tò vicinanzi",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
 	"nearby-pages-info-show-random": "Ammustra pàggini ammuzzu"

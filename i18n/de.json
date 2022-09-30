@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Brettchenweber"
+			"Brettchenweber",
+			"Metalhead64"
 		]
 	},
+	"nearby": "Seiten zu Themen in deiner Nähe",
 	"nearby-pages-desc": "Erweitert das Wiki um eine [[Special:Nearby|Spezialseite]] zur Anzeige von Seiten in örtlicher Nähe",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",

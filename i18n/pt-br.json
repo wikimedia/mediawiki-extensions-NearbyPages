@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Eduardo Addad de Oliveira",
-			"Eduardoaddad"
+			"Eduardoaddad",
+			"Felipe L. Ewald"
 		]
 	},
+	"nearby": "Páginas e tópicos próximas a você",
 	"nearby-pages-desc": "Adicionar a página especial de [[Special:Nearby|proximidade]]",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",

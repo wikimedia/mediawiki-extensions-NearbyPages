@@ -5,6 +5,7 @@
 			"Ykhwong"
 		]
 	},
+	"nearby": "근처 주제의 문서",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
 	"nearby-pages-title": "근처",

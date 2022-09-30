@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"RYOUMA1117"
+			"RYOUMA1117",
+			"Sujiniku"
 		]
 	},
+	"nearby": "トピック上にある、あなた付近のページ",
 	"nearby-pages-info-show-random": "おまかせ表示"
 }

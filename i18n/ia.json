@@ -4,6 +4,7 @@
 			"McDutchie"
 		]
 	},
+	"nearby": "Paginas con themas vicin a te",
 	"nearby-pages-desc": "Adde un pagina special [[Special:Nearby|A proximitate]]",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",

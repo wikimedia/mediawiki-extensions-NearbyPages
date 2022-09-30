@@ -5,6 +5,7 @@
 			"Weblars"
 		]
 	},
+	"nearby": "Sider om emner i nærheden af dig",
 	"nearby-pages-title": "I nærheden",
 	"nearby-pages-info-heading": "Steder omkring dig",
 	"nearby-pages-info-description": "Du kan læse interessante {{SITENAME}}-artikler om steder nær dig",

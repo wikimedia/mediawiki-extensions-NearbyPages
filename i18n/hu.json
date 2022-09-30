@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Csega"
+			"Csega",
+			"Tacsipacsi"
 		]
 	},
+	"nearby": "A közeledben található témájú lapok",
 	"nearby-pages-error-guidance": "Próbáld meg frissíteni a helyzetedet.",
 	"nearby-pages-title": "A közelben",
 	"nearby-pages-info-heading": "A közeledben lévő helyek"

@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Cedric31",
 			"Quentí"
 		]
 	},
+	"nearby": "Paginas sus de subjèctes prèp d'en çò vòstre",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
 	"nearby-pages-noresults-guidance": "Ensajatz de crear una pagina novèla o d’ajustar un emplaçament a una pagina existenta",

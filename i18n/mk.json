@@ -4,6 +4,7 @@
 			"Bjankuloski06"
 		]
 	},
+	"nearby": "Страници на теми во ваша близина",
 	"nearby-pages-desc": "Додава службена страница „[[Special:Nearby|Во близина]]“",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 км}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 м}}",

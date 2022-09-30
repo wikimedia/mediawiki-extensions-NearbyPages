@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"FarsiNevis",
-			"Jeeputer"
+			"Jeeputer",
+			"Reza1615"
 		]
 	},
+	"nearby": "صفحه‌های مرتبط نزدیک شما",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 کیلومتر}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 متر}}",
 	"nearby-pages-title": "در نزدیکی",

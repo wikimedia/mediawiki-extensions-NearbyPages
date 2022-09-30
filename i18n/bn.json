@@ -4,6 +4,7 @@
 			"আফতাবুজ্জামান"
 		]
 	},
+	"nearby": "আপনার কাছাকাছি প্রসঙ্গের উপর পাতাসমূহ",
 	"nearby-pages-desc": "বিশেষ পাতা [[Special:Nearby|কাছাকাছি]] যোগ করে",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 কিমি}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 মি}}",

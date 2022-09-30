@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Beta16"
+			"Beta16",
+			"Giromin Cangiaxo"
 		]
 	},
+	"nearby": "Pagine su argomenti nelle tue vicinanze",
 	"nearby-pages-desc": "Aggiunge la pagina speciale [[Special:Nearby|Nelle vicinanze]]",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",

@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"Siebrand"
 		]
 	},
+	"nearby": "Pagina's over onderwerpen bij u in de buurt",
 	"nearby-pages-desc": "Voegt de [[Special:Nearby|In de buurt]] speciale pagina toe",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",

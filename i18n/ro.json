@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Minisarm",
 			"NGC 54"
 		]
 	},
+	"nearby": "Pagini cu subiecte din apropierea dumneavoastră",
 	"nearby-pages-desc": "Adaugă pagina specială [[Special:Nearby|Aproape]]",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",

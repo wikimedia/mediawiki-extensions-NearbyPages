@@ -6,6 +6,7 @@
 			"Pacha Tchernof"
 		]
 	},
+	"nearby": "Страницы на темы об объектах поблизости",
 	"nearby-pages-error": "{{SITENAME}} Поблизости возникают проблемы.",
 	"nearby-pages-location-unavailable": "{{SITENAME}} не возможно определить ваше местоположение. Пожалуйста, попробуйте еще раз с лучшим сигналом.",
 	"nearby-pages-info-show-random": "Показать случайные страницы",

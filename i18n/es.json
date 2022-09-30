@@ -4,9 +4,11 @@
 			"DiegoAmbrocio",
 			"Fewasser Traduce",
 			"Fitoschido",
-			"Geryescalier"
+			"Geryescalier",
+			"Vivaelcelta"
 		]
 	},
+	"nearby": "Páginas sobre temas cercanos a ti",
 	"nearby-pages-desc": "Añade la página especial [[Special:Nearby|Cercanos]]",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",

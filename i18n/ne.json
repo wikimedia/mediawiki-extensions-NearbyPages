@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"पर्वत सुबेदी"
+			"पर्वत सुबेदी",
+			"बडा काजी"
 		]
 	},
+	"nearby": "तपाईंको नजिकका विषयहरूमा पृष्ठहरू",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 कि.मी.}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 मी.}}",
 	"nearby-pages-title": "नजिकैको",

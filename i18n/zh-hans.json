@@ -2,8 +2,10 @@
 	"@metadata": {
 		"authors": [
 			")8",
+			"Liuxinyu970226",
 			"SomeyaMako"
 		]
 	},
+	"nearby": "您附近的切题页面",
 	"nearby-pages-info-show-random": "显示随机页面"
 }

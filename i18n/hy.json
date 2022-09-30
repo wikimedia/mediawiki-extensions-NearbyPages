@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"23artashes",
 			"Kareyac"
 		]
 	},
+	"nearby": "Էջեր մոտակա օբյեկտների մասին",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 կմ}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 մ}}",
 	"nearby-pages-title": "Մոտակայքում",

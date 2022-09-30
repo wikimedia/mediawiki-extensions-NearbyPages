@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Shirayuki"
+		]
 	},
 	"nearby": "{{doc-special|Nearby}}",
 	"nearby-pages-desc": "{{desc|name=NearbyPages|url=https://www.mediawiki.org/wiki/Extension:NearbyPages}}",

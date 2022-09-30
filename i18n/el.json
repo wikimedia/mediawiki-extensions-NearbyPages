@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Geraki"
+			"Geraki",
+			"Glavkos"
 		]
 	},
+	"nearby": "Σελίδες σε θέματα που είναι κοντά σας",
 	"nearby-pages-desc": "Προσθέτει την ειδική σελίδα [[Special:Nearby|Nearby]]",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",

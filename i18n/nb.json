@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Danmichaelo",
 			"Jon Harald Søby"
 		]
 	},
+	"nearby": "Sider om temaer nær deg",
 	"nearby-pages-desc": "Legger til spesialsiden «[[Special:Nearby|I nærheten]]»",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",

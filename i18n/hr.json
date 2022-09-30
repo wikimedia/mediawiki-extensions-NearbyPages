@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bugoslav",
 			"Neptune, the Mystic"
 		]
 	},
+	"nearby": "Stranice o temama u Vašoj blizini",
 	"nearby-pages-desc": "Dodaje posebnu stranicu „[[Special:Nearby|U blizini]]”",
 	"nearby-pages-noresults": "Tiho je ovdje... Nisu pronađene stranice s temama u blizini.",
 	"nearby-pages-requirements": "Žao nam je! Vaš internetski preglednik ne podržava uslugu „U blizini” projekta {{SITENAME}}.",

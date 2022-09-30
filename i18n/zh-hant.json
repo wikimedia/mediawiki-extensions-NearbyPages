@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Cwlin0416",
 			"Kly",
 			"列维劳德"
 		]
 	},
+	"nearby": "您附近主題的頁面",
 	"nearby-pages-desc": "添加 [[Special:Nearby|Nearby]] 特殊頁面",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 公里}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 公尺}}",

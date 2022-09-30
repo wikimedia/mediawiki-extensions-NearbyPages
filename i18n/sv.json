@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ainali",
 			"Larske",
 			"Sabelöga",
 			"WikiPhoenix"
 		]
 	},
+	"nearby": "Sidor om ämnen nära dig",
 	"nearby-pages-desc": "Lägger till specialsidan [[Special:Nearby|I närheten]]",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",

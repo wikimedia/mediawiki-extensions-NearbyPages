@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Jack Phoenix",
 			"MITO",
 			"Moj",
 			"Rönttönen"
 		]
 	},
+	"nearby": "Sivut aiheista lähellä sinua",
 	"nearby-pages-desc": "Lisää toimintosivun [[Special:Nearby|Nearby]]",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-permission-denied": "Olet estänyt sivuston {{SITENAME}} pääsyn sijaintitietoihisi. Voit korjata asian selaimesi tai laitteesi asetuksista",

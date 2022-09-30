@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"Joseph",
 			"SaldırganSincap",
 			"ToprakM"
 		]
 	},
+	"nearby": "Yakınınızdaki başlıklardan sayfalar",
 	"nearby-pages-desc": "[[Special:Nearby|Yakın]] özel sayfası ekler",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
