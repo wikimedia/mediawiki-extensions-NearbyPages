@@ -6,6 +6,8 @@
 		]
 	},
 	"nearby-pages-desc": "Doda posebno stran [[Special:Nearby|Bližnje]]",
+	"nearby-pages-requirements": "Oprostite! Vaš spletni brskalnik ne podpira možnosti {{SITENAME}} Bližnje.",
+	"nearby-pages-requirements-guidance": "Poskusite z drugim brskalnikom ali omogočite JavaScript, če ste ga onemogočili.",
 	"nearby-pages-title": "Bližnje",
 	"nearby-pages-info-heading": "Kraji okoli vas",
 	"nearby-pages-info-description": "Preberete si lahko zanimive strani projekta {{SITENAME}} o krajih okoli vas.",
