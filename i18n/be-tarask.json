@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Red Winged Duck",
+			"Renessaince"
+		]
+	},
+	"nearby-pages-desc": "дадае спэцыяльную старонку [[Special:Nearby|Побач]]",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 км}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 м}}",
+	"nearby-pages-error": "{{SITENAME}} Побач спазнаў праблемы.",
+	"nearby-pages-error-guidance": "Паспрабуйце абнавіць вашае месцазнаходжаньне.",
+	"nearby-pages-noresults": "Нешта ціха… Мы не знайшлі старонкі на тэмы побач з вамі.",
+	"nearby-pages-noresults-guidance": "Паспрабуйце стварыць новую старонку або дадаць каардынаты да існай",
+	"nearby-pages-title": "Побач"
+}
