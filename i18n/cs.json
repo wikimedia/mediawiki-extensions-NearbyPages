@@ -4,5 +4,19 @@
 			"Mormegil"
 		]
 	},
-	"nearby": "Stránky o tématech blízko vás"
+	"nearby": "Stránky o tématech blízko vás",
+	"nearby-pages-desc": "Přidává speciální stránku [[Special:Nearby|Poblíž]]",
+	"nearby-pages-error": "Funkce Poblíž {{grammar:2sg|{{SITENAME}}}} má nějaké potíže.",
+	"nearby-pages-error-guidance": "Zkuste aktualizovat svou polohu.",
+	"nearby-pages-noresults": "Je tu trochu ticho… Nebyly nalezeny žádné stránky na témata v okolí.",
+	"nearby-pages-noresults-guidance": "Zkuste vytvořit novou stránku nebo přidat souřadnice k již existující stránce",
+	"nearby-pages-permission-denied": "{{GENDER:|Neumožnil|Neumožnila|Neumožnili}} jste {{GRAMMAR:3sg|{{SITENAME}}}} přístup ke službám určování polohy. Pokud to chcete změnit, navštivte prosím nastavení svého prohlížeče nebo zařízení",
+	"nearby-pages-location-unavailable": "{{SITENAME}} nemůže určit vaši polohu. Zkuste to prosím znovu s lepším signálem.",
+	"nearby-pages-requirements": "Je nám líto! Váš prohlížeč nepodporuje funkcionalitu Poblíž {{grammar:2sg|{{SITENAME}}}}.",
+	"nearby-pages-requirements-guidance": "Zkuste jiný prohlížeč nebo si zapněte JavaScript, pokud ho máte vypnutý.",
+	"nearby-pages-title": "Poblíž",
+	"nearby-pages-info-heading": "Místa kolem vás",
+	"nearby-pages-info-description": "Můžete si přečíst o zajímavých stránkách na {{GRAMMAR:6sg|{{SITENAME}}}} o místech kolem vás",
+	"nearby-pages-info-show-random": "Zobrazit náhodné stránky",
+	"nearby-pages-info-show-button": "Zobrazit stránky v okolí"
 }
