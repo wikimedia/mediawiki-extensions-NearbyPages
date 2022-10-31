@@ -1,8 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"SomeyaMako"
+			"SomeyaMako",
+			")8",
+			"Liuxinyu970226",
+			"Stang"
 		]
 	},
+	"nearby-pages-permission-denied": "您拒绝了{{SITENAME}}访问位置服务。如需更改这一设置，请查看您的浏览器或设备的设置",
+	"nearby-pages-title": "附近",
+	"nearby-pages-info-heading": "您附近的地点",
 	"nearby-pages-info-show-random": "显示随机条目"
 }
