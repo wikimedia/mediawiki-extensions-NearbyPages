@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"nearby-pages-desc": "הוספת הדף המיוחד [[Special:Nearby|Nearby]]",
+	"nearby-pages-distance": "{{PLURAL:$1|קילומטר אחד|$1 קילומטרים}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|מטר אחד|$1 מטרים}}",
+	"nearby-pages-error": "לפעולת \"בסביבה\" של אתר {{SITENAME}} יש בעיות בהפעלה.",
+	"nearby-pages-error-guidance": "נא לנסות לרענן את מיקומך.",
+	"nearby-pages-noresults": "שקט פה... לא מצאנו שום דף על נושא שנמצא בסביבה.",
+	"nearby-pages-noresults-guidance": "נא לנסות ליצור דף חדש או להוסיף נתוני מיקום לדף קיים",
+	"nearby-pages-permission-denied": "לא הענקת לאתר {{SITENAME}} גישה לשירותי המיקום שלך. כדי להעניק גישה, באפשרותך לבקר בהגדרות של הדפדפן או של המכשיר שלך",
+	"nearby-pages-location-unavailable": "אתר {{SITENAME}} לא מצליח לזהות את המיקום שלך. נא לנסות שוב עם קליטה טובה יותר.",
+	"nearby-pages-requirements": "סילחה! הדפדפן שלך אינו תומך בפעולה \"בסביבה\" של אתר {{SITENAME}}.",
+	"nearby-pages-requirements-guidance": "נא לנסות להשתמש בדפדפן אחר או להפעיל תמיכה ב־JavaScript אם כיבית אותה.",
+	"nearby-pages-title": "בסביבה",
+	"nearby-pages-info-heading": "מקומות בסביבתך"
+}
