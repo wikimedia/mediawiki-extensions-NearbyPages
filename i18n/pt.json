@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"nearby-pages-desc": "Adiciona a página especial [[Special:Nearby|Nas redondezas]]",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "O sistema de localização da wiki {{SITENAME}} está a ter algumas dificuldades.",
+	"nearby-pages-error-guidance": "Tente atualizar a sua localização.",
+	"nearby-pages-noresults": "Tudo calmo por aqui... Não existem páginas sobre temas que fiquem nas redondezas.",
+	"nearby-pages-noresults-guidance": "Tente criar uma página nova ou adicionar a localização a uma já existente",
+	"nearby-pages-permission-denied": "Recusou à wiki {{SITENAME}} acesso aos serviços de localização. Para alterar a recusa visite a configuração do seu ''browser'' ou do seu dispositivo.",
+	"nearby-pages-location-unavailable": "A wiki {{SITENAME}} não consegue determinar a sua localização. Tente novamente quando tiver melhor sinal, por favor.",
+	"nearby-pages-requirements": "Desculpe! O seu ''browser'' não suporta a funcionalidade \"Nas redondezas\" da wiki {{SITENAME}}.",
+	"nearby-pages-requirements-guidance": "Tente outro ''browser'' ou reative o JavaScript se o desativou.",
+	"nearby-pages-title": "Nas redondezas",
+	"nearby-pages-info-heading": "Lugares à sua volta",
+	"nearby-pages-info-show-random": "Mostrar páginas à sorte",
+	"nearby-pages-info-show-button": "Mostrar páginas de locais próximos"
+}
