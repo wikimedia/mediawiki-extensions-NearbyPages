@@ -19,7 +19,7 @@
 	"nearby-pages-requirements-guidance": "Prøv en annen nettleser eller skru på JavaScript hvis du har skrudd det av.",
 	"nearby-pages-title": "I nærheten",
 	"nearby-pages-info-heading": "Steder i nærheten",
-	"nearby-pages-info-description": "Du kan lese interessante {{SITENAME}}-artikler om steder i nærheten.",
-	"nearby-pages-info-show-random": "Vis tilfeldige artikler",
-	"nearby-pages-info-show-button": "Vis artikler i nærheten"
+	"nearby-pages-info-description": "Du kan lese interessante {{SITENAME}}-sider om steder i nærheten.",
+	"nearby-pages-info-show-random": "Vis tilfeldige sider",
+	"nearby-pages-info-show-button": "Vis sider i nærheten"
 }
