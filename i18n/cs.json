@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Matěj Suchánek",
 			"Mormegil"
 		]
 	},
@@ -16,7 +17,7 @@
 	"nearby-pages-requirements-guidance": "Zkuste jiný prohlížeč nebo si zapněte JavaScript, pokud ho máte vypnutý.",
 	"nearby-pages-title": "Poblíž",
 	"nearby-pages-info-heading": "Místa kolem vás",
-	"nearby-pages-info-description": "Můžete si přečíst o zajímavých stránkách na {{GRAMMAR:6sg|{{SITENAME}}}} o místech kolem vás",
+	"nearby-pages-info-description": "Můžete si přečíst zajímavé stránky na {{GRAMMAR:6sg|{{SITENAME}}}} o místech kolem vás",
 	"nearby-pages-info-show-random": "Zobrazit náhodné stránky",
 	"nearby-pages-info-show-button": "Zobrazit stránky v okolí"
 }
