@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jon Harald Søby"
+			"Jon Harald Søby",
+			"Danmichaelo"
 		]
 	},
 	"nearby-pages-desc": "Legger til spesialsiden «[[Special:Nearby|I nærheten]]»",
@@ -18,6 +19,6 @@
 	"nearby-pages-title": "I nærheten",
 	"nearby-pages-info-heading": "Steder i nærheten",
 	"nearby-pages-info-description": "Du kan lese interessante {{SITENAME}}-artikler om steder i nærheten.",
-	"nearby-pages-info-show-random": "Vis tilfeldige artikler",
-	"nearby-pages-info-show-button": "Vis artikler i nærheten"
+	"nearby-pages-info-show-random": "Vis tilfeldige sider",
+	"nearby-pages-info-show-button": "Vis sider i nærheten"
 }
