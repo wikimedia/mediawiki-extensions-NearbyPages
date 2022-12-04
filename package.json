@@ -1,4 +1,5 @@
 {
+	"name": "NearbyPages",
 	"private": true,
 	"scripts": {
 		"precommit": "npm -s run test",
