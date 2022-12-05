@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Balyozxane"
+		]
+	},
+	"nearby": "Rûpelên li ser mijarên li derdora te",
+	"nearby-pages-desc": "Rûpela taybet a [[Special:Nearby|Derdora min]] lê zêde dike",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "Pisgirêkek bi {{SITENAME}} Derdora min derket.",
+	"nearby-pages-error-guidance": "Lokasyona xwe ji nû ve bar bikin.",
+	"nearby-pages-noresults": "Li vir bêdeng e... Ti rûpela ku bi mijarên nêzîk nehat dîtin.",
+	"nearby-pages-noresults-guidance": "Rûpeleke nû çêke yan jî li yekî heyî lokasyonê lê zêde bike",
+	"nearby-pages-permission-denied": "Te gihiştina Xîzmetên Lokasyonê ji bo {{SITENAME}} red kir. Ji bo guhartinê ji kerema xwe re li eyarên xwe yên gerokê yan amûra xwe binêre",
+	"nearby-pages-location-unavailable": "{{SITENAME}} nikare cihê te diyar bike. Ji kerema xwe dîsa bi sînyaleke baştir biceribîne.",
+	"nearby-pages-requirements": "Bibore! Geroka te ya webê piştgiriya {{SITENAME}} Derdora min nake.",
+	"nearby-pages-requirements-guidance": "Bi gerokeke din biceribîne yan jî ger te neçalak kiribe, JavaScriptê çalak bike.",
+	"nearby-pages-title": "Derdora min",
+	"nearby-pages-info-heading": "Cihên li derdora te",
+	"nearby-pages-info-description": "Tu dikarî rûpelên {{SITENAME}} yên balkêş di derbarê cihên derdora xwe de bixwînî",
+	"nearby-pages-info-show-random": "Rûpelên ketober binêre",
+	"nearby-pages-info-show-button": "Rûpelên li derdora xwe bibîne"
+}
