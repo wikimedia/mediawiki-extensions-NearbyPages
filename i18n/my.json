@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Dr Lotus Black",
 			"Ninjastrikers"
 		]
 	},
-	"nearby": "ခေါင်းစဉ်အရ အနီးဆုံး စာမျက်နှာများ"
+	"nearby": "ခေါင်းစဉ်အရ အနီးဆုံး စာမျက်နှာများ",
+	"nearby-pages-title": "အနီးအနား",
+	"nearby-pages-info-show-random": "ကျပန်းစာမျက်နှာများကိုပြသပါ",
+	"nearby-pages-info-show-button": "အနီးနားရှိ စာမျက်နှာများကို ပြသပါ"
 }
