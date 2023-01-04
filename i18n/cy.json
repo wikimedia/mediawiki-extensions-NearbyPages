@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Afalau"
+		]
+	},
+	"nearby-pages-desc": "Yn ychwanegu tudalen arbennig [[Special:Nearby|Gerllaw]]",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error-guidance": "Ceisiwch adnewyddu eich lleoliad.",
+	"nearby-pages-title": "Gerllaw",
+	"nearby-pages-info-heading": "Llefydd o'ch cwmpas",
+	"nearby-pages-info-show-random": "Dangos tudalennau ar hap",
+	"nearby-pages-info-show-button": "Dangos tudalennau gerllaw"
+}
