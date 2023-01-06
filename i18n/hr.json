@@ -2,14 +2,25 @@
 	"@metadata": {
 		"authors": [
 			"Bugoslav",
+			"MaGa",
 			"Neptune, the Mystic"
 		]
 	},
 	"nearby": "Stranice o temama u Vašoj blizini",
 	"nearby-pages-desc": "Dodaje posebnu stranicu „[[Special:Nearby|U blizini]]”",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "\"U blizini\" na projektu {{SITENAME}} ima poteškoća.",
+	"nearby-pages-error-guidance": "Probajte osvježiti svoju lokaciju.",
 	"nearby-pages-noresults": "Tiho je ovdje... Nisu pronađene stranice s temama u blizini.",
+	"nearby-pages-noresults-guidance": "Probajte stvoriti novu stranicu ili dodati lokaciju postojećoj",
+	"nearby-pages-permission-denied": "Zabranili ste pristup uslugama lokacije za projekt {{SITENAME}}. Da biste to promijenili, posjetite postavke preglednika ili uređaja",
+	"nearby-pages-location-unavailable": "{{SITENAME}} ne može odrediti vašu lokaciju. Pokušajte opet s boljim signalom.",
 	"nearby-pages-requirements": "Žao nam je! Vaš internetski preglednik ne podržava uslugu „U blizini” projekta {{SITENAME}}.",
+	"nearby-pages-requirements-guidance": "Probajte s drugim preglednikom ili omogućite JavaScript, ako ste ga onemogućili.",
 	"nearby-pages-title": "U blizini",
 	"nearby-pages-info-heading": "Mjesta oko Vas",
-	"nearby-pages-info-description": "Možete čitati zanimljive članke projekta {{SITENAME}} o mjestima u Vašoj blizini"
+	"nearby-pages-info-description": "Možete čitati zanimljive stranice projekta {{SITENAME}} o mjestima u Vašoj blizini",
+	"nearby-pages-info-show-random": "Prikaži slučajne stranice",
+	"nearby-pages-info-show-button": "Prikaži stranice u blizini"
 }
