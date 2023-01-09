@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"nearby": "Stranice o temama u Vašoj blizini",
+	"nearby-pages-desc": "Dodaje posebnu stranicu „[[Special:Nearby|U blizini]]”",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "\"U blizini\" na projektu {{SITENAME}} ima poteškoća."
+}
