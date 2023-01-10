@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Mechanizatar",
-			"Tomato Cream"
+			"Tomato Cream",
+			"Maksim L."
 		]
 	},
 	"nearby-pages-desc": "Дадае адмысловую старонку [[Special:Nearby|Паблізу]]",
@@ -12,7 +13,7 @@
 	"nearby-pages-error-guidance": "Паспрабуйце абнавіць сваё месцазнаходжанне.",
 	"nearby-pages-noresults": "Тут ціха... Не было знойдзена старонак з тэмамі паблізу.",
 	"nearby-pages-noresults-guidance": "Паспрабуйце стварыць новую старонку або дадаць каардынаты да існай",
-	"nearby-pages-permission-denied": "Вы забаранілі доступ да службаў вызначэння месцазнаходжання для пляцоўцы {{SITENAME}}. Каб змяніць гэта, перайдзіце ў налады браўзера або прылады",
+	"nearby-pages-permission-denied": "Вы забаранілі доступ да службаў вызначэння месцазнаходжання для пляцоўкі {{SITENAME}}. Каб змяніць гэта, перайдзіце ў налады браўзера або прылады",
 	"nearby-pages-location-unavailable": "{{SITENAME}} не можа вызначыць ваша месцазнаходжанне. Паўтарыце спробу з лепшым сігналам.",
 	"nearby-pages-requirements": "Выбачайце! Ваш вэб-браўзер не падтрымлівае «Паблізу» на пляцоўцы {{SITENAME}}.",
 	"nearby-pages-requirements-guidance": "Паспрабуйце іншы браўзер або ўключыце JavaScript, калі вы яго адключылі.",
