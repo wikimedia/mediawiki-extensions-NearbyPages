@@ -55,7 +55,7 @@ const api = require( './api.js' ),
  */
 function showPagesNearPageHandler( vm ) {
 	return function ( title ) {
-		vm.loadPagesNearTitle( title );
+		vm.loadPagesNearTitle( decodeURIComponent( title ) );
 	};
 }
 
