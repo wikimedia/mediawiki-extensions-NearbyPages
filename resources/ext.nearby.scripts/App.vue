@@ -23,7 +23,9 @@
 		</pagelist>
 
 		<div :class="footerClass">
-			<cdx-button action="progressive" v-on:click="showNearbyArticles">
+			<cdx-button action="progressive"
+				:disabled="isShowNearbyButtonDisabled"
+				v-on:click="showNearbyArticles">
 				{{ msg( 'nearby-pages-info-show-button' ) }}
 			</cdx-button>
 
@@ -122,7 +124,8 @@ module.exports = exports = Vue.defineComponent( {
 		return {
 			includeRandomButton: mw.config.get( 'wgNearbyRandomButton' ),
 			pages: [],
-			error: false
+			error: false,
+			isShowNearbyButtonDisabled: false
 		};
 	},
 
@@ -158,6 +161,9 @@ module.exports = exports = Vue.defineComponent( {
 		showError: function ( msg ) {
 			this.error = mw.msg( msg );
 			this.pages = [];
+		},
+		disableShowNearbyButton: function () {
+			this.isShowNearbyButtonDisabled = true;
 		},
 		/**
 		 * @param {string} title
@@ -217,8 +223,10 @@ module.exports = exports = Vue.defineComponent( {
 				switch ( msg ) {
 					case locationProvider.ERROR_SERVICE_UNAVAILABLE:
 						return vm.showError( 'nearby-pages-location-unavailable' );
-					case locationProvider.ERROR_PERMISSION_DENIED:
+					case locationProvider.ERROR_PERMISSION_DENIED: {
+						vm.disableShowNearbyButton();
 						return vm.showError( 'nearby-pages-permission-denied' );
+					}
 					case locationProvider.ERROR_POSITION_UNAVAILABLE:
 					case locationProvider.ERROR_TIMEOUT:
 						return vm.showError( 'nearby-pages-location-unavailable' );
