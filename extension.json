@@ -9,7 +9,7 @@
 		"NearbyPages\\": "includes/"
 	},
 	"requires": {
-		"MediaWiki": ">= 1.39.0"
+		"MediaWiki": ">= 1.40.0"
 	},
 	"MessagesDirs": {
 		"NearbyPages": [
@@ -47,7 +47,6 @@
 	},
 	"ResourceModules": {
 		"ext.nearby.styles": {
-			"targets": [ "mobile", "desktop" ],
 			"styles": "resources/ext.nearby.styles/index.less"
 		},
 		"ext.nearby.scripts": {
@@ -59,7 +58,6 @@
 				"mediawiki.ui.button",
 				"mediawiki.api"
 			],
-			"targets": [ "mobile", "desktop" ],
 			"messages": [
 				"nearby-pages-info-heading",
 				"nearby-pages-info-description",
