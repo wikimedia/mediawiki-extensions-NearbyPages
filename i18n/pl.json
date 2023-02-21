@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Matma Rex",
-			"Rail"
+			"Rail",
+			"Peter Bowman",
+			"The Polish"
 		]
 	},
 	"nearby-pages-desc": "Dodaje stronę [[Special:Nearby|Specjalna:Nearby]]",
@@ -17,7 +19,7 @@
 	"nearby-pages-requirements": "Przepraszamy! Twoja przeglądarka nie obsługuje „{{SITENAME}} – w pobliżu”.",
 	"nearby-pages-requirements-guidance": "Spróbuj innej przeglądarki lub włącz obsługę JavaScript, jeżeli masz teraz wyłączoną.",
 	"nearby-pages-title": "W pobliżu",
-	"nearby-pages-info-heading": "Miejsca w twojej okolicy",
+	"nearby-pages-info-heading": "Miejsca w Twojej okolicy",
 	"nearby-pages-info-description": "Możesz przeczytać interesujące strony {{GRAMMAR:D.lp|{{SITENAME}}}} na temat miejsc w twojej okolicy",
 	"nearby-pages-info-show-random": "Pokaż losowe strony",
 	"nearby-pages-info-show-button": "Pokaż strony w pobliżu"
