@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Simbu123"
+		]
+	},
+	"nearby-pages-desc": "[[Special:Nearby|দাঁতিকাষৰীয়া]] বিশেষ পৃষ্ঠা যোগ কৰে",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 কিমি}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 মি}}",
+	"nearby-pages-error": "{{SITENAME}} দাঁতিকাষৰীয়া তথ্য লাভ কৰাত কিছুমান সমস্যা হৈছে।",
+	"nearby-pages-error-guidance": "আপোনাৰ অৱস্থান পুনঃসতেজ কৰি চাওক।",
+	"nearby-pages-noresults": "ইয়াত একেবাৰে নিজান-জান... দাঁতিকাষৰীয়া বিষয়বস্তুৰ ওপৰত কোনো পৃষ্ঠা পোৱা নগ'ল।",
+	"nearby-pages-noresults-guidance": "এটা নতুন পৃষ্ঠা সৃষ্টি কৰিবলৈ বা এটা বিদ্যমান পৃষ্ঠাত অৱস্থান যোগ কৰিবলৈ চেষ্টা কৰক",
+	"nearby-pages-permission-denied": "আপুনি {{SITENAME}}ৰ বাবে অৱস্থান পৰিসেৱাসমূহৰ প্ৰৱেশাধিকাৰ অস্বীকাৰ কৰিছে। এয়া সলনি কৰিবলৈ অনুগ্ৰহ কৰি আপোনাৰ ব্ৰাউজাৰ বা ডিভাইচৰ ছেটিংছ চাওক।",
+	"nearby-pages-location-unavailable": "{{SITENAME}}ই আপোনাৰ অৱস্থান নিৰ্ধাৰণ কৰিব পৰা নাই। অনুগ্ৰহ কৰি এক সবল চিগনেলৰ সৈতে পুনৰ চেষ্টা কৰক।",
+	"nearby-pages-requirements": "দুঃখিত! আপোনাৰ ৱেব ব্ৰাউজাৰে {{SITENAME}} দাঁতিকাষৰীয়া সমৰ্থন নকৰে।",
+	"nearby-pages-requirements-guidance": "আন এটা ব্ৰাউজাৰত চেষ্টা কৰক নাইবা আপুনি যদি জাভাস্ক্রিপ্ট নিষ্ক্ৰিয় কৰিছে, তাক সামৰ্থবান কৰক।",
+	"nearby-pages-title": "দাঁতিকাষৰীয়া",
+	"nearby-pages-info-heading": "আপোনাৰ দাঁতিকাষৰীয়া ঠাইবোৰ",
+	"nearby-pages-info-show-random": "যিকোনো পৃষ্ঠা দেখুৱাওক",
+	"nearby-pages-info-show-button": "দাঁতিকাষৰীয়া পৃষ্ঠাবোৰ দেখুৱাওক"
+}
