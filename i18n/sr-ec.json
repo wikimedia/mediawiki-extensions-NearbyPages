@@ -1,8 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"BadDog"
+			"BadDog",
+			"Milicevic01"
 		]
 	},
-	"nearby": "Странице о темама близу вас"
+	"nearby": "Странице о темама близу вас",
+	"nearby-pages-title": "У близини",
+	"nearby-pages-info-heading": "Места око вас",
+	"nearby-pages-info-show-random": "Прикажи случајне странице",
+	"nearby-pages-info-show-button": "Прикажи странице у близини"
 }
