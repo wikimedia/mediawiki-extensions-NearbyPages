@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chaduvari"
+		]
+	},
+	"nearby-pages-desc": "[[Special:Nearby|చుట్టుపక్కల]] అనే ప్రత్యేక పేజీని చేరుస్తుంది",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 కి.మీ.}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 మీ}}",
+	"nearby-pages-error": "{{SITENAME}} చుట్టుపక్కల కు ఇబ్బందులు ఏర్పడ్డాయి.",
+	"nearby-pages-error-guidance": "మీ స్థానాన్ని రిఫ్రెష్ చేయడానికి ప్రయత్నించండి.",
+	"nearby-pages-noresults": "అంతా నిశ్శబ్దంగా ఉంది... చుట్టుపక్కల అంశాలతో పేజీలేమీ కనబడలేదు.",
+	"nearby-pages-noresults-guidance": "కొత్త పేజీని సృష్టించడానికో లేదా ఇప్పటికే ఉన్న దానికి స్థానాన్ని జోడించడానికో ప్రయత్నించండి",
+	"nearby-pages-permission-denied": "స్థానానికి సంబంధించిన సేవలు {{SITENAME}} కు అందకుండా నిరాకరించారు. దీన్ని మార్చడానికి మీ బ్రౌజరు లేదా మీ పరికరం లోని సెట్టింగులను సందర్శించండి",
+	"nearby-pages-location-unavailable": "{{SITENAME}} మీరున్న స్థానాన్ని నిశ్చయించుకోలేకపోతోంది. మెరుగైన సిగ్నలుతో మళ్ళీ ప్రయత్నించండి.",
+	"nearby-pages-requirements": "సారీ! మీ వెబ్ బ్రౌజరు {{SITENAME}} చుట్టుపక్కల అంశానికి అనుకూలంగా లేదు.",
+	"nearby-pages-requirements-guidance": "వేరే బ్రౌజర్‌ని ప్రయత్నించండి లేదా మీరు జావాస్క్రిప్టును అచేతనం చేసి ఉంటే దాన్ని చేతనం చేయండి.",
+	"nearby-pages-title": "చుట్టుపక్కల",
+	"nearby-pages-info-heading": "మీ చుట్టుపక్కల ఉన్న ప్రదేశాలు",
+	"nearby-pages-info-show-random": "యాదృచ్ఛిక పేజీలను చూపించు",
+	"nearby-pages-info-show-button": "చుట్టుపక్కల పేజీలను చూపించు"
+}
