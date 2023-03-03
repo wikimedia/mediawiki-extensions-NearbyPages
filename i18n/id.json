@@ -9,6 +9,9 @@
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
 	"nearby-pages-noresults": "Sepi sekali... Tak ada halaman topik ditemukan sekitar Anda.",
+	"nearby-pages-requirements-guidance": "Coba peramban lain atau aktifkan JavaScript jika Anda telah menonaktifkannya.",
+	"nearby-pages-title": "Sekitaran",
+	"nearby-pages-info-heading": "Tempat di sekitar Anda",
 	"nearby-pages-info-show-random": "Tampilkan halaman acak",
 	"nearby-pages-info-show-button": "Tampilkan halaman sekitar"
 }
