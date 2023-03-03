@@ -8,5 +8,7 @@
 	"nearby": "Artikel tentang topik di sekitaran Anda",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
-	"nearby-pages-noresults": "Sepi sekali... Tak ada halaman topik ditemukan sekitar Anda."
+	"nearby-pages-noresults": "Sepi sekali... Tak ada halaman topik ditemukan sekitar Anda.",
+	"nearby-pages-info-show-random": "Tampilkan halaman acak",
+	"nearby-pages-info-show-button": "Tampilkan halaman sekitar"
 }
