@@ -4,5 +4,6 @@
 			"Lancine.kounfantoh.fofana"
 		]
 	},
-	"nearby": "ߞߐߜߍ ߡߍ߲ ߠߎ߬ ߞߎ߲߬ߕߐ߮ ߦߴߌ ߟߊߡߌߣߌ߲ ߘߐ߫"
+	"nearby": "ߞߐߜߍ ߡߍ߲ ߠߎ߬ ߞߎ߲߬ߕߐ߮ ߦߴߌ ߟߊߡߌߣߌ߲ ߘߐ߫",
+	"nearby-pages-distance": "{{PLURAL:|ߞߎߘߍ߫ $1|$1}}"
 }
