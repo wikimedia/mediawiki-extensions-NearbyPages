@@ -5,5 +5,9 @@
 		]
 	},
 	"nearby": "ߞߐߜߍ ߡߍ߲ ߠߎ߬ ߞߎ߲߬ߕߐ߮ ߦߴߌ ߟߊߡߌߣߌ߲ ߘߐ߫",
-	"nearby-pages-distance": "{{PLURAL:|ߞߎߘߍ߫ $1|$1}}"
+	"nearby-pages-distance": "{{PLURAL:|ߞߎߘߍ߫ $1|$1}}",
+	"nearby-pages-title": "ߛߌ߰ߢߐ߲߮",
+	"nearby-pages-info-heading": "ߦߙߐ ߡߍ߲ ߦߴߌ ߟߊߡߌߣߌ߲ ߘߐ߫",
+	"nearby-pages-info-show-random": "ߓߍ߲߬ߛߋ߲߬ߡߊ߬ ߞߐߜߍ ߟߎ߬ ߦߌ߬ߘߊ߬",
+	"nearby-pages-info-show-button": "ߛߌ߰ߢߐ߲߰ ߞߐߜߍ ߟߎ߫ ߦߌ߬ߘߊ߬"
 }
