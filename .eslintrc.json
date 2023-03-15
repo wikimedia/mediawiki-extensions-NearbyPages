@@ -17,6 +17,8 @@
 		"jsdoc/no-undefined-types": "off",
 		"mediawiki/msg-doc": "off",
 		"mediawiki/valid-package-file-require": "off",
-		"compat/compat": "warn"
+		"compat/compat": "warn",
+		"mediawiki/vue-exports-component-directive": "warn",
+		"vue/no-undef-components": "warn"
 	}
 }

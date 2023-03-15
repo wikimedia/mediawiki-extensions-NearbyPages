@@ -23,7 +23,8 @@
 		</pagelist>
 
 		<div :class="footerClass">
-			<cdx-button action="progressive"
+			<cdx-button
+				action="progressive"
 				:disabled="isShowNearbyButtonDisabled"
 				v-on:click="showNearbyArticles">
 				{{ msg( 'nearby-pages-info-show-button' ) }}
