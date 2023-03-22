@@ -6,6 +6,8 @@
 			"Pacha Tchernof"
 		]
 	},
+	"nearby-pages-distance": "{{PLURAL:$1|$1 км}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 м}}",
 	"nearby-pages-error": "{{SITENAME}} Поблизости возникают проблемы.",
 	"nearby-pages-location-unavailable": "{{SITENAME}} не возможно определить ваше местоположение. Пожалуйста, попробуйте еще раз с лучшим сигналом.",
 	"nearby-pages-info-show-random": "Показать случайные страницы",
