@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Jon Harald Søby",
-			"Danmichaelo"
+			"Danmichaelo",
+			"EdoAug"
 		]
 	},
 	"nearby-pages-desc": "Legger til spesialsiden «[[Special:Nearby|I nærheten]]»",
@@ -10,7 +11,7 @@
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
 	"nearby-pages-error": "{{GRAMMAR:genitive|{{SITENAME}}}} «I nærheten» har problemer.",
 	"nearby-pages-error-guidance": "Prøv å friske opp plasseringen din.",
-	"nearby-pages-noresults": "Du befinner deg visst utenfor allfarvei… Det ble ikke funnet noen sider om temaer i nærheten.",
+	"nearby-pages-noresults": "Du befinner deg visst utenfor allfarvei … Det ble ikke funnet noen sider om temaer i nærheten.",
 	"nearby-pages-noresults-guidance": "Prøv å opprette en ny side eller legg inn koordinater i en eksisterende.",
 	"nearby-pages-permission-denied": "Du har nektet tilgangen til stedstjenester for {{SITENAME}}. For å endre dette, gå til nettleserens eller enhetens innstillinger.",
 	"nearby-pages-location-unavailable": "{{SITENAME}} kan ikke fastslå posisjonen din. Prøv igjen når du har bedre dekning.",
