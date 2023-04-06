@@ -8,7 +8,10 @@
 	"nearby": "근처 주제의 문서",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-permission-denied": "{{SITENAME}}의 위치 서비스에 대한 접근을 거부하였습니다. 이것을 변경하려면 브라우저 또는 장치 설정을 방문해 주십시오",
 	"nearby-pages-title": "근처",
 	"nearby-pages-info-heading": "주변 장소",
-	"nearby-pages-info-show-random": "임의의 문서 표시"
+	"nearby-pages-info-description": "당신 주변의 장소에 관한 흥미로운 {{SITENAME}} 문서를 읽을 수 있습니다",
+	"nearby-pages-info-show-random": "임의의 문서 표시",
+	"nearby-pages-info-show-button": "주변 문서 표시"
 }
