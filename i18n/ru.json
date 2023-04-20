@@ -3,14 +3,25 @@
 		"authors": [
 			"Alexander Yukal",
 			"Okras",
-			"Pacha Tchernof"
+			"Pacha Tchernof",
+			"Stjn"
 		]
 	},
 	"nearby": "Страницы на темы об объектах поблизости",
+	"nearby-pages-desc": "Добавляет служебную страницу «[[Special:Nearby|Поблизости]]»",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 км}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 м}}",
 	"nearby-pages-error": "{{SITENAME}} Поблизости возникают проблемы.",
+	"nearby-pages-error-guidance": "Попробуйте обновить своё расположение.",
+	"nearby-pages-noresults": "Тихо здесь... Не найдено страниц о темах поблизости.",
+	"nearby-pages-noresults-guidance": "Попробуйте создать новую страницу или добавить местоположение существующим страницам",
+	"nearby-pages-permission-denied": "Вы запретили доступ к службам определения расположения для {{GRAMMAR:locative|{{SITENAME}}}}. Чтобы изменить это, пожалуйста, перейдите в настройки своего браузера или устройства.",
 	"nearby-pages-location-unavailable": "{{SITENAME}} не возможно определить ваше местоположение. Пожалуйста, попробуйте еще раз с лучшим сигналом.",
+	"nearby-pages-requirements": "Извините, ваш браузер не поддерживает функцию «Поблизости» {{GRAMMAR:genitive|{{SITENAME}}}}.",
+	"nearby-pages-requirements-guidance": "Попробуйте открыть страницу в другом браузере или включите JavaScript, если вы его отключали.",
+	"nearby-pages-title": "Поблизости",
+	"nearby-pages-info-heading": "Места неподалёку от вас",
+	"nearby-pages-info-description": "Вы можете читать интересные страницы {{GRAMMAR:genitive|{{SITENAME}}}} о местах рядом с вами",
 	"nearby-pages-info-show-random": "Показать случайные страницы",
 	"nearby-pages-info-show-button": "Показать близлежащие страницы"
 }
