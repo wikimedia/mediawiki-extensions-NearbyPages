@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"nearby-pages-desc": "ТӀетуху «[[Special:Nearby|Гергахьо]]» белхан агӀо",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 км}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 м}}",
+	"nearby-pages-error": "{{SITENAME}} Гергахьо проблемаш кхоллало.",
+	"nearby-pages-error-guidance": "Хьо лаьтта меттиг карлайаккха хьажа.",
+	"nearby-pages-noresults": "Кхузахь тийна ду... Гергахьара темех агӀонаш цакарий.",
+	"nearby-pages-noresults-guidance": "Керла агӀо кхолла йа йолуш йолу агӀонашна тӀетоха уьш лаьтташ йолу меттигаш",
+	"nearby-pages-permission-denied": "{{GRAMMAR:locative|{{SITENAME}}}} чохь ахьа лаьтта меттиг билгалйоккхучу гӀирсашна тӀекхача ца магийна. Дехар до, хьайн браузеран йа гӀирсан тӀера нисдаран гӀирс тӀе гӀой иза хийца.",
+	"nearby-pages-location-unavailable": "{{SITENAME}} хьо лаьтта меттиг билгалйан цало. Дехар до йуха а хьажа, дика сигналца.",
+	"nearby-pages-requirements": "Бехк ма била, хьан браузера «Гергахьа» функци ловш йац {{GRAMMAR:genitive|{{SITENAME}}}}.",
+	"nearby-pages-requirements-guidance": "Кхечу браузер тӀехь агӀо схьайелла хьажа йа латайе JavaScript, иза дӀайайина йелахь.",
+	"nearby-pages-title": "Гергахьо",
+	"nearby-pages-info-heading": "Хьуна гергахьо"
+}
