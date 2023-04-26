@@ -34,14 +34,6 @@ module.exports = {
             return '#/wiki/' + title;
         }
     },
-    config: {
-        set: function ( obj ) {
-            config = Object.assign( config, obj );
-        },
-        get: function ( name ) {
-            return config[name];
-        }
-    },
     language: {
         convertNumber: function ( a ) {
             return a;

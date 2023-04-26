@@ -42,13 +42,6 @@ const api = require( './api.js' );
 const PageList = require( './PageList.vue' );
 const { CdxButton, CdxMessage } = require( '@wikimedia/codex' );
 const Vue = require( 'vue' );
-const apiOptions = {
-	range: mw.config.get( 'wgNearbyRange' ),
-	// T117159
-	language: mw.config.get( 'wgPageContentLanguage' ) || 'en',
-	namespaces: mw.config.get( 'wgNearbyPagesNamespaces' ),
-	wikidata: mw.config.get( 'wgNearbyPagesWikidataCompatibility' )
-};
 const router = require( 'mediawiki.router' );
 const locationProvider = require( './locationProvider.js' );
 
@@ -115,6 +108,18 @@ module.exports = exports = Vue.defineComponent( {
 		title: {
 			type: String,
 			default: null
+		},
+		randomButton: {
+			type: Boolean
+		},
+		apiOptions: {
+			type: Object,
+			default: () => ( {
+				range: 10000,
+				language: 'en',
+				namespaces: [ 0 ],
+				wikidata: false
+			} )
 		}
 	},
 	test: {
@@ -128,7 +133,7 @@ module.exports = exports = Vue.defineComponent( {
 	 */
 	data: function () {
 		return {
-			includeRandomButton: mw.config.get( 'wgNearbyRandomButton' ),
+			includeRandomButton: this.randomButton,
 			pages: [],
 			error: false,
 			isShowNearbyButtonDisabled: false
@@ -180,7 +185,7 @@ module.exports = exports = Vue.defineComponent( {
 				useReplaceState: true
 			} );
 			this.loadPagesFromPromise(
-				api.getPagesNearbyPage( title, apiOptions )
+				api.getPagesNearbyPage( title, this.apiOptions )
 			);
 		},
 		/**
@@ -193,7 +198,7 @@ module.exports = exports = Vue.defineComponent( {
 				useReplaceState: true
 			} );
 			this.loadPagesFromPromise(
-				api.getPagesAtCoordinates( lat, lng, apiOptions )
+				api.getPagesAtCoordinates( lat, lng, this.apiOptions )
 			);
 		},
 
@@ -270,9 +275,9 @@ module.exports = exports = Vue.defineComponent( {
 
 .mw-vue-nearby {
 	position: relative;
+	background: white;
 	min-height: 90vh;
 	padding-bottom: @gutter-end;
-	background: white;
 
 	&__heading {
 		font-size: 1em;

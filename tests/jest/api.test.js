@@ -31,8 +31,6 @@ describe( 'api.js', () => {
 					require( './fixtures/geosearch.json' )
 				)
 			);
-
-			global.mw.config.get = jest.fn( ( key ) => `config:${key}` );
 		} );
 
 		it( 'Works with empty response', () => {

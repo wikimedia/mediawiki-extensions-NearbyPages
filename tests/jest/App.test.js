@@ -176,15 +176,6 @@ describe( 'App', () => {
 		} );
 
 		it( 'Shows pages on clicking random', () => {
-			// Mock 'NearbyRandomButton'
-			mw.config.get = jest.fn( ( key ) => {
-				switch ( key ) {
-					case 'wgNearbyRandomButton':
-						return true;
-					default:
-						return '';
-				}
-			} );
 			const randomLocationResult = Promise.resolve( {
 				latitude: 9,
 				longitude: 10
@@ -204,7 +195,11 @@ describe( 'App', () => {
 				() => getPagesAtCoordinatesResult
 			);
 
-			const app = VueTestUtils.mount( App );
+			const app = VueTestUtils.mount( App, {
+				props: {
+					randomButton: true
+				}
+			} );
 			return app.findAllComponents( Button )[ 1 ]
 				.trigger( 'click' )
 				.then( () => {

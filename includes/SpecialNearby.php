@@ -23,15 +23,6 @@ class SpecialNearby extends SpecialPage {
 		$this->setHeaders();
 		$this->outputHeader();
 		$out = $this->getOutput();
-		// set config
-		$config = $this->getConfig();
-		$out->addJsConfigVars( [
-			'wgNearbyPagesWikidataCompatibility' => $config->get( 'NearbyPagesWikidataCompatibility' ),
-			'wgNearbyPagesNamespaces' => $config->get( 'NearbyPagesNamespaces' ),
-			'wgNearbyRange' => $config->get( 'NearbyRange' ),
-			'wgNearbyRandomButton' => $config->get( 'NearbyRandomButton' ),
-			'wgNearbyPagesUrl' => $config->get( 'NearbyPagesUrl' ),
-		] );
 		$out->addModuleStyles( [
 			'ext.nearby.images',
 			'ext.nearby.styles'

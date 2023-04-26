@@ -31,3 +31,11 @@ You can begin development on Special:NearbyPages with 2 simple commands:
 npm install
 npm start
 ```
+
+To develop on Wikidata using this mode, edit resources/ext.nearby.scripts/config.json before running the command substituting the following values:
+
+```
+NearbyPagesNamespaces: [ 640, 146, 0 ],
+NearbyPagesUrl: 'https://www.wikidata.org/w/api.php',
+NearbyPagesWikidataCompatibility: true
+```

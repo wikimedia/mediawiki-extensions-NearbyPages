@@ -1,6 +1,7 @@
+const config = require( './config.json' );
 const mwApi = new mw.Api( {
 	ajax: {
-		url: mw.config.get( 'wgNearbyPagesUrl' )
+		url: config.NearbyPagesUrl
 	}
 } );
 

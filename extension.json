@@ -52,6 +52,7 @@
 		"ext.nearby.scripts": {
 			"es6": true,
 			"dependencies": [
+				"ext.nearby.images",
 				"vue",
 				"@wikimedia/codex",
 				"mediawiki.router",
@@ -78,6 +79,16 @@
 			"remoteExtPath": "NearbyPages",
 			"packageFiles": [
 				"index.js",
+				{
+					"name": "config.json",
+					"config": [
+						"NearbyPagesUrl",
+						"NearbyPagesWikidataCompatibility",
+						"NearbyPagesNamespaces",
+						"NearbyRange",
+						"NearbyRandomButton"
+					]
+				},
 				{
 					"name": "icons.json",
 					"callback": "MediaWiki\\ResourceLoader\\CodexModule::getIcons",
