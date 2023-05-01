@@ -4,5 +4,8 @@
 			"Mehtab ahmed"
 		]
 	},
-	"nearby": "اوهان جي ويجهو صحفن جا موضوع"
+	"nearby": "اوهان جي ويجهو صحفن جا موضوع",
+	"nearby-pages-title": "ويجها",
+	"nearby-pages-info-description": "توھان پنھنجو ويجهين جڳھن بابت دلچسپ {{SITENAME}} صفحا پڙھي سگهو ٿا",
+	"nearby-pages-info-show-button": "ويجها صفحا ڏيکاريو"
 }
