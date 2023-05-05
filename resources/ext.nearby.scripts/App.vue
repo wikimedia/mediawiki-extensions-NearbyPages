@@ -88,7 +88,7 @@ function showHomeHandler( vm ) {
  * @return {Card[]}
  */
 function proxyPages() {
-	// eslint-disable-next-line compat/compat
+
 	return Array( 50 ).fill( {
 		title: '‎ ',
 		description: '‎ '
