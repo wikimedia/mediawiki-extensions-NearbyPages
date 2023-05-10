@@ -8,19 +8,19 @@
 		]
 	},
 	"nearby-pages-desc": "Ajoute une page spéciale [[Special:Nearby|À proximité]]",
-	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
-	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
-	"nearby-pages-error": "{{SITENAME}} à proximité éprouve quelques problèmes.",
+	"nearby-pages-distance": "{{PLURAL:$1|}}$1 km",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|}}$1 m",
+	"nearby-pages-error": "La fonctionnalité « À proximité » sur {{SITENAME}} éprouve quelques problèmes.",
 	"nearby-pages-error-guidance": "Essayez d’actualiser votre emplacement.",
-	"nearby-pages-noresults": "C’est calme ici… Aucune page sur un sujet situé dans les environs n’a été trouvée.",
+	"nearby-pages-noresults": "C’est plutôt calme ici... Aucune page sur un sujet à proximité n’a été trouvée.",
 	"nearby-pages-noresults-guidance": "Essayez de créer une nouvelle page ou d’ajouter un emplacement à une page déjà existante",
 	"nearby-pages-permission-denied": "Vous avez refusé l’accès aux services de localisation pour {{SITENAME}}. Pour modifier cela, veuillez vérifier la configuration de votre navigateur ou de votre appareil.",
-	"nearby-pages-location-unavailable": "{{SITENAME}} ne peut déterminer votre position. Veuillez réessayer à nouveau avec un meilleur signal.",
+	"nearby-pages-location-unavailable": "{{SITENAME}} ne peut pas déterminer votre position. Veuillez essayer à nouveau avec un meilleur signal.",
 	"nearby-pages-requirements": "Désolé ! Votre navigateur web ne prend pas en charge la fonction « À proximité » de {{SITENAME}}.",
 	"nearby-pages-requirements-guidance": "Essayez un autre navigateur ou activez JavaScript si vous l’aviez désactivé.",
 	"nearby-pages-title": "À proximité",
 	"nearby-pages-info-heading": "Endroits autour de vous",
 	"nearby-pages-info-description": "Vous pouvez lire des pages intéressantes de {{SITENAME}} concernant les lieux qui vous entourent",
 	"nearby-pages-info-show-random": "Afficher des pages au hasard",
-	"nearby-pages-info-show-button": "Afficher des pages similaires"
+	"nearby-pages-info-show-button": "Afficher des pages à proximité"
 }
