@@ -2,10 +2,23 @@
 	"@metadata": {
 		"authors": [
 			"NEHAOUA",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"Alshamiri1",
+			"Maroen1990"
 		]
 	},
+	"nearby-pages-distance": "{{PLURAL:$1| $1 كلم}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1| $1 }}",
+	"nearby-pages-error": "{{SITENAME}} تواجه الأجهزة المجاورة بعض المشكلات.",
 	"nearby-pages-error-guidance": "حاول إنعاش موقعك.",
+	"nearby-pages-noresults": "الهدوء هنا ... لم يتم العثور على أية صفحات بها مواضيع قريبة.",
+	"nearby-pages-noresults-guidance": "حاول إنشاء صفحة جديدة أو إضافة موقع إلى صفحة موجودة",
+	"nearby-pages-permission-denied": "لقد رفضت الوصول إلى خدمات الموقع لـ {{SITENAME}}. لتغيير هذا يرجى زيارة المتصفح أو إعدادات الجهاز",
+	"nearby-pages-location-unavailable": "لا يمكن لـ {{SITENAME}} تحديد موقعك. يرجى المحاولة مرة أخرى مع إشارة أفضل.",
+	"nearby-pages-requirements": "آسف! متصفح الويب الخاص بك لا يدعم {{SITENAME}} القريبة.",
+	"nearby-pages-requirements-guidance": "جرب متصفحًا مختلفًا أو قم بتمكين JavaScript إذا قمت بتعطيله.",
+	"nearby-pages-title": "بالقرب من هنا",
 	"nearby-pages-info-heading": "أماكن حولك",
+	"nearby-pages-info-show-random": "عرض صفحات عشوائية",
 	"nearby-pages-info-show-button": "عرض المقالات القريبة"
 }
