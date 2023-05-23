@@ -7,6 +7,7 @@
 			"Maroen1990"
 		]
 	},
+	"nearby-pages-desc": "يضيف صفحة خاصة [[خاص: قريب | قريب]]",
 	"nearby-pages-distance": "{{PLURAL:$1| $1 كلم}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1| $1 }}",
 	"nearby-pages-error": "{{SITENAME}} تواجه الأجهزة المجاورة بعض المشكلات.",
