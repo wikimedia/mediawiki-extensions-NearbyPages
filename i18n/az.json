@@ -1,8 +1,25 @@
 {
 	"@metadata": {
 		"authors": [
+			"NMW03",
 			"Toghrul Rahimli"
 		]
 	},
-	"nearby-pages-permission-denied": "Siz {{SITENAME}} üçün yer xidmətləri funksiyasının istifadəsinə icazə vermədiniz. Bunu dəyişmək üçün brauzerinizin və ya cihazınızın nizamlamalarına daxil olun"
+	"nearby": "Sizə yaxın mövzularda səhifələr",
+	"nearby-pages-desc": "[[Special:Nearby|Yaxınlıqdakılar]] xüsusi səhifəsini əlavə edir",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "{{SITENAME}} Yaxınlıqdakılar əlavəsində bəzi problemlər var.",
+	"nearby-pages-error-guidance": "Məkanınızı yeniləməyə çalışın.",
+	"nearby-pages-noresults": "Burada sakitlikdir... Yaxınlıqda olan mövzular barədə heç bir səhifə tapılmadı.",
+	"nearby-pages-noresults-guidance": "Yeni səhifə yaratmağa və ya mövcud səhifəyə koordinat əlavə etməyə cəhd edin",
+	"nearby-pages-permission-denied": "Siz {{SITENAME}} üçün yer xidmətləri funksiyasının istifadəsinə icazə vermədiniz. Bunu dəyişmək üçün brauzerinizin və ya cihazınızın nizamlamalarına daxil olun",
+	"nearby-pages-location-unavailable": "{{SITENAME}} məkanınızı müəyyən edə bilmir. Daha yaxşı siqnalla yenidən cəhd edin.",
+	"nearby-pages-requirements": "Bağışlayın! Veb brauzeriniz {{SITENAME}} Yaxınlıqdakılar əlavəsini dəstəkləmir.",
+	"nearby-pages-requirements-guidance": "Fərqli brauzeri sınayın və ya deaktiv etmisinizsə, JavaScript-i aktiv edin.",
+	"nearby-pages-title": "Yaxınlıqdakılar",
+	"nearby-pages-info-heading": "Ətrafınızdakı yerlər",
+	"nearby-pages-info-description": "Ətrafınızdakı yerlər haqqında maraqlı {{SITENAME}} səhifələrini oxuya bilərsiniz",
+	"nearby-pages-info-show-random": "Təsadüfi səhifələri göstər",
+	"nearby-pages-info-show-button": "Yaxınlıqdakı səhifələri göstər"
 }
