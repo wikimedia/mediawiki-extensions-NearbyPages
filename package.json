@@ -31,7 +31,7 @@
 		"@wikimedia/codex": "0.11.0",
 		"babel-core": "6.26.3",
 		"eslint-config-wikimedia": "0.25.0",
-		"grunt-banana-checker": "0.10.0",
+		"grunt-banana-checker": "0.11.0",
 		"jest": "27.4.7",
 		"jquery": "3.6.1",
 		"jsdoc": "3.6.10",
@@ -43,7 +43,7 @@
 		"parcel": "2.3.2",
 		"pre-commit": "1.2.2",
 		"stylelint": "14.14.0",
-		"stylelint-config-wikimedia": "0.14.0",
+		"stylelint-config-wikimedia": "0.15.0",
 		"vue": "3.2.37"
 	}
 }
