@@ -30,6 +30,9 @@ const vue = require( 'vue' );
 
 module.exports = exports = vue.defineComponent( {
 	name: 'pagelist',
+	compatConfig: {
+		MODE: 3
+	},
 	props: {
 		supportingIcon: {
 			type: String,

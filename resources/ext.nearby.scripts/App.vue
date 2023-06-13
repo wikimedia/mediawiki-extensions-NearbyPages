@@ -103,6 +103,9 @@ function proxyPages() {
  */
 module.exports = exports = Vue.defineComponent( {
 	name: 'App',
+	compatConfig: {
+		MODE: 3
+	},
 	props: {
 		title: String
 	},
