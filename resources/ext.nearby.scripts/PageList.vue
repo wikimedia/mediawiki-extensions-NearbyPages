@@ -24,24 +24,34 @@
 </template>
 
 <script>
-const codex = require( '@wikimedia/codex' );
+const { CdxCard, CdxIcon } = require( '@wikimedia/codex' );
 const cdxIconMapPin = require( './icons.json' ).cdxIconMapPin;
 const vue = require( 'vue' );
 
+// @vue/component
 module.exports = exports = vue.defineComponent( {
-	name: 'pagelist',
+	name: 'PageList',
 	compatConfig: {
 		MODE: 3
+	},
+	components: {
+		CdxCard,
+		CdxIcon
 	},
 	props: {
 		supportingIcon: {
 			type: String,
 			default: cdxIconMapPin
 		},
-		pages: Array,
+		pages: {
+			type: Array,
+			default: () => []
+		},
 		supportsGeoUrlProtocol: {
 			type: Boolean,
 			// Chrome and FF will refuse navigation to such pages on desktop.
+			// TODO this is only used for the unit tests, maybe it can be handled differently there?
+			// eslint-disable-next-line vue/no-boolean-default
 			default: !!( navigator.userAgent.match( /Chrome/ ) || navigator.userAgent.match( /Firefox/ ) )
 		}
 	},
@@ -68,10 +78,6 @@ module.exports = exports = vue.defineComponent( {
 				};
 			} );
 		}
-	},
-	components: {
-		cdxCard: codex.CdxCard,
-		cdxIcon: codex.CdxIcon
 	}
 } );
 </script>
@@ -90,7 +96,7 @@ module.exports = exports = vue.defineComponent( {
 }
 
 @supports ( display: grid ) {
-	@media all and ( min-width: @width-breakpoint-desktop )  {
+	@media all and ( min-width: @width-breakpoint-desktop ) {
 		.mw-vue-page-list {
 			display: grid;
 			grid-template-columns: repeat( 3, 1fr );

@@ -7,7 +7,7 @@
 		"start": "node dev/build.js && parcel dev/index.html",
 		"start:wikidata": "node dev/build.js --wikidata && parcel dev/index.html",
 		"lint": "eslint --ext .json . && npm -s run lint:i18n && npm -s run lint:js && npm run lint:css",
-		"lint:js": "eslint --cache \"**/*.{js,vue}\"",
+		"lint:js": "eslint --max-warnings 0 --cache \"**/*.{js,vue}\"",
 		"lint:css": "stylelint '**/*.less'",
 		"lint:i18n": "banana-checker --requireLowerCase=0 i18n/",
 		"test": "npm -s run lint && npm run test:unit",

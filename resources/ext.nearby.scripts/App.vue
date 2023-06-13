@@ -16,11 +16,11 @@
 			</cdx-message>
 		</div>
 
-		<pagelist
+		<page-list
 			v-if="pages.length"
 			:pages="pages"
 			class="mw-vue-nearby__pagelist">
-		</pagelist>
+		</page-list>
 
 		<div :class="footerClass">
 			<cdx-button
@@ -38,19 +38,19 @@
 </template>
 
 <script>
-const api = require( './api.js' ),
-	PageList = require( './PageList.vue' ),
-	codex = require( '@wikimedia/codex' ),
-	Vue = require( 'vue' ),
-	apiOptions = {
-		range: mw.config.get( 'wgNearbyRange' ),
-		// T117159
-		language: mw.config.get( 'wgPageContentLanguage' ) || 'en',
-		namespaces: mw.config.get( 'wgNearbyPagesNamespaces' ),
-		wikidata: mw.config.get( 'wgNearbyPagesWikidataCompatibility' )
-	},
-	router = require( 'mediawiki.router' ),
-	locationProvider = require( './locationProvider.js' );
+const api = require( './api.js' );
+const PageList = require( './PageList.vue' );
+const { CdxButton, CdxMessage } = require( '@wikimedia/codex' );
+const Vue = require( 'vue' );
+const apiOptions = {
+	range: mw.config.get( 'wgNearbyRange' ),
+	// T117159
+	language: mw.config.get( 'wgPageContentLanguage' ) || 'en',
+	namespaces: mw.config.get( 'wgNearbyPagesNamespaces' ),
+	wikidata: mw.config.get( 'wgNearbyPagesWikidataCompatibility' )
+};
+const router = require( 'mediawiki.router' );
+const locationProvider = require( './locationProvider.js' );
 
 /**
  * @param {App} vm
@@ -90,35 +90,37 @@ function showHomeHandler( vm ) {
 function proxyPages() {
 
 	return Array( 50 ).fill( {
-		title: '‎ ',
-		description: '‎ '
+		title: '\u200e ',
+		description: '\u200e '
 	} );
 }
 
-// @vue/component
 /**
  * The main App component
  *
  * @module App
  */
+// @vue/component
 module.exports = exports = Vue.defineComponent( {
 	name: 'App',
 	compatConfig: {
 		MODE: 3
 	},
+	components: {
+		CdxButton,
+		CdxMessage,
+		PageList: PageList.name ? PageList : PageList.default
+	},
 	props: {
-		title: String
+		title: {
+			type: String,
+			default: null
+		}
 	},
 	test: {
 		showHomeHandler: showHomeHandler,
 		showPagesNearPageHandler: showPagesNearPageHandler,
 		showPagesNearLocationHandler: showPagesNearLocationHandler
-	},
-
-	components: {
-		CdxButton: codex.CdxButton,
-		pagelist: PageList.name ? PageList : PageList.default,
-		CdxMessage: codex.CdxMessage
 	},
 
 	/**
@@ -244,6 +246,7 @@ module.exports = exports = Vue.defineComponent( {
 	mounted: function () {
 		const vm = this,
 			pageRegex = /^\/page\/(.+)$/,
+			// eslint-disable-next-line security/detect-unsafe-regex
 			coordinateRegex = /^\/coord\/(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)/;
 
 		router.addRoute( coordinateRegex, showPagesNearLocationHandler( vm ) );

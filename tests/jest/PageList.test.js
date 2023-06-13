@@ -37,6 +37,18 @@ describe( 'PageList', () => {
 			pagelist.find( '.cdx-card__text__title' ).text()
 		).toBe( 'Foo' );
 	} );
+
+	it( 'renders an empty div when passed no cards', () => {
+		const pagelist = VueTestUtils.mount( PageList, {
+			propsData: {
+				supportsGeoUrlProtocol: true
+			}
+		} );
+
+		expect(
+			pagelist.findAll( '.cdx-card' ).length
+		).toBe( 0 );
+	} );
 } );
 
 describe( 'PageList where no geo uri support', () => {
