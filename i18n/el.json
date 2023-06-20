@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Geraki"
+			"Geraki",
+			"Glavkos",
+			"Iakovos Iason Tountas"
 		]
 	},
 	"nearby-pages-desc": "Προσθέτει την ειδική σελίδα [[Special:Nearby|Nearby]]",
@@ -18,5 +20,6 @@
 	"nearby-pages-title": "Κοντινά",
 	"nearby-pages-info-heading": "Μέρη κοντά σας",
 	"nearby-pages-info-description": "Μπορείτε να διαβάσετε ενδιαφέροντα λήμματα {{SITENAME}} για μέρη κοντά σε εσάς",
-	"nearby-pages-info-show-button": "Εμφάνιση κοντινών άρθρων"
+	"nearby-pages-info-show-random": "Εμφάνιση τυχαίων σελίδων",
+	"nearby-pages-info-show-button": "Εμφάνιση κοντινών σελιδών"
 }
