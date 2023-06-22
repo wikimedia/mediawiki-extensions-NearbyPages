@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Geraki",
-			"Glavkos"
+			"Glavkos",
+			"Iakovos Iason Tountas"
 		]
 	},
 	"nearby": "Σελίδες σε θέματα που είναι κοντά σας",
@@ -19,6 +20,7 @@
 	"nearby-pages-requirements-guidance": "Δοκιμάστε ένα διαφορετικό πρόγραμμα περιήγησης ή ενεργοποιήσετε την JavaScript εάν έχετε την απενεργοποιήσει.",
 	"nearby-pages-title": "Κοντινά",
 	"nearby-pages-info-heading": "Μέρη κοντά σας",
-	"nearby-pages-info-description": "Μπορείτε να διαβάσετε ενδιαφέροντα λήμματα {{SITENAME}} για μέρη κοντά σε εσάς",
-	"nearby-pages-info-show-button": "Εμφάνιση κοντινών άρθρων"
+	"nearby-pages-info-description": "Μπορείτε να διαβάσετε ενδιαφέροντα λήμματα {{SITENAME}} για μέρη κοντά σας",
+	"nearby-pages-info-show-random": "Εμφάνιση τυχαίων σελίδων",
+	"nearby-pages-info-show-button": "Εμφάνιση κοντινών σελιδών"
 }

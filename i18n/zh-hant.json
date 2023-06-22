@@ -20,7 +20,7 @@
 	"nearby-pages-requirements-guidance": "請嘗試使用別種瀏覽器，或是若您有停用 JavaScript 的話請開啟它。",
 	"nearby-pages-title": "Nearby",
 	"nearby-pages-info-heading": "您附近的地點",
-	"nearby-pages-info-description": "您可以閱讀圍繞在您周遭地點、有趣的{{SITENAME}}頁面",
+	"nearby-pages-info-description": "您可以閱讀圍繞在您周遭地點，有趣的{{SITENAME}}頁面",
 	"nearby-pages-info-show-random": "顯示隨機頁面",
 	"nearby-pages-info-show-button": "顯示附近的頁面"
 }
