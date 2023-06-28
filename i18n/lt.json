@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo",
+			"Zygimantus"
+		]
+	},
+	"nearby-pages-desc": "Prideda specialų [[Special:Nearby|Netoliese]] puslapį",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "{{SITENAME}} Netoliese susiduria su problemomis.",
+	"nearby-pages-error-guidance": "Pabandykite atnaujinti savo vietą.",
+	"nearby-pages-noresults": "Čia tylu... Puslapių su netoliese esančiomis temomis nerasta.",
+	"nearby-pages-noresults-guidance": "Pabandykite sukurti naują puslapį arba pridėti vietą prie esamo puslapio",
+	"nearby-pages-permission-denied": "Jūs uždraudėte {{SITENAME}} prieigą prie vietos paslaugų. Norėdami tai pakeisti, apsilankykite naršyklės arba įrenginio nustatymuose",
+	"nearby-pages-location-unavailable": "{{SITENAME}} negali nustatyti jūsų vietos. Bandykite dar kartą naudodami geresnį signalą.",
+	"nearby-pages-requirements": "Atsiprašome! Jūsų naršyklė nepalaiko {{SITENAME}} Netoliese.",
+	"nearby-pages-requirements-guidance": "Išbandykite kitą naršyklę arba įgalinkite „JavaScript“, jei jį išjungėte.",
+	"nearby-pages-title": "Netoliese",
+	"nearby-pages-info-heading": "Vietos aplink jus",
+	"nearby-pages-info-show-random": "Rodyti atsitiktinius puslapius",
+	"nearby-pages-info-show-button": "Rodyti netoliese esančius puslapius"
+}
