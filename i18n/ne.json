@@ -8,6 +8,9 @@
 	"nearby": "तपाईंको नजिकका विषयहरूमा पृष्ठहरू",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 कि.मी.}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 मी.}}",
+	"nearby-pages-error-guidance": "आफ्नो स्थान ताजा गर्ने प्रयास गर्नुहोस्।",
 	"nearby-pages-title": "नजिकैको",
-	"nearby-pages-info-heading": "तपाईको वरिपरिका स्थानहरू"
+	"nearby-pages-info-heading": "तपाईको वरिपरिका स्थानहरू",
+	"nearby-pages-info-show-random": "अनियमित पृष्ठहरू देखाउनुहोस्",
+	"nearby-pages-info-show-button": "नजिकका लेखहरू देखाउनुहोस्"
 }
