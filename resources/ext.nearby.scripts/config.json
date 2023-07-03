@@ -1,6 +1,5 @@
 {
 	"@doc": "Not used in production. Documents virtual configuration. Can also be locally edited for development with `npm start`",
-	"PageContentLanguage": "en",
 	"NearbyRange": "1000",
 	"NearbyPagesUrl": "https://en.wikipedia.org/w/api.php",
 	"NearbyPagesNamespaces": [ 640, 146, 0 ],

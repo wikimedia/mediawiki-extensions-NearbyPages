@@ -11,7 +11,7 @@ const defaultProps = () => {
 		apiOptions: {
 			range: config.NearbyRange,
 			// T117159
-			language: config.PageContentLanguage || 'en',
+			language: mw.config.get( 'wgPageContentLanguage' ) || 'en',
 			namespaces: config.NearbyPagesNamespaces,
 			wikidata: config.NearbyPagesWikidataCompatibility
 		},
@@ -21,9 +21,7 @@ const defaultProps = () => {
 
 function main() {
 	// @ts-ignore
-	Vue.createMwApp( App, {
-		props: defaultProps()
-	} )
+	Vue.createMwApp( App, defaultProps() )
 		.mount( document.getElementById( 'mw-nearby-pages' ) );
 }
 
