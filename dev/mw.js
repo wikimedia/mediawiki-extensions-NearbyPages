@@ -1,5 +1,5 @@
 const i18n = require( '../i18n/en.json' );
-const extConfig = require( '../extension.json' );
+const config = require( '../resources/ext.nearby.scripts/config.json' );
 
 const Api = function () {};
 
@@ -13,7 +13,7 @@ Api.prototype.ajax = function ( params ) {
         }
     } );
     return $.ajax( {
-        url: extConfig.config.NearbyPagesUrl.value,
+        url: config.NearbyPagesUrl,
         xhrFields: {
             withCredentials: false
         },
@@ -23,10 +23,6 @@ Api.prototype.ajax = function ( params ) {
 
 const configEl = document.getElementById( 'config' );
 const htmlConfig = configEl ? JSON.parse( configEl.textContent ) : {};
-let config = Object.assign( {}, htmlConfig );
-Object.keys( extConfig.config ).forEach( ( key ) => {
-    config[ `wg${key}` ] = extConfig.config[ key ].value;
-} )
 module.exports = {
     Api,
     util: {
@@ -37,6 +33,20 @@ module.exports = {
     language: {
         convertNumber: function ( a ) {
             return a;
+        }
+    },
+    config: {
+        get: function ( key ) {
+            const params = new URLSearchParams( location.search );
+            if ( params.get( key ) ) {
+                return params.get( key );
+            }
+            switch ( key ) {
+                case 'wgPageContentLanguage':
+                    return 'en';
+                default:
+                    return null;
+            }
         }
     },
     msg: function ( key ) {
