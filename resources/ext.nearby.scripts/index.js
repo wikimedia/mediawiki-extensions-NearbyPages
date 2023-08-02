@@ -20,8 +20,9 @@ const defaultProps = () => {
 };
 
 function main() {
+	const createApp = Vue.createMwApp || Vue.createApp;
 	// @ts-ignore
-	Vue.createMwApp( App, defaultProps() )
+	createApp( App, defaultProps() )
 		.mount( document.getElementById( 'mw-nearby-pages' ) );
 }
 
