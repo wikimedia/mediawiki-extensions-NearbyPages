@@ -9,7 +9,7 @@
 		"NearbyPages\\": "includes/"
 	},
 	"requires": {
-		"MediaWiki": ">= 1.40.0"
+		"MediaWiki": ">= 1.41"
 	},
 	"MessagesDirs": {
 		"NearbyPages": [
