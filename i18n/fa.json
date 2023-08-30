@@ -2,11 +2,21 @@
 	"@metadata": {
 		"authors": [
 			"FarsiNevis",
-			"Jeeputer"
+			"Jeeputer",
+			"Reza1615"
 		]
 	},
+	"nearby-pages-desc": "صفحهٔ ویژهٔ [[Special:Nearby|در نزدیکی]] را اضافه می‌کند",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 کیلومتر}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 متر}}",
+	"nearby-pages-error": "در نزدیکی {{SITENAME}} با مشکلاتی مواجه شده است.",
+	"nearby-pages-error-guidance": "برای تازه‌سازی موقعیت مکانی خود تلاش کنید.",
+	"nearby-pages-noresults": "چه سکوتی برقرار است... صفحه‌ای با موضوعات این اطرافی یافت نشد.",
+	"nearby-pages-noresults-guidance": "سعی کنید صفحه‌ای تازه ایجاد کنید یا موقعیت مکانی را یک صفحهٔ موجود بیافزایید",
+	"nearby-pages-permission-denied": "شما درخواست دسترسی {{SITENAME}} به خدمات موقعیت مکانی را رد کرده‌اید. برای تغییر این تنظیم، لطفاً به تنظیمات مرورگر یا دستگاه خود مراجعه کنید",
+	"nearby-pages-location-unavailable": "{{SITENAME}} قادر به تعیین موقعیت مکانی شما نیست. لطفاً دوباره و با سیگنالی بهتر تلاش کنید.",
+	"nearby-pages-requirements": "متأسفیم! مرورگر شما از در نزدیکی {{SITENAME}} پشتیبانی نمی‌کند.",
+	"nearby-pages-requirements-guidance": "یک مرورگر دیگر را امتحان کنید یا در صورتی که جاوااسکریپت را غیرفعال کرده‌اید، آن را فعال کنید.",
 	"nearby-pages-title": "در نزدیکی",
 	"nearby-pages-info-heading": "مکان‌های اطراف شما",
 	"nearby-pages-info-show-random": "نمایش صفحه‌های تصادفی",

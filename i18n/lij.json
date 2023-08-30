@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Giromin Cangiaxo",
+			"N. Longo"
+		]
+	},
+	"nearby-pages-desc": "O l'azónze a pàgina speciâle [[Special:Nearby|Inti contórni]]",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "L'Inti contórni de {{SITENAME}} o gh'à di problêmi.",
+	"nearby-pages-error-guidance": "Prêuva a métte a giórno a tò poxiçión.",
+	"nearby-pages-noresults": "Gh'é pâxe inte ste bànde chi... no émmo trovòu de pàgine in sce di argoménti da-arénte.",
+	"nearby-pages-noresults-guidance": "Prêuva a creâ 'na pàgina nêuva ò azónzi e cordinæ a unn-a ch'a l'exìste za.",
+	"nearby-pages-permission-denied": "Ti t'æ refuòu d'ativâ i servìççi de localizaçión pe {{SITENAME}}. Pe fâlo, ti t'æ d'amiâ a-e çèrnie pò-u tò browser ò pò-u tò dispoxitîvo.",
+	"nearby-pages-location-unavailable": "{{SITENAME}} o no l'ariêsce a trovâ a tò poxiçión. Prêuva tórna co-ina mêgio conesción.",
+	"nearby-pages-requirements": "Ne despiâxe ma o tò browser o no supòrta l'Inti contórni de {{SITENAME}}.",
+	"nearby-pages-requirements-guidance": "Prêuva co-în âtro browser ò atîva JavaScript se ti ti l'æ dezativòu.",
+	"nearby-pages-title": "Inti contórni",
+	"nearby-pages-info-heading": "Pòsti da-arénte a ti",
+	"nearby-pages-info-show-random": "Fâ védde de pàgine abrétio",
+	"nearby-pages-info-show-button": "Fâ védde de pàgine da-arénte"
+}
