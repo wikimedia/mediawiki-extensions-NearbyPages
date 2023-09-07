@@ -18,5 +18,7 @@
 	"nearby-pages-requirements-guidance": "Jal pengorag laèn atawa nyalain JavaScript kalo lu kaga' matiin tu.",
 	"nearby-pages-title": "Sekitaran",
 	"nearby-pages-info-heading": "Tempat di sekitaran lu",
-	"nearby-pages-info-description": "Lu bisa ngebaca halaman {{SITENAME}} nyang ngebèngbat pasal tempat di sekitaran lu"
+	"nearby-pages-info-description": "Lu bisa ngebaca halaman {{SITENAME}} nyang ngebèngbat pasal tempat di sekitaran lu",
+	"nearby-pages-info-show-random": "Kasi unjuk halaman sembarang",
+	"nearby-pages-info-show-button": "Kasi unjuk halaman sekitaran"
 }
