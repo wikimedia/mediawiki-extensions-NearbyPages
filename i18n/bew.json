@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bangrapip"
+		]
+	},
+	"nearby-pages-desc": "Tambah halaman istimèwa [[Special:Nearby|Sekitaran]]",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "{{SITENAME}} Ada mas'alah ama Sekitaran.",
+	"nearby-pages-error-guidance": "Jal segerin lu punya penempatan.",
+	"nearby-pages-noresults": "Meneng-meneng baé gènèng... Kaga' ada halaman topik nyang ketemu di sekitaran lu.",
+	"nearby-pages-noresults-guidance": "Jal keja atu halaman atawa tambahin penempatan ke halaman nyang udah ada",
+	"nearby-pages-permission-denied": "Lu udah nampik aksès ke Ladènan Penempatan bakal {{SITENAME}}. Bakal ngrobah ni, padol dah, saba lu punya penyetèlan pengorag atawa peralatan",
+	"nearby-pages-location-unavailable": "{{SITENAME}} kaga' bisa nentuin lu punya penempatan. Jal lagi dah entaran kalo sinyalnya mendingan.",
+	"nearby-pages-requirements": "Maap! Lu punya pengorag jala kaga' ndukung Sekitaran di {{SITENAME}}",
+	"nearby-pages-requirements-guidance": "Jal pengorag laèn atawa nyalain JavaScript kalo lu kaga' matiin tu.",
+	"nearby-pages-title": "Sekitaran",
+	"nearby-pages-info-heading": "Tempat di sekitaran lu",
+	"nearby-pages-info-show-random": "Kasi unjuk halaman sembarang",
+	"nearby-pages-info-show-button": "Kasi unjuk halaman sekitaran"
+}
