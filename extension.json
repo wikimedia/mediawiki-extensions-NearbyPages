@@ -56,7 +56,6 @@
 				"vue",
 				"@wikimedia/codex",
 				"mediawiki.router",
-				"mediawiki.ui.button",
 				"mediawiki.api"
 			],
 			"messages": [
