@@ -268,14 +268,16 @@ module.exports = exports = Vue.defineComponent( {
 </script>
 
 <style lang="less">
-@import 'variables.less';
+// To access Codex design tokens and mixins inside Vue files, import MediaWiki skin variables.
+@import 'mediawiki.skin.variables.less';
+
 @gutter-end: 60px;
 @gutter-end-with-random: 100px;
 @nearbyImageSize: 154px;
 
 .mw-vue-nearby {
 	position: relative;
-	background: white;
+	background-color: @background-color-base;
 	min-height: 90vh;
 	padding-bottom: @gutter-end;
 
@@ -286,7 +288,7 @@ module.exports = exports = Vue.defineComponent( {
 	}
 
 	&__description {
-		color: @colorGray7;
+		color: @color-subtle;
 		margin-bottom: 20px;
 		text-align: center;
 	}
@@ -311,10 +313,10 @@ module.exports = exports = Vue.defineComponent( {
 	&__pagelist + &__footer {
 		position: sticky;
 		bottom: 0;
-		background: #fff;
+		background-color: @background-color-base;
 		left: 0;
 		right: 0;
-		border: solid 1px #eee;
+		border: @border-width-base @border-style-base #eaecf0;
 		height: @gutter-end;
 		padding: 12px 0 0;
 		z-index: 2;

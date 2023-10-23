@@ -83,7 +83,8 @@ module.exports = exports = vue.defineComponent( {
 </script>
 
 <style lang="less">
-@import 'variables.less';
+// To access Codex design tokens and mixins inside Vue files, import MediaWiki skin variables.
+@import 'mediawiki.skin.variables.less';
 
 .mw-vue-page-list {
 	font-size: 16px;
@@ -96,7 +97,7 @@ module.exports = exports = vue.defineComponent( {
 }
 
 @supports ( display: grid ) {
-	@media all and ( min-width: @width-breakpoint-desktop ) {
+	@media all and ( min-width: @min-width-breakpoint-desktop ) {
 		.mw-vue-page-list {
 			display: grid;
 			grid-template-columns: repeat( 3, 1fr );
