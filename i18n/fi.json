@@ -3,12 +3,16 @@
 		"authors": [
 			"MITO",
 			"Moj",
-			"Rönttönen"
+			"Rönttönen",
+			"Jack Phoenix"
 		]
 	},
 	"nearby-pages-desc": "Lisää toimintosivun [[Special:Nearby|Nearby]]",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-error-guidance": "Kokeile päivittää sijaintisi.",
 	"nearby-pages-permission-denied": "Olet estänyt sivuston {{SITENAME}} pääsyn sijaintitietoihisi. Voit korjata asian selaimesi tai laitteesi asetuksista",
+	"nearby-pages-requirements": "Pahoittelut! Selaimesi ei tue {{GRAMMAR:genitive|{{SITENAME}}}} Lähistöllä-ominaisuutta.",
+	"nearby-pages-requirements-guidance": "Kokeile toista selainta tai ota JavaScript käyttöön jos olet ottanut sen pois käytöstä.",
 	"nearby-pages-title": "Lähistöllä",
 	"nearby-pages-info-heading": "Ympärilläsi olevat paikat"
 }
