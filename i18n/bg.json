@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"StanProg",
+			"Termininja"
+		]
+	},
+	"nearby-pages-desc": "Добавя специална страница [[Special:Nearby|Наблизо]]",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "{{SITENAME}} „Наблизо“ има проблем.",
+	"nearby-pages-error-guidance": "Опитайте да опресните местоположението си.",
+	"nearby-pages-noresults": "Тук е тихо. Не са намерили страници с близки теми.",
+	"nearby-pages-noresults-guidance": "Опитайте да създадете нова страница или да добавите местоположение към съществуваща",
+	"nearby-pages-permission-denied": "Вие отказахте достъп до услугите за местоположение за {{SITENAME}}. За да промените това, моля, посетете настройките на вашия браузър или устройство",
+	"nearby-pages-location-unavailable": "{{SITENAME}} не може да определи местоположението Ви. Моля, опитайте отново с по-добър сигнал.",
+	"nearby-pages-requirements": "Съжаляваме! Вашият уеб браузър не поддържа „Наблизо“ на {{SITENAME}}.",
+	"nearby-pages-requirements-guidance": "Опитайте с друг браузър или активирайте JavaScript, ако сте го деактивирали.",
+	"nearby-pages-title": "Наблизо",
+	"nearby-pages-info-heading": "Места около Вас",
+	"nearby-pages-info-show-random": "Показване на произволни страници",
+	"nearby-pages-info-show-button": "Показване на страници за неща наблизо"
+}
