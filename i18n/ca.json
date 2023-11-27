@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Paucabot",
 			"Toniher"
 		]
 	},
-	"nearby": "Pàgines de temes a prop teu"
+	"nearby": "Pàgines de temes a prop teu",
+	"nearby-pages-title": "A prop",
+	"nearby-pages-info-heading": "Llocs propers",
+	"nearby-pages-info-show-button": "Mostra articles propers"
 }
