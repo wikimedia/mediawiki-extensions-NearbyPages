@@ -2,9 +2,9 @@
 
 namespace NearbyPages;
 
-use Html;
+use MediaWiki\Html\Html;
 use MediaWiki\Html\TemplateParser;
-use SpecialPage;
+use MediaWiki\SpecialPage\SpecialPage;
 
 /**
  * Provide the Special page "Nearby" with location based articles
