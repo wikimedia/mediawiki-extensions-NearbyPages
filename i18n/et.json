@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pikne"
+		]
+	},
+	"nearby-pages-desc": "Lisab [[Special:Nearby|lähikonna]] erilehekülje.",
+	"nearby-pages-noresults": "Siin kandis on vaikne... Ei leitud ühtegi artiklit lähedal asuvatel teemadel.",
+	"nearby-pages-location-unavailable": "Sinu asukohta ei õnnestunud määrata. Palun proovi parema signaaliga uuesti.",
+	"nearby-pages-requirements": "Sinu brauser kahjuks ei toeta lähikonna funktsiooni!",
+	"nearby-pages-requirements-guidance": "Palun proovi teist brauserit või luba JavaScript, kui oled selle keelanud.",
+	"nearby-pages-title": "Lähikond",
+	"nearby-pages-info-heading": "Kohad sinu ümbruses",
+	"nearby-pages-info-show-button": "Näita lehekülgi lähikonnas"
+}
