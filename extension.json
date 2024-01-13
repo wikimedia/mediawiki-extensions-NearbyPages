@@ -101,7 +101,7 @@
 			]
 		},
 		"ext.nearby.images": {
-			"class": "ResourceLoaderImageModule",
+			"class": "MediaWiki\\ResourceLoader\\ImageModule",
 			"useDataURI": false,
 			"selector": ".{name}",
 			"images": {
