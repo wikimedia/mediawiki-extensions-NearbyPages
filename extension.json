@@ -50,7 +50,6 @@
 			"styles": "resources/ext.nearby.styles/index.less"
 		},
 		"ext.nearby.scripts": {
-			"es6": true,
 			"dependencies": [
 				"ext.nearby.images",
 				"vue",
