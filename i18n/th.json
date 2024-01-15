@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ekminarin",
 			"Patsagorn Y."
 		]
 	},
-	"nearby": "หน้าในหัวข้อใกล้เคียงคุณ"
+	"nearby": "หน้าในหัวข้อใกล้เคียงคุณ",
+	"nearby-pages-info-heading": "สถานที่ใกล้ตัวคุณ"
 }
