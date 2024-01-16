@@ -6,5 +6,16 @@
 		]
 	},
 	"nearby": "หน้าในหัวข้อใกล้เคียงคุณ",
-	"nearby-pages-info-heading": "สถานที่ใกล้ตัวคุณ"
+	"nearby-pages-desc": "เพิ่มหน้าพิเศษ [[Special:Nearby|ใกล้เคียง]]",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 กม.}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 ม.}}",
+	"nearby-pages-error": "{{SITENAME}} ใกล้เคียงมีปัญหาอะไรบางอย่าง",
+	"nearby-pages-error-guidance": "ลองรีเฟรชตำแหน่งของคุณ",
+	"nearby-pages-requirements": "ขออภัย! เว็บเบราว์เซอร์ของคุณไม่รองรับ {{SITENAME}} ใกล้เคียง",
+	"nearby-pages-requirements-guidance": "ลองใช้เบราว์เซอร์อื่นหรือเปิดใช้งานจาวาสคริปต์หากคุณปิดใช้งานไว้",
+	"nearby-pages-title": "ใกล้เคียง",
+	"nearby-pages-info-heading": "สถานที่ใกล้ตัวคุณ",
+	"nearby-pages-info-description": "คุณสามารถอ่านหน้า {{SITENAME}} ที่น่าสนใจเกี่ยวกับสถานที่ใกล้ตัวคุณได้",
+	"nearby-pages-info-show-random": "แสดงหน้าสุ่ม",
+	"nearby-pages-info-show-button": "แสดงหน้าที่อยู่ใกล้เคียง"
 }
