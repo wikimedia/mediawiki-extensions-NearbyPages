@@ -4,5 +4,21 @@
 			"Huñvreüs"
 		]
 	},
-	"nearby": "Pajennoù diwar-benn danvezioù tost deoc'h"
+	"nearby": "Pajennoù diwar-benn danvezioù tost deoc'h",
+	"nearby-pages-desc": "Ouzhpennañ a ra pajenn dibar [[Special:Nearby|Nepell]]",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "{{SITENAME}} Kudennoù zo gant Nepell.",
+	"nearby-pages-error-guidance": "Klaskit freskaat ho lec’hiadur.",
+	"nearby-pages-noresults": "Sioul eo amañ… N’eus bet kavet pajenn ebet nepell o danvezioù.",
+	"nearby-pages-noresults-guidance": "Klaskit krouiñ ur bajenn nevez pe ouzhpennañ lec’hiadur d’unan a zo dija",
+	"nearby-pages-permission-denied": "Miret ho peus ouzh {{SITENAME}} da ober gant Servijoù Lec’hiadur. Evit kemmañ an dra-mañ kit da arventennoù ho merdeer pe ardivink mar plij.",
+	"nearby-pages-location-unavailable": "Ne c’hall ket {{SITENAME}} kavout ho lec’h. Klaskit en-dro gant ur sinal gwelloc’h mar plij.",
+	"nearby-pages-requirements": "Digarezǃ Ho merdeer ne skor ket {{SITENAME}} Nepell.",
+	"nearby-pages-requirements-guidance": "Klaskit ober gant ur merdeer all pe gweredekaat Javascript m’ho peus diweredekaet anezhañ.",
+	"nearby-pages-title": "Nepell",
+	"nearby-pages-info-heading": "Lec’hioù nepell diouzhoc’h",
+	"nearby-pages-info-description": "Gallout a rit lenn pajennoù {{SITENAME}} dedennus a-zivout lec’hioù nepell diouzhoc’h",
+	"nearby-pages-info-show-random": "Diskouez pajennoù dre zegouezh",
+	"nearby-pages-info-show-button": "Diskouez pajennoù nepell"
 }
