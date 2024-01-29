@@ -5,6 +5,8 @@
 			"Milicevic01"
 		]
 	},
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
 	"nearby-pages-error-guidance": "Освежи локацију.",
 	"nearby-pages-title": "У близини",
 	"nearby-pages-info-heading": "Места око вас",
