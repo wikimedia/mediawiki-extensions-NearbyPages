@@ -4,6 +4,7 @@
 			"Joetaras"
 		]
 	},
+	"nearby": "Pàggene sus a argumiende vecine a te",
 	"nearby-pages-desc": "Aggiunge 'a pàgena spaciale [[Special:Nearby|Jndr'à le vicinanze]]",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
