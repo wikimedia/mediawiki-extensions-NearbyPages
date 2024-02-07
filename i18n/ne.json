@@ -11,6 +11,7 @@
 	"nearby-pages-error-guidance": "आफ्नो स्थान ताजा गर्ने प्रयास गर्नुहोस्।",
 	"nearby-pages-title": "नजिकैको",
 	"nearby-pages-info-heading": "तपाईको वरिपरिका स्थानहरू",
+	"nearby-pages-info-description": "तपाईं आफ्नो वरपरका ठाउँहरूको बारेमा रोचक {{SITENAME}} पृष्ठहरू पढ्न सक्नुहुन्छ",
 	"nearby-pages-info-show-random": "अनियमित पृष्ठहरू देखाउनुहोस्",
 	"nearby-pages-info-show-button": "नजिकका लेखहरू देखाउनुहोस्"
 }
