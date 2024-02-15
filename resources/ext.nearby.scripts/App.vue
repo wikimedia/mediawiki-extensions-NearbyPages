@@ -277,7 +277,7 @@ module.exports = exports = Vue.defineComponent( {
 
 .mw-vue-nearby {
 	position: relative;
-	background-color: @background-color-base;
+	background-color: var( --background-color-base, @background-color-base );
 	min-height: 90vh;
 	padding-bottom: @gutter-end;
 
@@ -288,7 +288,7 @@ module.exports = exports = Vue.defineComponent( {
 	}
 
 	&__description {
-		color: @color-subtle;
+		color: var( --color-subtle, @color-subtle );
 		margin-bottom: 20px;
 		text-align: center;
 	}
@@ -313,7 +313,7 @@ module.exports = exports = Vue.defineComponent( {
 	&__pagelist + &__footer {
 		position: sticky;
 		bottom: 0;
-		background-color: @background-color-base;
+		background-color: var( --background-color-base, @background-color-base );
 		left: 0;
 		right: 0;
 		border: @border-width-base @border-style-base #eaecf0;
