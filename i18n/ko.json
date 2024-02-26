@@ -1,14 +1,23 @@
 {
 	"@metadata": {
 		"authors": [
+			"Dr1t jg",
 			"Nuevo Paso",
 			"Ykhwong"
 		]
 	},
 	"nearby": "근처 주제의 문서",
+	"nearby-pages-desc": "[[Special:Nearby|근처]] 특별 문서 추가함",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "{{SITENAME}} 근처가 문제를 겪고 있음.",
+	"nearby-pages-error-guidance": "위치를 새로 고쳐봐.",
+	"nearby-pages-noresults": "여기 조용하네... 근처 주제로 찾은 문서 없음.",
+	"nearby-pages-noresults-guidance": "새 문서를 만들거나 기존 문서에 위치를 추가해 봐",
 	"nearby-pages-permission-denied": "{{SITENAME}}의 위치 서비스에 대한 접근을 거부하였습니다. 이것을 변경하려면 브라우저 또는 장치 설정을 방문해 주십시오",
+	"nearby-pages-location-unavailable": "{{SITENAME}}은 너의 위치를 확인할 수 없어. 더 나은 신호로 다시 시도해 봐.",
+	"nearby-pages-requirements": "미안해! 네 웹 브라우저는 {{SITENAME}} 근처를 지원하지 않아.",
+	"nearby-pages-requirements-guidance": "다른 브라우저를 사용해 보거나 자바스크립트를 비활성화했다면 활성화해 봐.",
 	"nearby-pages-title": "근처",
 	"nearby-pages-info-heading": "주변 장소",
 	"nearby-pages-info-description": "당신 주변의 장소에 관한 흥미로운 {{SITENAME}} 문서를 읽을 수 있습니다",
