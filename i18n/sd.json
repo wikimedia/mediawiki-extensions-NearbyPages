@@ -4,6 +4,19 @@
 			"Mehtab ahmed"
 		]
 	},
+	"nearby-pages-desc": "[[Special:Nearby|ويجهو]] خاص صفحو شامل ڪري ٿو",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 ڪلوميٽر}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 ميٽر}}",
+	"nearby-pages-error": "{{SITENAME}} ويجها ۾ ڪجهہ مسئلا آھن.",
+	"nearby-pages-error-guidance": "پنھنجي مڪانيت کي تازو ڪرڻ جي ڪوشش ڪريو.",
+	"nearby-pages-noresults": "ھتي خاموشي لڳي پئي آھي... ويجهن موضوعن مان ڪي بہ صفحا نہ لڌا.",
+	"nearby-pages-noresults-guidance": "ڪوشش ڪريو ڪو نئون صفحو سرجيو يا موجوده ڪنھن صفحي ۾ مڪانيت شامل ڪريو",
+	"nearby-pages-permission-denied": "توهان {{SITENAME}} لاءِ مڪانيت جي خدمتن تائين رسائي کان انڪار ڪيو آهي. ھن کي تبديل ڪرڻ لاءِ مھرباني ڪري پنھنجي برائوزر يا ڊوائيس ترتيبن ڏانهن وڃو",
+	"nearby-pages-location-unavailable": "{{SITENAME}} توھان جي جڳھ جو تعين نٿي ڪري سگهي. مھرباني ڪري بھتر سگنل سان ٻيھر ڪوشش ڪريو.",
+	"nearby-pages-requirements": "معاف ڪجو! توھانجو ويب برائوزر  {{SITENAME}} ويجها کي سپورٽ نہ ٿو ڪري.",
+	"nearby-pages-requirements-guidance": "ڪو مختلف برائوزر آزمايو يا جاوااسڪرپٽ فعال ڪريو جيڪڏھن توھان ان کي بند ڪيو آھي.",
 	"nearby-pages-title": "ويجها",
+	"nearby-pages-info-heading": "توهان جي چوڌاري ماڳ",
+	"nearby-pages-info-show-random": "بلاترتيب صفحا ڏيکاريو",
 	"nearby-pages-info-show-button": "ويجها صفحا ڏيکاريو"
 }

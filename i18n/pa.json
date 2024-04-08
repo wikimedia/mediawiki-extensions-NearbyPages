@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kuldeepburjbhalaike"
+		]
+	},
+	"nearby-pages-desc": "[[Special:Nearby|ਨੇੜੇ]] ਖ਼ਾਸ ਸਫ਼ਾ ਜੋੜਦਾ ਹੈ",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 ਕਿਮੀ}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 ਮੀਟਰ}}",
+	"nearby-pages-error": "{{SITENAME}} ਨੇੜੇ ਵਿੱਚ ਕੁਝ ਸਮੱਸਿਆਵਾਂ ਆ ਰਹੀਆਂ ਹਨ।",
+	"nearby-pages-error-guidance": "ਆਪਣੇ ਸਥਾਨ ਨੂੰ ਤਾਜ਼ਾ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+	"nearby-pages-info-heading": "ਤੁਹਾਡੇ ਆਲੇ-ਦੁਆਲੇ ਦੀਆਂ ਥਾਵਾਂ"
+}
