@@ -82,7 +82,6 @@ function getRandomPages() {
 }
 
 /**
- *
  * @param {Object} reqData to send to the api request
  * @param {ApiOptions} options
  * @return {jQuery.Deferred}
