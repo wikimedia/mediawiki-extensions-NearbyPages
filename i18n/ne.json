@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"पर्वत सुबेदी",
-			"बडा काजी"
+			"बडा काजी",
+			"Yadav Bhattarai"
 		]
 	},
 	"nearby-pages-distance": "{{PLURAL:$1|$1 कि.मी.}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 मी.}}",
 	"nearby-pages-error-guidance": "आफ्नो स्थान ताजा गर्ने प्रयास गर्नुहोस्।",
-	"nearby-pages-location-unavailable": "{{SITENAME}}ले तपाईको स्थान निर्धारण गर्न सकेन। राम्रो सङ्केतसँग पुन: प्रयास गर्नुहोस्।",
+	"nearby-pages-location-unavailable": "{{SITENAME}}ले तपाईको स्थान निर्धारण गर्न सकेन। कृपया राम्रो ईन्टरनेट हुँदा पुन: प्रयास गर्नुहोला।",
 	"nearby-pages-title": "नजिकैको",
 	"nearby-pages-info-heading": "तपाईको वरिपरिका स्थानहरू",
 	"nearby-pages-info-show-random": "अनियमित पृष्ठहरू देखाउनुहोस्",
