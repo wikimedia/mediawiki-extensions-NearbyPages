@@ -3,11 +3,12 @@
 		"authors": [
 			"Cwlin0416",
 			"Kly",
-			"列维劳德"
+			"列维劳德",
+			"Cookai1205"
 		]
 	},
 	"nearby": "您附近主題的頁面",
-	"nearby-pages-desc": "添加 [[Special:Nearby|Nearby]] 特殊頁面",
+	"nearby-pages-desc": "新增[[Special:Nearby|Nearby]]特殊頁面",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 公里}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 公尺}}",
 	"nearby-pages-error": "{{SITENAME}} Nearby 功能有一些問題。",
