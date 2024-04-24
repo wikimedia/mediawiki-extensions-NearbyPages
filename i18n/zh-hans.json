@@ -5,11 +5,22 @@
 			"Evesiesta",
 			"Liuxinyu970226",
 			"SomeyaMako",
-			"Stang"
+			"Stang",
+			"沈澄心"
 		]
 	},
 	"nearby": "您附近的切题页面",
+	"nearby-pages-desc": "添加[[Special:Nearby|Nearby]]特殊页面",
+	"nearby-pages-distance": "{{PLURAL:$1|$1公里}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1米}}",
+	"nearby-pages-error": "{{SITENAME}}Nearby功能有一些问题。",
+	"nearby-pages-error-guidance": "尝试刷新您的位置。",
+	"nearby-pages-noresults": "这里很安静……找不到任何与附近主题相关的页面。",
+	"nearby-pages-noresults-guidance": "尝试创建新页面或将位置添加到现有页面",
 	"nearby-pages-permission-denied": "您拒绝了{{SITENAME}}访问位置服务。如需更改这一设置，请查看您的浏览器或设备的设置",
+	"nearby-pages-location-unavailable": "{{SITENAME}}无法确定您的位置。请在信号较好的地方重试。",
+	"nearby-pages-requirements": "抱歉！您的网络浏览器不支持{{SITENAME}} Nearby 功能。",
+	"nearby-pages-requirements-guidance": "尝试使用其他浏览器，或者启用JavaScript（如果已禁用）。",
 	"nearby-pages-title": "附近",
 	"nearby-pages-info-heading": "您附近的地点",
 	"nearby-pages-info-description": "您可以阅读有关您附近地点的有趣的{{SITENAME}}页面",
