@@ -7,6 +7,7 @@
 		]
 	},
 	"nearby": "근처 주제의 문서",
+	"nearby-pages-desc": "[[특수:Nearby|Nearby]] 특수 문서를 추가합니다",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
 	"nearby-pages-permission-denied": "{{SITENAME}}의 위치 서비스에 대한 접근을 거부하였습니다. 이것을 변경하려면 브라우저 또는 장치 설정을 방문해 주십시오",
