@@ -6,7 +6,7 @@
 			"Dr1t jg"
 		]
 	},
-	"nearby-pages-desc": "[[Special:Nearby|근처]] 특별 문서 추가함",
+	"nearby-pages-desc": "[[특수:Nearby|Nearby]] 특수 문서를 추가합니다",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
 	"nearby-pages-error": "{{SITENAME}} 근처가 문제를 겪고 있음.",
