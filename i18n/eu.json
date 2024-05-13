@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sator",
+			"Theklan"
+		]
+	},
+	"nearby-pages-desc": "[[Special:Nearby|Hurbilekoak]] orrialde berezia gehitzen du",
+	"nearby-pages-distance": "{{PLURAL:$1|km $1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|m $1|$1 m}}",
+	"nearby-pages-error": "{{SITENAME}} Hurbilekoak arazoak dituela dirudi.",
+	"nearby-pages-error-guidance": "Saia zaitez zure kokapena freskatzen.",
+	"nearby-pages-noresults": "Emaitzarik ez... ez dirudi gertu duzun gairik topatu dugunik.",
+	"nearby-pages-noresults-guidance": "Saia zaitez orrialde berri bat gehitzen edo existitzen den bati kokapena gehitzen",
+	"nearby-pages-permission-denied": "Ez duzu baimenik eman {{SITENAME}}n Kokapen Zerbitzuak gaitzeko. Zure nabigatzailean aldatu beharko zenuke ezarpen hau.",
+	"nearby-pages-location-unavailable": "{{SITENAME}} guneak ezin du zure lekua zehaztu. Saia zaitez berriro ere seinale hobea duzunean.",
+	"nearby-pages-requirements": "Barkatu! Zure web-arakatzaileak ez du onartzen {{SITENAME}} Hurbilekoak.",
+	"nearby-pages-requirements-guidance": "Saia zaitez beste nabigatzaile batekin edo gaitu JavaScript desgaitu bazenuen.",
+	"nearby-pages-title": "Hurbilekoak",
+	"nearby-pages-info-heading": "Zure inguruko lekuak",
+	"nearby-pages-info-show-random": "Ausazko orriak erakutsi",
+	"nearby-pages-info-show-button": "Gertuko orriak erakutsi"
+}
