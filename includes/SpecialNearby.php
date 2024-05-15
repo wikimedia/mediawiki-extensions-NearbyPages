@@ -30,7 +30,7 @@ class SpecialNearby extends SpecialPage {
 		$out->addModules( [
 			'ext.nearby.scripts'
 		] );
-		$out->setPageTitle( $this->msg( 'nearby-pages-title' ) );
+		$out->setPageTitleMsg( $this->msg( 'nearby-pages-title' ) );
 
 		$tp = new TemplateParser( __DIR__ . '/templates' );
 		$html = $tp->processTemplate( 'Nearby', [
