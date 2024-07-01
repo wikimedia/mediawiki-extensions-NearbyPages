@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Исмаил Садуев",
 			"Умар"
 		]
 	},
 	"nearby": "Уллера объектех лаьцна агӀонаш",
-	"nearby-pages-desc": "ТӀетуху «[[Special:Nearby|Гергахьо]]» белхан агӀо",
+	"nearby-pages-desc": "ТӀетуху «[[Special:Nearby|Йуххехь]]» белхан агӀо",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 км}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 м}}",
 	"nearby-pages-error": "{{SITENAME}} Гергахьо проблемаш кхоллало.",
@@ -16,8 +17,8 @@
 	"nearby-pages-location-unavailable": "{{SITENAME}} хьо лаьтта меттиг билгалйан цало. Дехар до йуха а хьажа, дика сигналца.",
 	"nearby-pages-requirements": "Бехк ма била, хьан браузера «Гергахьа» функци ловш йац {{GRAMMAR:genitive|{{SITENAME}}}}.",
 	"nearby-pages-requirements-guidance": "Кхечу браузер тӀехь агӀо схьайелла хьажа йа латайе JavaScript, иза дӀайайина йелахь.",
-	"nearby-pages-title": "Гергахьо",
-	"nearby-pages-info-heading": "Хьуна гергахьо",
+	"nearby-pages-title": "Йуххехь",
+	"nearby-pages-info-heading": "Хьуна йуххехь",
 	"nearby-pages-info-description": "Хьа аьтту бу {{GRAMMAR:genitive|{{SITENAME}}}} чуьра хьуна гергахьа йолучу меттигех лаьцна агӀонаш йеша.",
 	"nearby-pages-info-show-random": "Цахууш нисйелла агӀонаш гайта",
 	"nearby-pages-info-show-button": "Гайта гергахьара агӀонаш"
