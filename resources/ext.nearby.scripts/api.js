@@ -48,9 +48,19 @@ function toCard( obj ) {
 		description = terms.description ? terms.description[ 0 ] : obj.description,
 		proximity = coordinates.dist !== undefined ?
 			getDistanceMessage( coordinates.dist / 1000 ) : undefined;
+	let fullurl = obj.fullurl;
+
+	// The api returns urls that do not take into account the mobile domain
+	if ( fullurl ) {
+		fullurl = new URL( obj.fullurl, document.baseURI );
+		if ( fullurl.host === mw.config.get( 'wgServerName' ) ) {
+			fullurl.host = location.host;
+		}
+		fullurl = fullurl.toString();
+	}
 
 	return {
-		url: obj.fullurl,
+		url: fullurl,
 		title: terms.label ? terms.label[ 0 ] : obj.title,
 		id: obj.title,
 		description: description,
