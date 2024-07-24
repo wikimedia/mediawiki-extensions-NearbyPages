@@ -170,7 +170,7 @@ describe( 'api.js', () => {
 			expect(
 				api.test.toCard( {
 					title: 'Q1',
-					fullurl: '/wiki/Q1',
+					fullurl: 'http://localhost/wiki/Q1',
 					entityterms: {
 						description: [ 'desc' ],
 						label: [ 'label' ]
@@ -183,8 +183,26 @@ describe( 'api.js', () => {
 				proximity: undefined,
 				thumbnail: undefined,
 				title: 'label',
-				url: '/wiki/Q1'
+				url: 'http://localhost/wiki/Q1'
 			} );
+		} );
+
+		it( 'can resolve full urls on mobile domain', () => {
+			delete window.location;
+			window.location = new URL( 'http://m.localhost' );
+			mw.config.get = jest.fn( ( p ) => {
+				if ( p === 'wgServerName' ) {
+					return 'localhost';
+				}
+			} );
+			expect(
+				api.test.toCard( {
+					title: 'Paris',
+					fullurl: 'http://localhost/wiki/Paris'
+				} ).url
+			).toStrictEqual(
+				'http://m.localhost/wiki/Paris'
+			);
 		} );
 
 		it( 'can resolve wikidata terms without a label', () => {
