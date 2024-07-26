@@ -11,6 +11,7 @@
 	"nearby": "Sivut aiheista lähellä sinua",
 	"nearby-pages-desc": "Lisää toimintosivun [[Special:Nearby|Nearby]]",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
 	"nearby-pages-error-guidance": "Kokeile päivittää sijaintisi.",
 	"nearby-pages-permission-denied": "Olet estänyt {{GRAMMAR:genitive|{{SITENAME}}}} pääsyn sijaintitietoihisi. Voit korjata asian selaimesi tai laitteesi asetuksista",
 	"nearby-pages-requirements": "Pahoittelut! Selaimesi ei tue {{GRAMMAR:genitive|{{SITENAME}}}} Lähistöllä-ominaisuutta.",
