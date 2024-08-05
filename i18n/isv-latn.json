@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"IJzeren Jan"
+		]
+	},
+	"nearby-pages-desc": "Dodavaje specialnu stranicu [[Special:Nearby|V pobližju]]",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "Funkcija «V pobližju» v projektu {{SITENAME}} imaje problemy.",
+	"nearby-pages-error-guidance": "Poprobujte osvěžiti svoje městopoloženje.",
+	"nearby-pages-noresults": "Tiho tu... Ne najdena nijedna stranica s temami v vašem pobližju.",
+	"nearby-pages-noresults-guidance": "Poprobujte stvoriti novu stranicu ili dodati městopoloženje jestvujučej stranici",
+	"nearby-pages-permission-denied": "Vy jeste zabranili dostup k službam městopoloženja za projekt {{SITENAME}}. Ako hočete to izměniti, prosimo, že posětite nastavjenja svojego prěgledača ili aparata",
+	"nearby-pages-location-unavailable": "{{SITENAME}} ne može oprěděliti vaše městopoloženje. Prosimo, poprobujte ješče raz s lěpšim signalom.",
+	"nearby-pages-requirements": "Izvinite! Vaš prěgledač ne poddrživaje funkciju «V pobližju» v projektu {{SITENAME}}.",
+	"nearby-pages-requirements-guidance": "Poprobujte drugy prěgledač ili vključite JavaScript, ako jest u vas izključeny.",
+	"nearby-pages-title": "V pobližju",
+	"nearby-pages-info-heading": "Města nedaleko vas",
+	"nearby-pages-info-show-random": "Pokazati slučajne stranice",
+	"nearby-pages-info-show-button": "Pokazati stranice o městah v pobližju"
+}
