@@ -1,8 +1,25 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
-	"nearby": "Páxinas sobre temas preto de vostede"
+	"nearby": "Páxinas sobre temas preto de ti",
+	"nearby-pages-desc": "Engade a páxina especial sobre [[Special:Nearby|temas preto de ti]]",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "A funcionalidade de temas preto de ti de {{SITENAME}} está tendo algunhas dificultades.",
+	"nearby-pages-error-guidance": "Intenta refrescar a túa localización.",
+	"nearby-pages-noresults": "Está todo moi quedo... Non hai páxinas sobre temas preto de ti.",
+	"nearby-pages-noresults-guidance": "Intenta crear unha páxina nova ou engadir a localización a unha páxina existente",
+	"nearby-pages-permission-denied": "Rexeitaches o acceso aos servizos de localización de {{SITENAME}}. Para modificar isto, visita os axustes do teu navegador ou dispositivo",
+	"nearby-pages-location-unavailable": "{{SITENAME}} non pode determinar a túa localización. Inténtao de novo cando teñas mellor sinal.",
+	"nearby-pages-requirements": "Sentímolo! O teu navegador non soporta a funcionalidade de temas preto de ti de {{SITENAME}}.",
+	"nearby-pages-requirements-guidance": "Proba un navegador diferente ou activa o JavaScript se o tes desactivado.",
+	"nearby-pages-title": "Preto",
+	"nearby-pages-info-heading": "Sitios ao teu redor",
+	"nearby-pages-info-description": "Podes ler páxinas de {{SITENAME}} interesantes sobre sitios ao teu redor",
+	"nearby-pages-info-show-random": "Amosar páxinas ao chou",
+	"nearby-pages-info-show-button": "Amosar páxinas preto de ti"
 }
