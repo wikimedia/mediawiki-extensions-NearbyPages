@@ -1,21 +1,23 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
-	"nearby-pages-desc": "Setzt d'Spezialsäit[[Special:Nearby|Nobäi]] derbäi",
+	"nearby-pages-desc": "Setzt d'Spezialsäit[[Special:Nearby|An der Géigend]] derbäi",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
-	"nearby-pages-error": "{{SITENAME}} 'Nobäi' huet e puer Problemer.",
-	"nearby-pages-error-guidance": "Probéiert d'Plaz wou Dir sidd z'aktualiséieren.",
-	"nearby-pages-noresults": "Et ass roueg hei... Et goufe keng Säite mat Themen aus der Géigend fonnt.",
-	"nearby-pages-location-unavailable": "{{SITENAME}} kann net bestëmme wou Dir sidd. Probéiert wgl. nach eng Kéier mat engem bessere Signal.",
-	"nearby-pages-requirements": "Leider ënnerstëtzt Ären Internetbrowser {{SITENAME}} 'Nobäi' net.",
-	"nearby-pages-requirements-guidance": "Probéiert en anere Browser oder aktivéiert JavaScript wann Dir deen ausgeschalt hutt.",
-	"nearby-pages-title": "Nobäi",
-	"nearby-pages-info-heading": "Plaze ronderëm Iech",
+	"nearby-pages-error": "„An der Géigend“ vu(n) {{SITENAME}} huet e puer Problemer.",
+	"nearby-pages-error-guidance": "Probéiert Äre Standuert z'aktualiséieren.",
+	"nearby-pages-noresults": "Et ass roueg hei... Et goufe keng Säite mat Theemen an der Géigend fonnt.",
+	"nearby-pages-noresults-guidance": "Probéiert eng nei Säit unzeleeën oder de Standuert bei eng bestoend derbäizesetzen",
+	"nearby-pages-location-unavailable": "{{SITENAME}} konnt Äre Standuert net bestëmmen. Probéiert wgl. nach eng Kéier mat engem bessere Signal.",
+	"nearby-pages-requirements": "Leider ënnerstëtzt Ären Internetbrowser „An der Géigend“ vu(n) {{SITENAME}} net.",
+	"nearby-pages-requirements-guidance": "Probéiert en anere Browser oder aktivéiert JavaScript, falls Dir en desaktivéiert hutt.",
+	"nearby-pages-title": "An der Géigend",
+	"nearby-pages-info-heading": "Plazen an Ärer Géigend",
 	"nearby-pages-info-description": "Dir kënnt interessant {{SITENAME}}-Säiten iwwer Plaze ronderëm Iech liesen",
 	"nearby-pages-info-show-random": "Zoufälleg Säite weisen",
-	"nearby-pages-info-show-button": "Säiten nobäi weisen"
+	"nearby-pages-info-show-button": "Säiten an der Géigend weisen"
 }
