@@ -35,7 +35,7 @@ class SpecialNearby extends SpecialPage {
 		$tp = new TemplateParser( __DIR__ . '/templates' );
 		$html = $tp->processTemplate( 'Nearby', [
 			'html-error-noscript' => Html::errorBox(
-				$this->msg( 'nearby-pages-requirements-guidance' )->text(),
+				$this->msg( 'nearby-pages-requirements-guidance' )->parse(),
 				$this->msg( 'nearby-pages-requirements' )->text()
 			)
 		] );
