@@ -1,11 +1,23 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung"
+			"Winston Sung",
+			"BadDog"
 		]
 	},
 	"nearby-pages-desc": "Dodaje posebnu stranicu „[[Special:Nearby|U blizini]]”",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
-	"nearby-pages-error": "\"U blizini\" na projektu {{SITENAME}} ima poteškoća."
+	"nearby-pages-error": "Funkcija „U blizini” suočava se s poteškoćama.",
+	"nearby-pages-error-guidance": "Osvježite svoju lokaciju.",
+	"nearby-pages-noresults": "Nema stranica o obližnjim temama.",
+	"nearby-pages-noresults-guidance": "Izradite novu stranicu ili dodajte lokaciju postojećoj.",
+	"nearby-pages-permission-denied": "Odbili ste pristup uslugama lokacije. Da biste to promijenili, posjetite postavke preglednika ili uređaja.",
+	"nearby-pages-location-unavailable": "Ne mogu da odredim lokaciju. Pokušajte ponovo s boljim signalom.",
+	"nearby-pages-requirements": "Vaš veb-preglednik ne podržava funkciju „U blizini”.",
+	"nearby-pages-requirements-guidance": "Upotrebite drugi preglednik ili uključite JavaScript u slučaju da je isključen.",
+	"nearby-pages-title": "U blizini",
+	"nearby-pages-info-heading": "Obližnja mjesta",
+	"nearby-pages-info-show-random": "Prikaži nasumične stranice",
+	"nearby-pages-info-show-button": "Prikaži obližnja mjesta"
 }
