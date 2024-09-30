@@ -1,8 +1,23 @@
 {
 	"@metadata": {
 		"authors": [
+			"Luky001",
 			"Teslaton"
 		]
 	},
-	"nearby": "Stránky o blízkych lokalitách"
+	"nearby": "Stránky o blízkych lokalitách",
+	"nearby-pages-desc": "Pridáva špeciálnu stránku [[Special:Nearby|V okolí]]",
+	"nearby-pages-error": "Funkcia {{GRAMMAR:genitív|{{SITENAME}}}} V okolí má nejaké problémy.",
+	"nearby-pages-error-guidance": "Skúste aktualizovať svoju polohu.",
+	"nearby-pages-noresults": "Je tu akosi prázdno... Neboli nájdené žiadne stránky o témach v okolí.",
+	"nearby-pages-noresults-guidance": "Skúste vytvoriť novú stránku alebo pridať súradnice k existujúcej stránke",
+	"nearby-pages-permission-denied": "Zamietli ste prístup k lokalizačným službám pre {{GRAMMAR:akuzatív|{{SITENAME}}}}. Ak to chcete zmeniť, navštívte, prosím, nastavenia vášho prehliadača alebo zariadenia.",
+	"nearby-pages-location-unavailable": "{{GRAMMAR:nominatív|{{SITENAME}}}} nemôže určiť vašu polohu. Skúste to znova s lepším signálom.",
+	"nearby-pages-requirements": "Prepáčte! Váš prehliadač nepodporuje funkcionalitu {{GRAMMAR:genitív|{{SITENAME}}}} V okolí.",
+	"nearby-pages-requirements-guidance": "Skúste iný prehliadač alebo povoľte JavaScript, ak ste ho zakázali.",
+	"nearby-pages-title": "V okolí",
+	"nearby-pages-info-heading": "Miesta okolo vás",
+	"nearby-pages-info-description": "Môžete si prečítať zaujímavé stránky na {{GRAMMAR:lokál|{{SITENAME}}}} o miestach okolo vás",
+	"nearby-pages-info-show-random": "Zobraziť náhodné stránky",
+	"nearby-pages-info-show-button": "Zobraziť stránky v okolí"
 }
