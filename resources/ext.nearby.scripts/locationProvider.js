@@ -89,11 +89,8 @@ function getRandomLocation() {
 		// we don't have enough to choose from. Try to find another.
 		return api.getRandomPages().then( function ( pages ) {
 			randomLocations = randomLocations.concat(
-				pages.map( function ( page ) {
-					return page.coordinates ? page.coordinates[ 0 ] : null;
-				} ).filter( function ( coords ) {
-					return coords !== null;
-				} )
+				pages.map( ( page ) => page.coordinates ? page.coordinates[ 0 ] : null )
+					.filter( ( coords ) => coords !== null )
 			);
 			// In the very unlikely case that failed let's generate a random coordinate
 			if ( randomLocations.length < 20 ) {
