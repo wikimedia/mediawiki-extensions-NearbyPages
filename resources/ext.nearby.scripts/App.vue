@@ -207,19 +207,19 @@ module.exports = exports = Vue.defineComponent( {
 		 */
 		loadPagesFromPromise: function ( promise ) {
 			this.pages = proxyPages();
-			promise.then( function ( result ) {
+			promise.then( ( result ) => {
 				const pages = result.pages;
 				this.error = pages.length ? false : mw.msg( 'nearby-pages-noresults' );
 				this.pages = pages;
-			}.bind( this ), function () {
+			}, () => {
 				this.showError( 'nearby-pages-error' );
-			}.bind( this ) );
+			} );
 		},
 
 		showRandomNearbyArticles: function () {
 			const vm = this;
 			this.reset();
-			locationProvider.getRandomLocation().then( function ( coordinate ) {
+			locationProvider.getRandomLocation().then( ( coordinate ) => {
 				vm.loadPages( coordinate.latitude, coordinate.longitude );
 			} );
 		},
@@ -228,9 +228,9 @@ module.exports = exports = Vue.defineComponent( {
 			const vm = this;
 			this.reset();
 
-			locationProvider.getCurrentPosition().then( function ( coordinate ) {
+			locationProvider.getCurrentPosition().then( ( coordinate ) => {
 				vm.loadPages( coordinate.latitude, coordinate.longitude );
-			}, function ( msg ) {
+			}, ( msg ) => {
 				switch ( msg ) {
 					case locationProvider.ERROR_SERVICE_UNAVAILABLE:
 						return vm.showError( 'nearby-pages-location-unavailable' );

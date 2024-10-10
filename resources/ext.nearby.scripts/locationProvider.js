@@ -28,13 +28,13 @@ function getCurrentPosition() {
 	const result = $.Deferred();
 	if ( isAvailable() ) {
 		navigator.geolocation.getCurrentPosition(
-			function ( geo ) {
+			( geo ) => {
 				result.resolve( {
 					latitude: geo.coords.latitude,
 					longitude: geo.coords.longitude
 				} );
 			},
-			function ( err ) {
+			( err ) => {
 				let error;
 				switch ( err.code ) {
 					case err.PERMISSION_DENIED:
@@ -87,7 +87,7 @@ function getRandomLocation() {
 	const result = $.Deferred();
 	if ( randomLocations.length < 20 ) {
 		// we don't have enough to choose from. Try to find another.
-		return api.getRandomPages().then( function ( pages ) {
+		return api.getRandomPages().then( ( pages ) => {
 			randomLocations = randomLocations.concat(
 				pages.map( ( page ) => page.coordinates ? page.coordinates[ 0 ] : null )
 					.filter( ( coords ) => coords !== null )

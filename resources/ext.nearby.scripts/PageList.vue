@@ -61,22 +61,20 @@ module.exports = exports = vue.defineComponent( {
 		 */
 		pagesToSuggestions: function () {
 			const supportsGeoUrlProtocol = this.supportsGeoUrlProtocol;
-			return this.pages.map( function ( page ) {
-				return {
-					url: page.url,
-					id: page.id,
-					label: page.title,
-					proximity: page.proximity,
-					description: page.description,
-					geoURI: supportsGeoUrlProtocol ? page.geoURI : undefined,
-					thumbnail: page.thumbnail ? {
-						mimetype: 'image/jpeg',
-						width: 200,
-						height: 150,
-						url: page.thumbnail.source
-					} : null
-				};
-			} );
+			return this.pages.map( ( page ) => ( {
+				url: page.url,
+				id: page.id,
+				label: page.title,
+				proximity: page.proximity,
+				description: page.description,
+				geoURI: supportsGeoUrlProtocol ? page.geoURI : undefined,
+				thumbnail: page.thumbnail ? {
+					mimetype: 'image/jpeg',
+					width: 200,
+					height: 150,
+					url: page.thumbnail.source
+				} : null
+			} ) );
 		}
 	}
 } );
@@ -102,8 +100,7 @@ module.exports = exports = vue.defineComponent( {
 			display: grid;
 			grid-template-columns: repeat( 3, 1fr );
 			grid-auto-rows: 1fr;
-			row-gap: 10px;
-			column-gap: 10px;
+			gap: 10px 10px;
 
 			.cdx-card {
 				width: auto;

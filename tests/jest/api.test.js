@@ -8,11 +8,9 @@ let apiMock;
 describe( 'api.js', () => {
 	describe( 'getRandomPages', () => {
 		beforeEach( () => {
-			apiMock = jest.fn( () =>
-				Promise.resolve(
-					require( './fixtures/random.json' )
-				)
-			);
+			apiMock = jest.fn( () => Promise.resolve(
+				require( './fixtures/random.json' )
+			) );
 		} );
 
 		it( 'Gets a random location', () => {
@@ -26,11 +24,9 @@ describe( 'api.js', () => {
 	describe( 'getPagesAtCoordinates', () => {
 
 		beforeEach( () => {
-			apiMock = jest.fn( () =>
-				Promise.resolve(
-					require( './fixtures/geosearch.json' )
-				)
-			);
+			apiMock = jest.fn( () => Promise.resolve(
+				require( './fixtures/geosearch.json' )
+			) );
 		} );
 
 		it( 'Works with empty response', () => {

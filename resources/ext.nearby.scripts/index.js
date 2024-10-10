@@ -6,18 +6,16 @@ const Vue = require( 'vue' ),
 /**
  * @return {Object}
  */
-const defaultProps = () => {
-	return {
-		apiOptions: {
-			range: config.NearbyRange,
-			// T117159
-			language: mw.config.get( 'wgPageContentLanguage' ) || 'en',
-			namespaces: config.NearbyPagesNamespaces,
-			wikidata: config.NearbyPagesWikidataCompatibility
-		},
-		randomButton: config.NearbyRandomButton
-	};
-};
+const defaultProps = () => ( {
+	apiOptions: {
+		range: config.NearbyRange,
+		// T117159
+		language: mw.config.get( 'wgPageContentLanguage' ) || 'en',
+		namespaces: config.NearbyPagesNamespaces,
+		wikidata: config.NearbyPagesWikidataCompatibility
+	},
+	randomButton: config.NearbyRandomButton
+} );
 
 function main() {
 	const createApp = Vue.createMwApp || Vue.createApp;

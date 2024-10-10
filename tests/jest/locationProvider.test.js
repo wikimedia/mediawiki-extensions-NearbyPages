@@ -1,33 +1,27 @@
 const locationProvider = require( '../../resources/ext.nearby.scripts/locationProvider.js' );
 
-const geolocationRejectWithErrorCode = ( code ) => {
-	return {
-		getCurrentPosition: ( resolve, reject ) => {
-			reject( {
-				code: true,
-				[ code ]: true
-			} );
-		}
-	};
-};
+const geolocationRejectWithErrorCode = ( code ) => ( {
+	getCurrentPosition: ( resolve, reject ) => {
+		reject( {
+			code: true,
+			[ code ]: true
+		} );
+	}
+} );
 
 let apiMock, apiMockNoLocation;
 
 describe( 'LocationProvider', () => {
 	describe( 'getRandomLocation', () => {
 		beforeEach( () => {
-			apiMock = jest.fn( () =>
-				Promise.resolve(
-					// 100 pages, 26 of which have locations
-					require( './fixtures/random.json' )
-				)
-			);
-			apiMockNoLocation = jest.fn( () =>
-				Promise.resolve(
-					// 100 pages, 26 of which have locations
-					require( './fixtures/randomWithoutLocation.json' )
-				)
-			);
+			apiMock = jest.fn( () => Promise.resolve(
+				// 100 pages, 26 of which have locations
+				require( './fixtures/random.json' )
+			) );
+			apiMockNoLocation = jest.fn( () => Promise.resolve(
+				// 100 pages, 26 of which have locations
+				require( './fixtures/randomWithoutLocation.json' )
+			) );
 		} );
 
 		it( 'Considers the fact that random pages may yield no results', () => {
@@ -49,11 +43,9 @@ describe( 'LocationProvider', () => {
 				expect( apiMock ).toHaveBeenCalledTimes( 1 );
 			} ).then( () => Promise.all(
 				// We run 6 more calls so that our cache becomes 19
-				( new Array( 6 ).fill( 0 ) ).map( () => {
-					return locationProvider.getRandomLocation().then( ( r ) => {
-						results.push( r );
-					} );
-				} )
+				( new Array( 6 ).fill( 0 ) ).map( () => locationProvider.getRandomLocation().then( ( r ) => {
+					results.push( r );
+				} ) )
 			) ).then( () => {
 				// After running 6 more getRandomLocation calls,
 				// the cache is now depleted: 26 possibilities - 7 => 19
@@ -73,7 +65,7 @@ describe( 'LocationProvider', () => {
 	describe( 'getCurrentPosition', () => {
 		it( 'rejects when no support', () => {
 			delete global.window.navigator.geolocation;
-			locationProvider.getCurrentPosition().then( null, function ( msg ) {
+			locationProvider.getCurrentPosition().then( null, ( msg ) => {
 				expect( msg ).toBe( locationProvider.ERROR_SERVICE_UNAVAILABLE );
 			} );
 		} );
@@ -90,7 +82,7 @@ describe( 'LocationProvider', () => {
 				}
 			};
 
-			locationProvider.getCurrentPosition().then( function ( coords ) {
+			locationProvider.getCurrentPosition().then( ( coords ) => {
 				expect( coords.latitude ).toBe( 5 );
 				expect( coords.longitude ).toBe( 6 );
 			} );
@@ -99,7 +91,7 @@ describe( 'LocationProvider', () => {
 		it( 'rejects when denied', () => {
 			global.window.navigator.geolocation = geolocationRejectWithErrorCode( 'PERMISSION_DENIED' );
 
-			locationProvider.getCurrentPosition().then( null, function ( msg ) {
+			locationProvider.getCurrentPosition().then( null, ( msg ) => {
 				expect( msg ).toBe( locationProvider.PERMISSION_DENIED );
 			} );
 		} );
@@ -107,7 +99,7 @@ describe( 'LocationProvider', () => {
 		it( 'rejects when timed out', () => {
 			global.window.navigator.geolocation = geolocationRejectWithErrorCode( 'TIMEOUT' );
 
-			locationProvider.getCurrentPosition().then( null, function ( msg ) {
+			locationProvider.getCurrentPosition().then( null, ( msg ) => {
 				expect( msg ).toBe( locationProvider.ERROR_TIMEOUT );
 			} );
 		} );
@@ -115,7 +107,7 @@ describe( 'LocationProvider', () => {
 		it( 'rejects when unable to find location', () => {
 			global.window.navigator.geolocation = geolocationRejectWithErrorCode( 'POSITION_UNAVAILABLE' );
 
-			locationProvider.getCurrentPosition().then( null, function ( msg ) {
+			locationProvider.getCurrentPosition().then( null, ( msg ) => {
 				expect( msg ).toBe( locationProvider.ERROR_POSITION_UNAVAILABLE );
 			} );
 		} );
@@ -123,7 +115,7 @@ describe( 'LocationProvider', () => {
 		it( 'rejects unknown errors', () => {
 			global.window.navigator.geolocation = geolocationRejectWithErrorCode( 'as24u2uehsd' );
 
-			locationProvider.getCurrentPosition().then( null, function ( msg ) {
+			locationProvider.getCurrentPosition().then( null, ( msg ) => {
 				expect( msg ).toBe( locationProvider.ERROR_UNKNOWN );
 			} );
 		} );

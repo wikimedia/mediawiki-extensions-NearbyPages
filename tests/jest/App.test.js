@@ -202,17 +202,11 @@ describe( 'App', () => {
 			} );
 			return app.findAllComponents( Button )[ 1 ]
 				.trigger( 'click' )
-				.then( () => {
-					return randomLocationResult.then( () => {
-						return getPagesAtCoordinatesResult.then( () => {
-							return Vue.nextTick( () => {
-								expect(
-									app.findAllComponents( Card ).length
-								).toBe( 1 );
-							} );
-						} );
-					} );
-				} );
+				.then( () => randomLocationResult.then( () => getPagesAtCoordinatesResult.then( () => Vue.nextTick( () => {
+					expect(
+						app.findAllComponents( Card ).length
+					).toBe( 1 );
+				} ) ) ) );
 		} );
 
 		it( 'renders near a given page if title prop given', () => {

@@ -86,9 +86,7 @@ function getRandomPages() {
 		colimit: 100,
 		grnnamespace: 0,
 		grnlimit: 100
-	} ).then( function ( data ) {
-		return data.query.pages;
-	} );
+	} ).then( ( data ) => data.query.pages );
 }
 
 /**
@@ -103,7 +101,7 @@ function getPages( reqData, options ) {
 		language = options.language || 'en',
 		additionalProps = wikidataMode ? [ 'entityterms' ] : [ 'pageterms' ];
 
-	return mwApi.ajax( $.extend( {
+	return mwApi.ajax( Object.assign( {
 		wbetterms: wikidataMode ? [ 'label', 'description' ] : undefined,
 		action: 'query',
 		format: 'json',
@@ -125,9 +123,9 @@ function getPages( reqData, options ) {
 		piprop: 'thumbnail',
 		pithumbsize: 150,
 		pilimit: 50
-	}, reqData ) ).then( function ( data ) {
+	}, reqData ) ).then( ( data ) => {
 		const queryPages = data && data.query ? data.query.pages : [],
-			pages = queryPages.sort( function ( a, b ) {
+			pages = queryPages.sort( ( a, b ) => {
 				const c = a.coordinates || [ { dist: 0 } ],
 					d = b.coordinates || [ { dist: 0 } ];
 
