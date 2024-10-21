@@ -1,24 +1,6 @@
 {
 	"root": true,
 	"extends": [
-		"wikimedia/client-es6",
-		"wikimedia/jquery",
-		"wikimedia/mediawiki"
-	],
-	"env": {
-		"browser": true,
-		"commonjs": true
-	},
-	"rules": {
-		"no-implicit-globals": "off",
-		"vue/html-self-closing": "off",
-		"vue/v-on-style": "off",
-		"vue/v-bind-style": "off",
-		"jsdoc/no-undefined-types": "off",
-		"mediawiki/msg-doc": "off",
-		"mediawiki/valid-package-file-require": "off",
-		"compat/compat": "warn",
-		"mediawiki/vue-exports-component-directive": "warn",
-		"vue/no-undef-components": "warn"
-	}
+		"wikimedia/server"
+	]
 }
