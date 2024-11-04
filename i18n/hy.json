@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac"
+			"Kareyac",
+			"23artashes"
 		]
 	},
 	"nearby-pages-distance": "{{PLURAL:$1|$1 կմ}}",

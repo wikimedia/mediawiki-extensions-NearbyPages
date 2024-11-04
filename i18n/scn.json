@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ajeje Brazorf"
+			"Ajeje Brazorf",
+			"Sarvaturi"
 		]
 	},
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",

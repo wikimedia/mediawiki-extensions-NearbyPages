@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Quentí"
+			"Quentí",
+			"Cedric31"
 		]
 	},
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",

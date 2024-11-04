@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mormegil"
+			"Mormegil",
+			"Matěj Suchánek"
 		]
 	},
 	"nearby-pages-desc": "Přidává speciální stránku [[Special:Nearby|Poblíž]]",
