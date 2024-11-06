@@ -3,12 +3,13 @@
 		"authors": [
 			"Alshamiri1",
 			"Maroen1990",
+			"Meno25",
 			"NEHAOUA",
 			"محمد أحمد عبد الفتاح"
 		]
 	},
 	"nearby": "صفحات فيها مواضيع قريبة منك",
-	"nearby-pages-desc": "يضيف صفحة خاصة [[خاص: قريب | قريب]]",
+	"nearby-pages-desc": "إضافة صفحة خاصة [[Special:Nearby|Nearby]]",
 	"nearby-pages-distance": "{{PLURAL:$1| $1 كلم}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1| $1 }}",
 	"nearby-pages-error": "{{SITENAME}} تواجه الأجهزة المجاورة بعض المشكلات.",
