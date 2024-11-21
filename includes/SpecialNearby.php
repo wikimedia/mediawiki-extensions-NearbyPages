@@ -25,6 +25,7 @@ class SpecialNearby extends SpecialPage {
 		$out = $this->getOutput();
 		$out->addModuleStyles( [
 			'ext.nearby.images',
+			'mediawiki.codex.messagebox.styles',
 			'ext.nearby.styles'
 		] );
 		$out->addModules( [
