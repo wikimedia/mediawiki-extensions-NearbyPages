@@ -31,9 +31,6 @@ const vue = require( 'vue' );
 // @vue/component
 module.exports = exports = vue.defineComponent( {
 	name: 'PageList',
-	compatConfig: {
-		MODE: 3
-	},
 	components: {
 		CdxCard,
 		CdxIcon

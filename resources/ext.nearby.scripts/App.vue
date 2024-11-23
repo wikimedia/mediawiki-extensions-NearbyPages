@@ -96,9 +96,6 @@ function proxyPages() {
 // @vue/component
 module.exports = exports = Vue.defineComponent( {
 	name: 'App',
-	compatConfig: {
-		MODE: 3
-	},
 	components: {
 		CdxButton,
 		CdxMessage,
