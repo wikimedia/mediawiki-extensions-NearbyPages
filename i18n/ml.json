@@ -4,7 +4,7 @@
 			"Praveenp"
 		]
 	},
-	"nearby-pages-desc": " [[Special:Nearby|സമീപസ്ഥം]] പ്രത്യേക താൾ ചേർക്കുന്നു",
+	"nearby-pages-desc": "[[Special:Nearby|സമീപസ്ഥം]] പ്രത്യേക താൾ ചേർക്കുന്നു",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 കി.മീ.}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 മീ.}}",
 	"nearby-pages-error": "{{SITENAME}} സമീപസ്ഥം ചില പ്രശ്നങ്ങൾ നേരിടുന്നു.",
