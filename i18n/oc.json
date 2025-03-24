@@ -2,12 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Quentí",
-			"Cedric31"
+			"Cedric31",
+			"Lhanars"
 		]
 	},
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
 	"nearby-pages-noresults-guidance": "Ensajatz de crear una pagina novèla o d’ajustar un emplaçament a una pagina existenta",
 	"nearby-pages-title": "A proximitat",
-	"nearby-pages-info-heading": "Luòcs a proximitat"
+	"nearby-pages-info-heading": "Luòcs a proximitat",
+	"nearby-pages-info-show-button": "Mostrar d'articles pròps"
 }
