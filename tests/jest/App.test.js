@@ -27,7 +27,7 @@ function userClickShowNearbyPages(
 		app.findComponent( Button ).trigger( 'click' ),
 		getCurrentPositionResult,
 		getPagesAtCoordinatesResult || Promise.resolve()
-	] ).catch( () => Promise.resolve() );
+	] ).catch( () => {} );
 }
 
 describe( 'App', () => {
