@@ -3,5 +3,12 @@
 		"authors": [
 			"Srđan"
 		]
-	}
+	},
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error-guidance": "Osveži lokaciju.",
+	"nearby-pages-title": "U blizini",
+	"nearby-pages-info-heading": "Mesta oko vas",
+	"nearby-pages-info-show-random": "Prikaži slučajne stranice",
+	"nearby-pages-info-show-button": "Prikaži stranice u blizini"
 }
