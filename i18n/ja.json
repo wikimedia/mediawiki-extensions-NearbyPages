@@ -3,7 +3,8 @@
 		"authors": [
 			"RYOUMA1117",
 			"Kokage si",
-			"Sujiniku"
+			"Sujiniku",
+			"Shirayuki"
 		]
 	},
 	"nearby-pages-desc": "[[Special:Nearby|付近]]特別ページを追加する",
@@ -14,7 +15,7 @@
 	"nearby-pages-noresults": "ここは静かですね...付近のトピックでページは見つかりませんでした。",
 	"nearby-pages-noresults-guidance": "新しいページを作成するか、既存のページに場所を追加してみてください",
 	"nearby-pages-permission-denied": "{{SITENAME}}に対して位置情報サービスへのアクセスを拒否しました。これを変更するには、ブラウザまたはデバイスの設定を訪れてください",
-	"nearby-pages-location-unavailable": "{{SITENAME}}が位置を特定することができません。より良い信号で再度試してください。",
+	"nearby-pages-location-unavailable": "{{SITENAME}}が位置を特定できません。より良い信号でもう一度お試しください。",
 	"nearby-pages-requirements": "申し訳ありません！あなたのウェブブラウザは{{SITENAME}}の付近機能をサポートしていません。",
 	"nearby-pages-requirements-guidance": "別のブラウザを試すか、JavaScriptを無効にしているならば有効にしてください。",
 	"nearby-pages-title": "付近",
