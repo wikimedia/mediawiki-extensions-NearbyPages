@@ -1,8 +1,25 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bjarki S",
 			"Snævar"
 		]
 	},
-	"nearby": "Síður um efni nálægt þér"
+	"nearby": "Síður um efni nálægt þér",
+	"nearby-pages-desc": "Bætir við sérstakri síðu fyrir [[Special:Nearby|nálæg]] atriði.",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "Það er eitthvað vandamál við að sækja nálæga {{SITENAME}} hluti.",
+	"nearby-pages-error-guidance": "Reyndu að endurnýja staðsetningu þína.",
+	"nearby-pages-noresults": "Það er ekki mikið að frétta á þessum slóðum. Það fundust engar síður fyrir atriði í grenndinni.",
+	"nearby-pages-noresults-guidance": "Prófaðu að búa til nýja síðu fyrir nálæg fyrirbæri eða bæta staðsetningu við síðu sem er til nú þegar",
+	"nearby-pages-permission-denied": "Þú hefur ekki heimilað {{SITENAME}} að hafa aðgengi að staðsetningargögnum. Þú þarft að breyta þessu í stillingum tækisins eða vafrans.",
+	"nearby-pages-location-unavailable": "{{SITENAME}} gat ekki staðsett þig. Reyndu aftur með betra staðsetningarmerki.",
+	"nearby-pages-requirements": "Því miður býður vafrinn þinn ekki upp á að sýna nálægt fyrirbæri á {{SITENAME}}.",
+	"nearby-pages-requirements-guidance": "Reyndu annan vafra eða kveiktu á JavaScript ef það er slökkt á því.",
+	"nearby-pages-title": "Nálægt",
+	"nearby-pages-info-heading": "Staðir nálægt þér",
+	"nearby-pages-info-description": "Þú getur lesið áhugaverðar {{SITENAME}} síður um staði nálægt þér",
+	"nearby-pages-info-show-random": "Sýna síður af handahófi",
+	"nearby-pages-info-show-button": "Sýna síður fyrir nálæg fyrirbæri"
 }
