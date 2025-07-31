@@ -214,12 +214,17 @@ $specialPageAliases['vi'] = [
 	'Nearby' => [ 'Lân_cận', 'Kề_bên' ],
 ];
 
-/** Simplified Chinese (中文（简体）‎) */
+/** Chinese (中文) */
+$specialPageAliases['zh'] = [
+	'Nearby' => [ 'Nearby' ],
+];
+
+/** Simplified Chinese (中文（简体）) */
 $specialPageAliases['zh-hans'] = [
 	'Nearby' => [ '附近' ],
 ];
 
-/** Traditional Chinese (中文（繁體）‎) */
+/** Traditional Chinese (中文（繁體）) */
 $specialPageAliases['zh-hant'] = [
 	'Nearby' => [ '附近' ],
 ];
