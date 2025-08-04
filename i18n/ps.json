@@ -1,7 +1,23 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
-	}
+	},
+	"nearby-pages-desc": "د [[Special:Nearby|څېرمه]] ځانگړی مخ ورگډوي",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 ک‌م}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 م}}",
+	"nearby-pages-error": "{{SITENAME}} څېرمه ځينې ستونزې لري.",
+	"nearby-pages-error-guidance": "د خپل ځای تاندولو هڅه وکړئ.",
+	"nearby-pages-noresults": "څه چوپتيا ده...دلته د څېرمه سکالوگانو هېڅ مخونه ونه موندل شول.",
+	"nearby-pages-noresults-guidance": "د يو نوي مخ جوړولو هڅه وکړئ يا يو شته مخ ته ځای ورگډ کړئ",
+	"nearby-pages-permission-denied": "تاسو د {{SITENAME}} لپاره ځای چوپړتیاوو ته لاسرسی ناگاره کړی دی. د دې بدلولو لپاره مهرباني وکړئ خپل ښوونگر يا وسيلې اوڼنو نه ليدنه وکړئ.",
+	"nearby-pages-location-unavailable": "{{SITENAME}} ستاسو ځای نشي ټاکلی. مهرباني وکړئ له يو ښه سيگنال سره بيا هڅه وکړئ.",
+	"nearby-pages-requirements": "بښنه غواړم! ستاسو وېب ښوونگر {{SITENAME}} څېرمه نه ملاتړ کوي.",
+	"nearby-pages-requirements-guidance": "يو بل ښوونگر وکاروئ يا جاواسکريپټ چارن کړئ که چېرې مو ناچارن کړی وي.",
+	"nearby-pages-title": "څېرمه",
+	"nearby-pages-info-heading": "ستاسو شاوخوا ځايونه",
+	"nearby-pages-info-show-random": "ناڅاپي مخونه ښودل",
+	"nearby-pages-info-show-button": "څېرمه مخونه ښودل"
 }
