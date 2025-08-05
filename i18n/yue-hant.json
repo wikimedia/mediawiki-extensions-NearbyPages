@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"H78c67c",
+			"Ktchankt",
 			"Winston Sung"
 		]
 	},
+	"nearby": "喺你左近嘅話題嘅版面",
 	"nearby-pages-requirements": "對唔住！你嘅瀏覽器唔支援{{SITENAME}}附近功能。",
 	"nearby-pages-title": "左近",
 	"nearby-pages-info-heading": "你附近嘅地方",
