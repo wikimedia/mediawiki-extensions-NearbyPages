@@ -80,7 +80,7 @@ describe( 'App', () => {
 
 			expect(
 				addRoute
-			).toHaveBeenCalledTimes( 3 );
+			).toHaveBeenCalledTimes( 2 );
 		} );
 	} );
 
@@ -148,8 +148,7 @@ describe( 'App', () => {
 					expect( navigateTo ).toHaveBeenCalledWith(
 						null,
 						{
-							path: '#/coord/4,5',
-							useReplaceState: true
+							path: '#/coord/4,5'
 						}
 					);
 					expect(

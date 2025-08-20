@@ -191,8 +191,7 @@ module.exports = exports = Vue.defineComponent( {
 		 */
 		loadPages: function ( lat, lng ) {
 			router.navigateTo( null, {
-				path: '#/coord/' + lat + ',' + lng,
-				useReplaceState: true
+				path: '#/coord/' + lat + ',' + lng
 			} );
 			this.loadPagesFromPromise(
 				api.getPagesAtCoordinates( lat, lng, this.apiOptions )
@@ -251,9 +250,12 @@ module.exports = exports = Vue.defineComponent( {
 			// eslint-disable-next-line security/detect-unsafe-regex
 			coordinateRegex = /^\/coord\/(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)/;
 
-		router.addRoute( coordinateRegex, showPagesNearLocationHandler( vm ) );
-		router.addRoute( pageRegex, showPagesNearPageHandler( vm ) );
-		router.addRoute( '', showHomeHandler( vm ) );
+		router.addRoute(
+			coordinateRegex,
+			showPagesNearLocationHandler( vm ),
+			showHomeHandler( vm )
+		);
+		router.addRoute( pageRegex, showPagesNearPageHandler( vm ), showHomeHandler( vm ) );
 		router.checkRoute();
 		if ( this.title ) {
 			vm.loadPagesNearTitle( this.title );
