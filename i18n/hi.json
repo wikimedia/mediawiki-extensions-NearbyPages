@@ -4,5 +4,9 @@
 			"Saurmandal"
 		]
 	},
-	"nearby": "आपके आस-पास के विषयों के बारे में पृष्ठ"
+	"nearby": "आपके आस-पास के विषयों के बारे में पृष्ठ",
+	"nearby-pages-title": "आस-पास",
+	"nearby-pages-info-heading": "आपके आस-पास की जगहें",
+	"nearby-pages-info-description": "आप अपने आस-पास की जगहों के बारे में {{SITENAME}} के दिलचस्प पृष्ठ पढ़ सकते हैं",
+	"nearby-pages-info-show-button": "आस-पास के पृष्ठ दिखाएँ"
 }
