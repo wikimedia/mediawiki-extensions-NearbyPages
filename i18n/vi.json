@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Minh Nguyen"
+			"Minh Nguyen",
+			"Nvdtn19"
 		]
 	},
 	"nearby-pages-desc": "Thêm trang dặc biệt [[Special:Nearby|Lân cận]]",
@@ -9,14 +10,14 @@
 	"nearby-pages-distance-meters": "$1 {{PLURAL:$1}}m",
 	"nearby-pages-error": "{{SITENAME}} Lân cận đang gặp sự cố.",
 	"nearby-pages-error-guidance": "Hãy thử làm mới vị trí của bạn.",
-	"nearby-pages-noresults": "Có vẻ hẻo lánh nhỉ. Không tìm thấy trang nào có chủ đề lân cận.",
-	"nearby-pages-noresults-guidance": "Hãy thử tạo trang mới hoặc đặt vị trí vào một trang đã tồn tại.",
+	"nearby-pages-noresults": "Có vẻ hẻo lánh… Không tìm thấy trang nào có chủ đề lân cận.",
+	"nearby-pages-noresults-guidance": "Hãy thử tạo trang mới hoặc thêm vị trí vào một trang đã tồn tại.",
 	"nearby-pages-permission-denied": "Bạn đã từ chối cho phép {{SITENAME}} truy cập Dịch vụ Vị trí. Để khắc phục vấn đề này, hãy mở cài đặt của trình duyệt hoặc thiết bị.",
 	"nearby-pages-location-unavailable": "{{SITENAME}} không thể định vị bạn. Xin hãy di chuyển đến nơi có cường độ tín hiệu mạnh hơn rồi thử lại.",
 	"nearby-pages-requirements": "Rất tiếc, trình duyệt của bạn không hỗ trợ {{SITENAME}} Lân cận.",
 	"nearby-pages-requirements-guidance": "Hãy thử một trình duyệt khác hoặc bật JavaScript nếu đang bị tắt.",
 	"nearby-pages-title": "Lân cận",
-	"nearby-pages-info-heading": "Những địa điểm chung quanh bạn",
+	"nearby-pages-info-heading": "Địa điểm gần bạn",
 	"nearby-pages-info-show-random": "Xem các trang ngẫu nhiên",
 	"nearby-pages-info-show-button": "Xem các trang lân cận"
 }
