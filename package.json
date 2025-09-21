@@ -40,7 +40,7 @@
 		"mustache": "3.0.1",
 		"oojs": "3.0.1",
 		"oojs-router": "0.3.0",
-		"parcel": "2.3.2",
+		"parcel": "2.16.0",
 		"pre-commit": "1.2.2",
 		"stylelint": "16.2.0",
 		"stylelint-config-wikimedia": "0.17.2",
