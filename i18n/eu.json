@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Sator",
-			"Theklan"
+			"Theklan",
+			"Xabier Armendaritz"
 		]
 	},
 	"nearby-pages-desc": "[[Special:Nearby|Hurbilekoak]] orrialde berezia gehitzen du",
-	"nearby-pages-distance": "{{PLURAL:$1|km $1|$1 km}}",
-	"nearby-pages-distance-meters": "{{PLURAL:$1|m $1|$1 m}}",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
 	"nearby-pages-error": "{{SITENAME}} Hurbilekoak arazoak dituela dirudi.",
 	"nearby-pages-error-guidance": "Saia zaitez zure kokapena freskatzen.",
 	"nearby-pages-noresults": "Emaitzarik ez... ez dirudi gertu duzun gairik topatu dugunik.",
