@@ -1,9 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ajiniyaz Nurniyazov"
+			"Ajiniyaz Nurniyazov",
+			"Janabaevazizbek"
 		]
 	},
 	"nearby": "Sizge jaqın temadaǵı betler",
-	"nearby-pages-info-description": "Átirapıńızdaǵı orınlar haqqında qızıqlı {{SITENAME}} betlerin oqıwıńız múmkin"
+	"nearby-pages-title": "Átirapımdaǵılar",
+	"nearby-pages-info-heading": "Átirapıńızdaǵı orınlar",
+	"nearby-pages-info-description": "Átirapıńızdaǵı orınlar haqqında qızıqlı {{SITENAME}} betlerin oqıwıńız múmkin",
+	"nearby-pages-info-show-button": "Átirapımdaǵı betlerdi kórset"
 }
