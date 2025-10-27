@@ -1,7 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ajiniyaz Nurniyazov"
+			"Ajiniyaz Nurniyazov",
+			"Janabaevazizbek"
 		]
-	}
+	},
+	"nearby-pages-title": "Átirapımdaǵılar",
+	"nearby-pages-info-heading": "Átirapıńızdaǵı orınlar",
+	"nearby-pages-info-show-button": "Átirapımdaǵı betlerdi kórset"
 }
