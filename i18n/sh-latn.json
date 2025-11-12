@@ -17,7 +17,7 @@
 	"nearby-pages-permission-denied": "Odbili ste pristup uslugama lokacije. Da biste to promijenili, posjetite postavke preglednika ili uređaja.",
 	"nearby-pages-location-unavailable": "Ne mogu da odredim lokaciju. Pokušajte ponovo s boljim signalom.",
 	"nearby-pages-requirements": "Vaš veb-preglednik ne podržava funkciju „U blizini”.",
-	"nearby-pages-requirements-guidance": "Upotrebite drugi preglednik ili uključite JavaScript u slučaju da je isključen.",
+	"nearby-pages-requirements-guidance": "Iskoristite drugi preglednik ili uključite JavaScript u slučaju da je isključen.",
 	"nearby-pages-title": "U blizini",
 	"nearby-pages-info-heading": "Obližnja mjesta",
 	"nearby-pages-info-description": "Istražite zanimljive stranice o obližnjim mjestima.",
