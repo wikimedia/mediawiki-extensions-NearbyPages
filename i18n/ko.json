@@ -3,6 +3,7 @@
 		"authors": [
 			"Dr1t jg",
 			"Nuevo Paso",
+			"Tensama0415",
 			"Ykhwong"
 		]
 	},
@@ -10,6 +11,8 @@
 	"nearby-pages-desc": "[[Special:Nearby|Nearby]] 특수 문서를 추가합니다",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "{{SITENAME}} Nearby에 문제가 발생했습니다.",
+	"nearby-pages-error-guidance": "위치를 새로고침해 보세요.",
 	"nearby-pages-permission-denied": "{{SITENAME}}의 위치 서비스에 대한 접근을 거부하였습니다. 이것을 변경하려면 브라우저 또는 장치 설정을 방문해 주십시오",
 	"nearby-pages-title": "근처",
 	"nearby-pages-info-heading": "주변 장소",
