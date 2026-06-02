@@ -2,13 +2,25 @@
 	"@metadata": {
 		"authors": [
 			"Saederup92",
+			"Steenth",
 			"Weblars"
 		]
 	},
 	"nearby": "Sider om emner i nærheden af dig",
+	"nearby-pages-desc": "Tilføjer [[Special:Nearby|i nærheden]] specialside",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "{{SITENAME}} I nærheden har nogle problemer.",
+	"nearby-pages-error-guidance": "Prøv at opdatere din placering.",
+	"nearby-pages-noresults": "Stille herude... Der blev ikke fundet nogen sider med emner i nærheden.",
+	"nearby-pages-noresults-guidance": "Prøv at oprette en ny side eller tilføje en placering til en eksisterende side",
+	"nearby-pages-permission-denied": "Du har nægtet adgang til Lokationstjenester for {{SITENAME}}. For at ændre dette, skal du gå til dine browser- eller enhedsindstillinger.",
+	"nearby-pages-location-unavailable": "{{SITENAME}} kan ikke bestemme din placering. Prøv igen med et bedre signal.",
+	"nearby-pages-requirements": "Beklager! Din webbrowser understøtter ikke {{SITENAME}} I nærheden.",
+	"nearby-pages-requirements-guidance": "Prøv en anden browser, eller aktiver JavaScript, hvis du har deaktiveret det.",
 	"nearby-pages-title": "I nærheden",
 	"nearby-pages-info-heading": "Steder omkring dig",
-	"nearby-pages-info-description": "Du kan læse interessante {{SITENAME}}-artikler om steder nær dig",
+	"nearby-pages-info-description": "Du kan læse interessante {{SITENAME}}-sider om steder nær dig",
 	"nearby-pages-info-show-random": "Vis tilfældige sider",
-	"nearby-pages-info-show-button": "Vis artikler i nærheden"
+	"nearby-pages-info-show-button": "Vis sider i nærheden"
 }
