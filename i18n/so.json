@@ -4,7 +4,21 @@
 			"AhmedG612"
 		]
 	},
+	"nearby": "Bogagga ku saabsan mowduucyada ku dhow adiga",
+	"nearby-pages-desc": "Waxay ku dartaa bogga gaarka ah ee [[Special:Nearby|Ku dhow]]",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "{{SITENAME}} Ku Dhow waxaa ka jira dhibaatooyin.",
+	"nearby-pages-error-guidance": "Isku day inaad dib u cusboonaysiiso goobtaada.",
+	"nearby-pages-noresults": "Aamusnaan ayaa halkan ka jirta... Lama helin bogag leh mowduucyo ku dhow.",
+	"nearby-pages-noresults-guidance": "Isku day inaad samayso bog cusub ama aad ku darto goob bog jira",
+	"nearby-pages-permission-denied": "Waxaad diiday gelitaanka adeegyada goobta ee {{SITENAME}}. Si aad tan u beddesho, fadlan booqo dejimaha biraawsarkaaga ama qalabkaaga",
 	"nearby-pages-location-unavailable": "{{SITENAME}} ma go'aamin karto goobtaada. Fadlan mar kale isku day adigoo leh xiriir ka wanaagsan.",
+	"nearby-pages-requirements": "Waan ka xunnahay! Biraawsarkaaga web-ka ma taageerayo {{SITENAME}} Ku Dhow.",
+	"nearby-pages-requirements-guidance": "Isku day biraawsar kale ama daar JavaScript haddii aad damisay.",
+	"nearby-pages-title": "Ku dhow",
 	"nearby-pages-info-heading": "Meelaha kugu dhow",
-	"nearby-pages-info-description": "Waxaad akhrisan kartaa bogag xiiso leh oo {{SITENAME}} ah oo ku saabsan meelo kugu dhow"
+	"nearby-pages-info-description": "Waxaad akhrisan kartaa bogag xiiso leh oo {{SITENAME}} ah oo ku saabsan meelo kugu dhow",
+	"nearby-pages-info-show-random": "Muuji bogag si aan kala sooc lahayn loo doortay",
+	"nearby-pages-info-show-button": "Muuji bogagga ku dhow"
 }
