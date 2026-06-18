@@ -34,7 +34,7 @@
 		"grunt-banana-checker": "0.13.0",
 		"jest": "27.4.7",
 		"jquery": "3.7.1",
-		"jsdoc": "4.0.2",
+		"jsdoc": "4.0.5",
 		"jsdoc-vuejs": "4.0.0",
 		"less": "4.1.2",
 		"mustache": "3.0.1",
