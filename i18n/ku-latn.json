@@ -5,7 +5,7 @@
 		]
 	},
 	"nearby": "Rûpelên li ser mijarên li derdora te",
-	"nearby-pages-desc": "Rûpela taybet a [[Special:Nearby|Derdora min]] lê zêde dike",
+	"nearby-pages-desc": "Rûpela xisûsî ya [[Special:Nearby|Derdora min]] lê zêde dike",
 	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
 	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
 	"nearby-pages-error": "Problemeke bi Derdora min a {{GRAMMAR:oblique|{{SITENAME}}}} derket.",
@@ -15,7 +15,7 @@
 	"nearby-pages-permission-denied": "Te gihiştina Xîzmetên Lokasyonê ji bo {{GRAMMAR:oblique|{{SITENAME}}}} red kir. Ji bo guhartinê ji kerema xwe re li eyarên xwe yên gerokê yan amûra xwe binêre",
 	"nearby-pages-location-unavailable": "{{SITENAME}} nikare cihê te diyar bike. Ji kerema xwe dîsa bi sînyaleke baştir biceribîne.",
 	"nearby-pages-requirements": "Bibore! Geroka te ya webê piştgiriya Derdora min a {{GRAMMAR:oblique|{{SITENAME}}}} nake.",
-	"nearby-pages-requirements-guidance": "Bi gerokeke din biceribîne yan jî ger te neçalak kiribe, JavaScriptê çalak bike.",
+	"nearby-pages-requirements-guidance": "Bi gerokeke din biceribîne yan jî ger te neaktîvkiribe kiribe, JavaScriptê aktîv bike.",
 	"nearby-pages-title": "Derdora min",
 	"nearby-pages-info-heading": "Cihên li derdora te",
 	"nearby-pages-info-description": "Tu dikarî rûpelên {{GRAMMAR:oblique|{{SITENAME}}}} yên entresan di derbarê cihên derdora xwe de bixwînî",
