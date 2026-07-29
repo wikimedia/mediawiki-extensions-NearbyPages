@@ -2,11 +2,25 @@
 	"@metadata": {
 		"authors": [
 			"Csega",
-			"Tacsipacsi"
+			"Tacsipacsi",
+			"Dj"
 		]
 	},
 	"nearby": "A közeledben található témájú lapok",
+	"nearby-pages-desc": "Hozzáadja a [[Special:Nearby|Nearby]] speciális lapot.",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
+	"nearby-pages-error": "A(z) {{SITENAME}} Közeli lapok funkciójával problémák vannak.",
 	"nearby-pages-error-guidance": "Próbáld meg frissíteni a helyzetedet.",
+	"nearby-pages-noresults": "Nagy itt a csend… Nem találhatók közeli témájú lapok.",
+	"nearby-pages-noresults-guidance": "Próbálj meg új lapot létrehozni, vagy helyadatokat hozzáadni egy meglévőhöz.",
+	"nearby-pages-permission-denied": "Megtagadtad a(z) {{SITENAME}} hozzáférését a helymeghatározási szolgáltatásokhoz. Ennek módosításához nyisd meg a böngésződ vagy az eszközöd beállításait.",
+	"nearby-pages-location-unavailable": "A(z) {{SITENAME}} nem tudja meghatározni a tartózkodási helyedet. Próbáld újra jobb jelerősség mellett.",
+	"nearby-pages-requirements": "Sajnáljuk! A böngésződ nem támogatja a(z) {{SITENAME}} Közeli lapok funkcióját.",
+	"nearby-pages-requirements-guidance": "Próbálj meg másik böngészőt használni, vagy engedélyezd a JavaScriptet, ha letiltottad.",
 	"nearby-pages-title": "A közelben",
-	"nearby-pages-info-heading": "A közeledben lévő helyek"
+	"nearby-pages-info-heading": "A közeledben lévő helyek",
+	"nearby-pages-info-description": "Érdekes {{SITENAME}}-lapokat olvashatsz a környékeden található helyekről.",
+	"nearby-pages-info-show-random": "Véletlenszerű lapok megjelenítése",
+	"nearby-pages-info-show-button": "Közeli lapok megjelenítés"
 }
