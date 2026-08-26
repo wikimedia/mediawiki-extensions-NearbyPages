@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Matma Rex",
+			"PanWor",
 			"Peter Bowman",
 			"Rail",
 			"The Polish"
@@ -16,7 +17,7 @@
 	"nearby-pages-noresults": "Jesteś w szczerym polu… Nie znaleziono nic w pobliżu na ten temat.",
 	"nearby-pages-noresults-guidance": "Spróbuj utworzyć nową stronę albo uzupełnić współrzędne geograficzne na już istniejącej stronie",
 	"nearby-pages-permission-denied": "Odmówiłeś {{GRAMMAR:C.lp|{{SITENAME}}}} dostępu do usług lokalizacyjnych. Aby to zmienić odwiedź ustawienia przeglądarki lub urządzenia",
-	"nearby-pages-location-unavailable": "{{SITENAME}} nie może określić twojego położenia. Proszę spróbuj ponownie z lepszym sygnałem.",
+	"nearby-pages-location-unavailable": "{{SITENAME}} nie może określić Twojego położenia. Spróbuj ponownie z lepszym sygnałem.",
 	"nearby-pages-requirements": "Przepraszamy! Twoja przeglądarka nie obsługuje „{{SITENAME}} – w pobliżu”.",
 	"nearby-pages-requirements-guidance": "Spróbuj innej przeglądarki lub włącz obsługę JavaScript, jeżeli masz teraz wyłączoną.",
 	"nearby-pages-title": "W pobliżu",
