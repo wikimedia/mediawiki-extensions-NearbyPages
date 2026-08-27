@@ -2,11 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Luky001",
-			"Teslaton"
+			"Teslaton",
+			"Wizzard"
 		]
 	},
 	"nearby": "Stránky o blízkych lokalitách",
 	"nearby-pages-desc": "Pridáva špeciálnu stránku [[Special:Nearby|V okolí]]",
+	"nearby-pages-distance": "{{PLURAL:$1|$1 km}}",
+	"nearby-pages-distance-meters": "{{PLURAL:$1|$1 m}}",
 	"nearby-pages-error": "Funkcia {{GRAMMAR:genitív|{{SITENAME}}}} V okolí má nejaké problémy.",
 	"nearby-pages-error-guidance": "Skúste aktualizovať svoju polohu.",
 	"nearby-pages-noresults": "Je tu akosi prázdno... Neboli nájdené žiadne stránky o témach v okolí.",
