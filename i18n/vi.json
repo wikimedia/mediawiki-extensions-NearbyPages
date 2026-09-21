@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Hide on Rosé",
 			"Minh Nguyen",
 			"Nvdtn19"
 		]
 	},
 	"nearby": "Trang về đề tài gần bạn",
-	"nearby-pages-desc": "Thêm trang dặc biệt [[Special:Nearby|Lân cận]]",
+	"nearby-pages-desc": "Thêm trang đặc biệt [[Special:Nearby|Lân cận]]",
 	"nearby-pages-distance": "$1 {{PLURAL:$1}}km",
 	"nearby-pages-distance-meters": "$1 {{PLURAL:$1}}m",
 	"nearby-pages-error": "{{SITENAME}} Lân cận đang gặp sự cố.",
